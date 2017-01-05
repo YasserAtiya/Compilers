@@ -1,0 +1,2 @@
+	.seg	"data"
+	.seg	"text"

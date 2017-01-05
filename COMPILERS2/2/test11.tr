@@ -1,0 +1,22 @@
+.fp 5 CBI
+.ft CR
+.nf
+\f(CR 
+main()
+{
+    \f(CBint\f(CR gd = DETECT, gm;
+ 
+    initgraph(&gd, &gm,\fB"C:\\TC\\BGI"\f(CR);
+ 
+    outtextxy(\f510\f(CR,\f520\f(CR, \fB"Graphics source code example."\f(CR);
+ 
+    circle(\f5200\f(CR, \f5200\f(CR, \f550\f(CR);
+ 
+    setcolor(BLUE);
+ 
+    line(\f5350\f(CR, \f5250\f(CR, \f5450\f(CR, \f550\f(CR);
+ 
+    getch();
+    closegraph( );
+    \f(CBreturn\f(CR \f50\f(CR;
+}

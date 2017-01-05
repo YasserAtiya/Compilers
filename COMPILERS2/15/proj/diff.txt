@@ -1,0 +1,231 @@
+23c23
+< !  outs=%l0:
+---
+> !  outs=%g2:%g4:%l0:
+29a30,33
+> 	sethi	%hi(down),%g1       ! sets=%g1:    uses=         deads=
+> 	add	%g1,%lo(down),%g2   ! sets=%g2:    uses=%g1:     deads=%g1:
+> 	sethi	%hi(up),%g3         ! sets=%g3:    uses=         deads=
+> 	add	%g3,%lo(up),%g4     ! sets=%g4:    uses=%g3:     deads=%g3:
+35,36c39,40
+< !   ins=%l0:
+< !  outs=%l0:
+---
+> !   ins=%g2:%g4:%l0:
+> !  outs=%g2:%g4:%l0:
+41,43c45
+< 	sethi	%hi(down),%o2       ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(down),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%g0,[%o1 + %o2]     ! sets=        uses=%g0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%g0,[%o1 + %g2]     ! sets=        uses=%g0:%g2:%o1:deads=%o1:
+45,47c47
+< 	sethi	%hi(up),%o2         ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(up),%o2     ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%g0,[%o1 + %o2]     ! sets=        uses=%g0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%g0,[%o1 + %g4]     ! sets=        uses=%g0:%g4:%o1:deads=%o1:
+60c60
+< !  outs=%l0:
+---
+> !  outs=%g2:%g4:%l0:
+64a65,68
+> 	sethi	%hi(x),%g1          ! sets=%g1:    uses=         deads=
+> 	add	%g1,%lo(x),%g2      ! sets=%g2:    uses=%g1:     deads=%g1:
+> 	sethi	%hi(rows),%g3       ! sets=%g3:    uses=         deads=
+> 	add	%g3,%lo(rows),%g4   ! sets=%g4:    uses=%g3:     deads=%g3:
+70,71c74,75
+< !   ins=%l0:
+< !  outs=%l0:
+---
+> !   ins=%g2:%g4:%l0:
+> !  outs=%g2:%g4:%l0:
+76,78c80
+< 	sethi	%hi(x),%o2          ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(x),%o2      ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%g0,[%o1 + %o2]     ! sets=        uses=%g0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%g0,[%o1 + %g2]     ! sets=        uses=%g0:%g2:%o1:deads=%o1:
+80,82c82
+< 	sethi	%hi(rows),%o2       ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(rows),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%g0,[%o1 + %o2]     ! sets=        uses=%g0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%g0,[%o1 + %g4]     ! sets=        uses=%g0:%g4:%o1:deads=%o1:
+126c126
+< !  outs=%l0:%l1:
+---
+> !  outs=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+132c132
+< 	mov	%i0,%l1             ! sets=%l1:    uses=%i0:     deads=%i0:
+---
+> 	mov	%i0,%l1             ! sets=%l1:    uses=%i0:     deads=
+134a135,150
+> 	sethi	%hi(x),%g1          ! sets=%g1:    uses=         deads=
+> 	sethi	%hi(up),%g2         ! sets=%g2:    uses=         deads=
+> 	sethi	%hi(down),%g3       ! sets=%g3:    uses=         deads=
+> 	add	%i0,1,%g5           ! sets=%g5:    uses=%i0:     deads=
+> 	sethi	%hi(rows),%g7       ! sets=%g7:    uses=         deads=
+> 	add	%g1,%lo(x),%o3      ! sets=%o3:    uses=%g1:     deads=
+> 	add	%g2,%lo(up),%o4     ! sets=%o4:    uses=%g2:     deads=%g2:
+> 	add	%g3,%lo(down),%o5   ! sets=%o5:    uses=%g3:     deads=%g3:
+> 	mov	%o5,%l2             ! sets=%l2:    uses=%o5:     deads=
+> 	add	%g7,%lo(rows),%l4   ! sets=%l4:    uses=%g7:     deads=%g7:
+> 	mov	%o4,%l6             ! sets=%l6:    uses=%o4:     deads=
+> 	mov	%o4,%l7             ! sets=%l7:    uses=%o4:     deads=
+> 	mov	%l4,%i2             ! sets=%i2:    uses=%l4:     deads=
+> 	mov	%l4,%i3             ! sets=%i3:    uses=%l4:     deads=
+> 	sll	%i0,2,%i4           ! sets=%i4:    uses=%i0:     deads=%i0:
+> 	mov	%g1,%i5             ! sets=%i5:    uses=%g1:     deads=%g1:
+140,141c156,157
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+146,148c162
+< 	sethi	%hi(rows),%o1       ! sets=%o1:    uses=         deads=
+< 	add	%o1,%lo(rows),%o1   ! sets=%o1:    uses=%o1:     deads=%o1:
+< 	ld	[%o0 + %o1],%o0     ! sets=%o0:    uses=%o0:%o1: deads=%o0:%o1:
+---
+> 	ld	[%o0 + %l4],%o0     ! sets=%o0:    uses=%o0:%l4: deads=%o0:
+157,158c171,172
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+163,165c177
+< 	sethi	%hi(up),%o1         ! sets=%o1:    uses=         deads=
+< 	add	%o1,%lo(up),%o1     ! sets=%o1:    uses=%o1:     deads=%o1:
+< 	ld	[%o0 + %o1],%o0     ! sets=%o0:    uses=%o0:%o1: deads=%o0:%o1:
+---
+> 	ld	[%o0 + %o4],%o0     ! sets=%o0:    uses=%o0:%o4: deads=%o0:
+174,175c186,187
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+180,182c192
+< 	sethi	%hi(down),%o1       ! sets=%o1:    uses=         deads=
+< 	add	%o1,%lo(down),%o1   ! sets=%o1:    uses=%o1:     deads=%o1:
+< 	ld	[%o0 + %o1],%o0     ! sets=%o0:    uses=%o0:%o1: deads=%o0:%o1:
+---
+> 	ld	[%o0 + %o5],%o0     ! sets=%o0:    uses=%o0:%o5: deads=%o0:
+191,192c201,202
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%o3:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%o3:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+199,201c209
+< 	sethi	%hi(down),%o2       ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(down),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%o0,[%o1 + %o2]     ! sets=        uses=%o0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%o0,[%o1 + %l2]     ! sets=        uses=%o0:%o1:%l2:deads=%o1:
+205,207c213
+< 	sethi	%hi(up),%o2         ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(up),%o2     ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%o0,[%o1 + %o2]     ! sets=        uses=%o0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%o0,[%o1 + %l7]     ! sets=        uses=%o0:%o1:%l7:deads=%o1:
+209,211c215
+< 	sethi	%hi(rows),%o2       ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(rows),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%o0,[%o1 + %o2]     ! sets=        uses=%o0:%o1:%o2:deads=%o0:%o1:%o2:
+---
+> 	st	%o0,[%o1 + %i3]     ! sets=        uses=%o0:%o1:%i3:deads=%o0:%o1:
+213,215c217
+< 	sll	%l1,2,%o1           ! sets=%o1:    uses=%l1:     deads=
+< 	sethi	%hi(x),%o2          ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(x),%o2      ! sets=%o2:    uses=%o2:     deads=%o2:
+---
+> 	add	%i5,%lo(x),%o2      ! sets=%o2:    uses=%i5:     deads=
+219c221
+< 	st	%l0,[%o1 + %o2]     ! sets=        uses=%o1:%o2:%l0:deads=
+---
+> 	st	%l0,[%i4 + %o2]     ! sets=        uses=%o2:%l0:%i4:deads=
+225,226c227,228
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%o3:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%g6:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+229d230
+< 	sethi	%hi(x),%o0          ! sets=%o0:    uses=         deads=
+231c232
+< 	add	%o0,%lo(x),%o0      ! sets=%o0:    uses=%o0:     deads=
+---
+> 	mov	%o3,%o0             ! sets=%o0:    uses=%o3:     deads=
+237,238c238,239
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%g6:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%g6:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+246,247c247,248
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%g6:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+252c253
+< 	add	%l1,1,%o0           ! sets=%o0:    uses=%l1:     deads=
+---
+> 	mov	%g5,%o0             ! sets=%o0:    uses=%g5:     deads=
+258,259c259,260
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%g6:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+266,267c267
+< 	sethi	%hi(down),%o2       ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(down),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+---
+> 	add	%g6,%lo(down),%o2   ! sets=%o2:    uses=%g6:     deads=%g6:
+272,274c272
+< 	sethi	%hi(up),%o2         ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(up),%o2     ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%g0,[%o1 + %o2]     ! sets=        uses=%g0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%g0,[%o1 + %l6]     ! sets=        uses=%g0:%o1:%l6:deads=%o1:
+276,278c274
+< 	sethi	%hi(rows),%o2       ! sets=%o2:    uses=         deads=
+< 	add	%o2,%lo(rows),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+< 	st	%g0,[%o1 + %o2]     ! sets=        uses=%g0:%o1:%o2:deads=%o1:%o2:
+---
+> 	st	%g0,[%o1 + %i2]     ! sets=        uses=%g0:%o1:%i2:deads=%o1:
+284,285c280,281
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+> !  outs=%g5:%o3:%o4:%o5:%l0:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+320c316
+< !  outs=%l0:%l1:
+---
+> !  outs=%g2:%l0:%l1:
+328a325,326
+> 	sethi	%hi(.L43),%g1       ! sets=%g1:    uses=         deads=
+> 	add	%g1,%lo(.L43),%g2   ! sets=%g2:    uses=%g1:     deads=%g1:
+334,335c332,333
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g2:%l0:%l1:
+> !  outs=%g2:%l0:%l1:
+339d336
+< 	sethi	%hi(.L43),%o0       ! sets=%o0:    uses=         deads=
+341c338
+< 	add	%o0,%lo(.L43),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+---
+> 	mov	%g2,%o0             ! sets=%o0:    uses=%g2:     deads=%g2:
+349,350c346,347
+< !   ins=%l0:%l1:
+< !  outs=%l0:%l1:
+---
+> !   ins=%g2:%l0:%l1:
+> !  outs=%g2:%l0:%l1:

@@ -1,0 +1,18 @@
+Gameplan Live Variable Analysis.
+   Find Defs and uses
+      Go from first line down
+         Find defs
+            Difference uses of block wth sets of line
+               Union with defs of block
+         Find uses
+            Get number of uses in line
+            use varcommon(cblk->defs,curline->uses)
+               If that returns number of uses in line, they are not uses
+                  otherwise subtract block from line set, and union that with block's uses
+   Use sets and uses to find ins and outs
+      Use algorithm
+
+   Find Dead
+      Difference ins and outs to find variables that die inside
+         When a variable or register is used that is on the will die list, search through other instructions to see if it is used again
+            If not, dead

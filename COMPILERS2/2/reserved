@@ -1,0 +1,17 @@
+auto do /*5667777 This is a multiline comment auto */
+"Ihaveto 
+lex"
+'\\';
+while
+"2 consecutive strings"
+"2nd consecutive string"
+'1234'
+12do34
+'2 consecutive literals'
+'2nd consecutive literal'
+shortstuffishardcore
+123456789shortdo			//123do auto doThis is a line 
+'"'
+"'"
+'\''
+"\""

@@ -1,0 +1,105 @@
+%{
+	int CurrentType = 0;
+%}
+
+
+
+Reserved "auto"|"break"|"case"|"char"|"continue"|"default"|"do"|"double"|"else"|"extern"|"float"|"for"|"goto"|"if"|"int"|"long"|"register"|"return"|"short"|"sizeof"|"static"|"struct"|"switch"|"typedef"|"union"|"unsigned"|"void"|"while"
+MultiLineComment  "/*"(.|"\n")*"*/"
+LineComment "//"(.)*
+String "\""(.|"\n")*"\""
+Literal "'"(.|"\n"|"\\\\")"'"
+NewLine "\n"
+Number [0-9]+
+
+%p 10000
+%a 10000
+
+%%
+
+{Reserved}/(" "|"\t"|"\n"|"(")		{
+					if(CurrentType == 0){
+			                        printf(".fp 5 CBI\n");
+						printf("\\f(CB%s",yytext);
+					}
+					else if(CurrentType != 1)
+						printf("\\f(CB%s",yytext);
+					else
+						printf("%s",yytext);
+						
+					CurrentType = 1;
+				}
+{MultiLineComment}  		{		
+					if(CurrentType == 0){
+			                        printf(".fp 5 CBI\n");
+						printf("\\f(CI%s",yytext);
+					}
+					else if(CurrentType != 2)
+						printf("\\f(CI%s",yytext);
+					else
+						printf("%s",yytext);
+					CurrentType = 2;
+				}
+
+{LineComment}	  		{
+					if(CurrentType == 0){
+			                        printf(".fp 5 CBI\n");
+						printf("\\f(CI%s",yytext);
+					}
+					else if(CurrentType != 2)
+						printf("\\f(CI%s",yytext);
+					else
+						printf("%s",yytext);
+					CurrentType = 2;
+				}
+
+
+{String}	  		{
+					if(CurrentType == 0){
+                        			printf(".fp 5 CBI\n");
+						printf("\\fB%s",yytext);
+					}
+					else if(CurrentType != 3)
+						printf("\\fB%s",yytext);
+					else
+						printf("%s",yytext);
+					CurrentType = 3;
+				}
+
+{Literal}			{
+					if(CurrentType == 0){
+			                        printf(".fp 5 CBI\n");
+						printf("\\fI%s",yytext);
+					}
+					else if(CurrentType != 4)
+						printf("\\fI%s",yytext);
+					else
+						printf("%s",yytext);
+					CurrentType = 4;
+				}
+
+{Number}			{
+					if(CurrentType == 0){
+                        			printf(".fp 5 CBI\n");
+						printf("\\f5%s",yytext);
+					}
+					else if(CurrentType != 5)
+						printf("\\f5%s",yytext);
+					else
+						printf("%s",yytext);
+					CurrentType = 5;
+				}
+
+.				{
+					if(CurrentType == 0){
+                      				printf(".fp 5 CBI\n");
+						printf("\\f(CR%s",yytext);
+					}
+					else if(CurrentType != 6)
+						printf("\\f(CR%s",yytext);
+					else
+						printf("%s",yytext);
+					CurrentType = 6;
+				}
+%%
+

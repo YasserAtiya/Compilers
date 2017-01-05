@@ -1,0 +1,377 @@
+
+Trying to find fill for: 	bge	.L29
+Curline: 	mov	%i1,%l5
+FILLED
+
+Trying to find fill for: 	call	printf,1
+Curline: 	add	%o0,%lo(.L31),%o0
+FILLED
+
+Trying to find fill for: 	call	exit,1
+Curline: 	mov	%g0,%o0
+FILLED
+
+Trying to find fill for: 	call	number,1
+Curline: 	ld	[%l5 + 4],%o0
+FILLED
+
+Trying to find fill for: 	bl	.L39
+Curline: 	mov	%o0,%l3
+FILLED
+
+Trying to find fill for: 	call	number,1
+Curline: 	ld	[%l5 + 8],%o0
+FILLED
+
+Trying to find fill for: 	bl	.L39
+Curline: 	mov	%o0,%l0
+FILLED
+
+Trying to find fill for: 	bg	.L39
+Curline: 	or	%o1,%lo(9999),%o1
+Conflicts with Compline: 	cmp	%l0,%o1
+Curline uses:
+%o1:
+Curline sets:
+%o1:
+Compline uses:
+%o1:%l0:
+Compline sets:
+%o1:%l0:
+
+Trying to find fill for: 	bg	.L39
+Curline: 	sethi	%hi(9999),%o1
+Conflicts with Compline: 	or	%o1,%lo(9999),%o1
+Curline uses:
+
+Curline sets:
+%o1:
+Compline uses:
+%o1:
+Compline sets:
+%o1:
+
+Trying to find fill for: 	call	printf,3
+Curline: 	mov	%l0,%o2
+FILLED
+
+Trying to find fill for: 	call	printf,2
+Curline: 	add	%o1,%lo(dayw),%o1
+FILLED
+
+Trying to find fill for: 	call	cal,4
+Curline: 	mov	24,%o3
+FILLED
+
+Trying to find fill for: 	call	pstr,2
+Curline: 	mov	24,%o1
+FILLED
+
+Trying to find fill for: 	bl	.L48
+Curline: 	mov	%o0,%l1
+FILLED
+
+Trying to find fill for: 	call	exit,1
+Curline: 	mov	%g0,%o0
+FILLED
+
+Trying to find fill for: 	call	number,1
+Curline: 	ld	[%l5 + 4],%o0
+FILLED
+
+Trying to find fill for: 	bl	.L39
+Curline: 	mov	%o0,%l0
+FILLED
+
+Trying to find fill for: 	bg	.L39
+Curline: 	or	%o1,%lo(9999),%o1
+Conflicts with Compline: 	cmp	%l0,%o1
+Curline uses:
+%o1:
+Curline sets:
+%o1:
+Compline uses:
+%o1:%l0:
+Compline sets:
+%o1:%l0:
+
+Trying to find fill for: 	bg	.L39
+Curline: 	sethi	%hi(9999),%o1
+Conflicts with Compline: 	or	%o1,%lo(9999),%o1
+Curline uses:
+
+Curline sets:
+%o1:
+Compline uses:
+%o1:
+Compline sets:
+%o1:
+
+Trying to find fill for: 	call	printf,1
+Curline: 	add	%o0,%lo(.L54),%o0
+FILLED
+
+Trying to find fill for: 	call	printf,2
+Curline: 	mov	%l0,%o1
+FILLED
+
+Trying to find fill for: 	call	printf,1
+Curline: 	add	%o0,%lo(.L56),%o0
+FILLED
+
+Trying to find fill for: 	bl	.L62
+Curline: 	mov	%o0,%l2
+FILLED
+
+Trying to find fill for: 	call	printf,2
+Curline: 	ld	[%o1 + %i4],%o1
+FILLED
+
+Trying to find fill for: 	call	printf,2
+Curline: 	ld	[%o1 + %i4],%o1
+FILLED
+
+Trying to find fill for: 	call	printf,2
+Curline: 	ld	[%o1 + %i4],%o1
+FILLED
+
+Trying to find fill for: 	call	printf,4
+Curline: 	mov	%l6,%o3
+FILLED
+
+Trying to find fill for: 	call	cal,4
+Curline: 	mov	72,%o3
+FILLED
+
+Trying to find fill for: 	call	cal,4
+Curline: 	mov	72,%o3
+FILLED
+
+Trying to find fill for: 	call	cal,4
+Curline: 	mov	72,%o3
+FILLED
+
+Trying to find fill for: 	call	pstr,2
+Curline: 	mov	72,%o1
+FILLED
+
+Trying to find fill for: 	bl	.L70
+Curline: 	mov	%o0,%l2
+FILLED
+
+Trying to find fill for: 	bl	.L59
+Curline: 	mov	%o0,%l1
+FILLED
+
+Trying to find fill for: 	call	printf,1
+Curline: 	add	%o0,%lo(.L73),%o0
+FILLED
+
+Trying to find fill for: 	call	exit,1
+Curline: 	mov	%g0,%o0
+FILLED
+
+Trying to find fill for: 	call	printf,1
+Curline: 	add	%o0,%lo(.L74),%o0
+FILLED
+function     level instructions memory refs
+------------ ----- ------------ -----------
+main         total          164           8
+                 0          103           4
+                 1           49           3
+                 2           12           1
+
+Trying to find fill for: 	be	.L78
+Curline: 	mov	%o0,%g2
+FILLED
+
+Trying to find fill for: 	ba,a	.L77
+Curline: 	mov	%o0,%g1
+FILLED
+number       total           27           1
+                 0            9           0
+                 1           18           1
+
+Trying to find fill for: 	be	.L85
+Curline: 	sub	%l0,1,%l0
+FILLED
+
+Trying to find fill for: 	bne	.L84
+Curline: 	ldsb	[%o0],%o0
+Conflicts with Compline: 	cmp	%o0,%g0
+Curline uses:
+%o0:
+Curline sets:
+%o0:
+Compline uses:
+%g0:%o0:
+Compline sets:
+%g0:%o0:
+
+Trying to find fill for: 	bne	.L84
+Curline: 	mov	%o1,%l1
+FILLED
+
+Trying to find fill for: 	be	.L88
+Curline: 	sub	%l0,1,%l0
+FILLED
+
+Trying to find fill for: 	be	.L87
+Curline: 	ldsb	[%o0],%o0
+Conflicts with Compline: 	cmp	%o0,32
+Curline uses:
+%o0:
+Curline sets:
+%o0:
+Compline uses:
+%o0:
+Compline sets:
+%o0:
+
+Trying to find fill for: 	be	.L87
+Curline: 	mov	%o0,%l1
+Conflicts with Compline: 	ldsb	[%o0],%o0
+Curline uses:
+%o0:
+Curline sets:
+%l1:
+Compline uses:
+%o0:
+Compline sets:
+%o0:
+
+Trying to find fill for: 	be	.L87
+Curline: 	sub	%l1,1,%o0
+Conflicts with Compline: 	mov	%o0,%l1
+Curline uses:
+%l1:
+Curline sets:
+%o0:
+Compline uses:
+%o0:
+Compline sets:
+%o0:
+
+Trying to find fill for: 	call	printf,2
+Curline: 	mov	%l2,%o1
+FILLED
+pstr         total           38           4
+                 0           15           1
+                 1           23           3
+
+Trying to find fill for: 	call	jan1,1
+Curline: 	mov	%i1,%o0
+FILLED
+
+Trying to find fill for: 	call	jan1,1
+Curline: 	add	%l4,1,%o0
+FILLED
+
+Trying to find fill for: 	call	.rem,2
+Curline: 	mov	7,%o1
+FILLED
+
+Trying to find fill for: 	ba,a	.L95
+Curline: 	stb	%o0,[%o1 + 2]
+FILLED
+
+Trying to find fill for: 	ba,a	.L95
+Curline: 	stb	%o0,[%o1 + 9]
+FILLED
+
+Trying to find fill for: 	ba,a	.L102
+Curline: 	add	%g1,%lo(mon),%g2
+FILLED
+
+Trying to find fill for: 	call	.rem,2
+Curline: 	mov	7,%o1
+FILLED
+
+Trying to find fill for: 	ba,a	.L107
+Curline: 	add	%l3,%l7,%l4
+FILLED
+
+Trying to find fill for: 	bne	.L109
+Curline: 	ldsb	[%l3 + %l7],%o0
+Conflicts with Compline: 	cmp	%o0,19
+Curline uses:
+%l3:%l7:
+Curline sets:
+%o0:
+Compline uses:
+%o0:
+Compline sets:
+%o0:
+
+Trying to find fill for: 	call	.div,2
+Curline: 	mov	10,%o1
+FILLED
+
+Trying to find fill for: 	call	.rem,2
+Curline: 	mov	10,%o1
+FILLED
+
+Trying to find fill for: 	bne	.L111
+Curline: 	mov	%o0,%l0
+FILLED
+
+Trying to find fill for: 	ble	.L108
+Curline: 	ldsb	[%l3 + %l7],%o1
+Conflicts with Compline: 	cmp	%l1,%o1
+Curline uses:
+%l3:%l7:
+Curline sets:
+%o1:
+Compline uses:
+%o1:%l1:
+Compline sets:
+%o1:%l1:
+cal          total          110          11
+                 0           58           4
+                 1           52           7
+
+Trying to find fill for: 	call	.div,2
+Curline: 	mov	4,%o1
+FILLED
+
+Trying to find fill for: 	ble	.L115
+Curline: 	mov	%l0,%l2
+FILLED
+
+Trying to find fill for: 	call	.div,2
+Curline: 	mov	100,%o1
+FILLED
+
+Trying to find fill for: 	call	.div,2
+Curline: 	mov	400,%o1
+FILLED
+
+Trying to find fill for: 	call	.rem,2
+Curline: 	mov	7,%o1
+FILLED
+jan1         total           30           0
+------------ ----- ------------ -----------
+program      total          369          24
+                 0          215           9
+                 1          142          14
+                 2           12           1
+
+ 15 transformations applied by reverse branches phase.
+  6 transformations applied by branch chaining phase.
+ 76 transformations applied by dead assignment elimination phase.
+ 20 transformations applied by local cse phase.
+ 54 transformations applied by fill delay slots phase.
+ 43 transformations applied by loop-invariant code motion phase.
+104 transformations applied by copy propagation phase.
+ 43 transformations applied by peephole optimization phase.
+ 24 transformations applied by register allocation phase.
+  3 transformations applied by unreachable code elimination phase.
+---
+388 transformations applied by all optimization phases.
+
+Number of peeprules is 10, applied 43 times.
+Peephole rule 2 applied 16 times.
+Peephole rule 3 applied 10 times.
+Peephole rule 5 applied 1 times.
+Peephole rule 7 applied 13 times.
+Peephole rule 10 applied 3 times.

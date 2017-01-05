@@ -1,0 +1,457 @@
+Curline: ! .1_rs = %g1
+Curline: ! .1_rl = %g2
+Curline: ! .1_bit = %g3
+Curline: ! .1_i = %g4
+Curline: ! .1_j = %g5
+Curline: ! .1_m = %g6
+Curline: 	save	%sp,(-88),%sp
+Curline: ! .1_s = %g7
+Curline: 	mov	%i0,%g7
+Curline: ! .1_prch = %o3
+Curline: 	mov	%i1,%o3
+Curline: ! .1_line = %o4
+Curline: 	mov	%i2,%o4
+Curline: ! .1_space = %o5
+Curline: 	mov	%i3,%o5
+Curline: ! source statement 122
+Curline: 	mov	%i3,%o0
+Curline: 	mov	%i3,%g2
+Curline: ! source statement 123
+Curline: 	mov	%g0,%g4
+Curline: ! source statement 124
+Curline: 	mov	%g0,%g5
+Curline: ! source statement 125
+Curline: 	mov	%g7,%o0
+Curline: 	mov	%g7,%g1
+Curline: 	ba,a	.L92
+Curline: ! source statement 126
+Curline: 	mov	%g1,%o0
+Curline: 	add	%g1,1,%o1
+Curline: 	mov	%o1,%g1
+Curline: 	ldsb	[%o0],%o0
+Curline: 	and	%o0,127,%o0
+Curline: 	sub	%o0,33,%o0
+Curline: 	mov	%o0,%g3
+Curline: 	cmp	%o0,%g0
+Curline: 	bge	.L94
+Curline: 	mov	%g0,%o0
+Curline: 	ba,a	.L95
+Curline: 	mov	%g3,%o0
+Curline: 	mov	%o0,%g3
+Curline: ! source statement 127
+Curline: 	mov	64,%o0
+Curline: 	mov	%o0,%g6
+Curline: 	ba,a	.L98
+Curline: ! source statement 128
+Curline: 	mov	%g6,%o0
+Curline: 	mov	%g3,%o1
+Curline: 	andcc	%g6,%g3,%g0
+Curline: 	be	.L100
+Curline: 	mov	%o3,%o0
+Curline: 	be	.L102
+Curline: 	mov	%o3,%o0
+Curline: 	ba,a	.L101
+Curline: 	mov	%g1,%o0
+Curline: 	ba,a	.L101
+Curline: 	mov	32,%o0
+Curline: 	mov	%g2,%o1
+Curline: 	add	%g2,1,%o2
+Curline: 	mov	%o2,%g2
+Curline: 	stb	%o0,[%o1]
+Curline: ! source statement 129
+Curline: 	mov	%g3,%o0
+Curline: ! source statement 130
+Curline: 	mov	%g3,%o0
+Curline: 	cmp	%g3,%g0
+Curline: 	bne	.L99
+Curline: ! source statement 131
+Curline: 	mov	9,%o0
+Curline: 	mov	%g2,%o1
+Curline: 	add	%g2,1,%o2
+Curline: 	mov	%o2,%g2
+Curline: 	stb	%o0,[%o1]
+Curline: ! source statement 132
+Curline: 	mov	%g5,%o0
+Curline: ! source statement 132
+Curline: 	mov	%g1,%o0
+Curline: 	mov	%g5,%o0
+Curline: 	cmp	%g5,%o4
+Curline: 	bl	.L93
+Curline: ! source statement 133
+Curline: 	mov	%g2,%o0
+Curline: ! source statement 135
+Curline: 	mov	%g2,%o0
+Curline: ! source statement 138
+Curline: 	mov	%g2,%o0
+Curline: 	stb	%g0,[%g2]
+Curline: ! source statement 139
+Curline: 	mov	%o5,%i0
+Curline: 	ret
+Curline: 	restore
+Curline: ! .1_rs = %g1
+Curline: ! .1_rl = %g2
+Curline: ! .1_bit = %g3
+Curline: ! .1_i = %g4
+Curline: ! .1_j = %g5
+Curline: ! .1_m = %g6
+Curline: 	save	%sp,(-88),%sp
+Curline: ! .1_s = %g7
+Curline: 	mov	%i0,%g7
+Curline: ! .1_prch = %o3
+Curline: 	mov	%i1,%o3
+Curline: ! .1_line = %o4
+Curline: 	mov	%i2,%o4
+Curline: ! .1_space = %o5
+Curline: 	mov	%i3,%o5
+Curline: ! source statement 122
+Curline: 	mov	%i3,%g2
+Curline: ! source statement 123
+Curline: 	mov	%g0,%g4
+Curline: ! source statement 124
+Curline: 	mov	%g0,%g5
+Curline: ! source statement 125
+Curline: 	mov	%g7,%g1
+Curline: 	ba,a	.L92
+Curline: ! source statement 126
+Curline: 	mov	%g1,%o0
+Curline: 	add	%g1,1,%o1
+Curline: 	mov	%o1,%g1
+Curline: 	ldsb	[%o0],%o0
+Curline: 	and	%o0,127,%o0
+Curline: 	sub	%o0,33,%o0
+Curline: 	mov	%o0,%g3
+Curline: 	cmp	%o0,%g0
+Curline: 	bge	.L94
+Curline: 	mov	%g0,%o0
+Curline: 	ba,a	.L95
+Curline: 	smul	%g3,7,%o0
+Curline: 	sethi	%hi(btab),%o1
+Curline: 	add	%o1,%lo(btab),%o1
+Curline: 	add	%o0,%o1,%o0
+Curline: 	mov	%g4,%o1
+Curline: 	ldsb	[%o0 + %g4],%o0
+Curline: 	mov	%o0,%g3
+Curline: ! source statement 127
+Curline: 	mov	64,%o0
+Curline: 	mov	%o0,%g6
+Curline: 	ba,a	.L98
+Curline: ! source statement 128
+Curline: 	andcc	%g6,%g3,%g0
+Curline: 	be	.L100
+Curline: 	cmp	%o3,%g0
+Curline: 	be	.L102
+Curline: 	mov	%o3,%o0
+Curline: 	ba,a	.L101
+Curline: 	ldsb	[%g1 + (-1)],%o0
+Curline: 	ba,a	.L101
+Curline: 	mov	32,%o0
+Curline: 	mov	%g2,%o1
+Curline: 	add	%g2,1,%o2
+Curline: 	mov	%o2,%g2
+Curline: 	stb	%o0,[%o1]
+Curline: ! source statement 129
+Curline: 	mov	%g6,%o1
+Curline: 	andn	%g3,%g6,%o0
+Curline: 	mov	%o0,%g3
+Curline: ! source statement 130
+Curline: 	mov	%g6,%o0
+Curline: ! source statement 130
+Curline: 	cmp	%g3,%g0
+Curline: 	bne	.L99
+Curline: ! source statement 131
+Curline: 	mov	9,%o0
+Curline: 	mov	%g2,%o1
+Curline: 	add	%g2,1,%o2
+Curline: 	mov	%o2,%g2
+Curline: 	stb	%o0,[%o1]
+Curline: ! source statement 132
+Curline: 	add	%g5,1,%o0
+Curline: 	mov	%o0,%g5
+Curline: ! source statement 132
+Curline: 	ldsb	[%g1],%o0
+Curline: 	cmp	%o0,%g0
+Curline: 	be	.L104
+Curline: 	mov	%o4,%o1
+Curline: 	bl	.L93
+Curline: ! source statement 133
+Curline: 	sub	%g2,1,%o0
+Curline: 	mov	%o0,%g2
+Curline: 	ldsb	[%o0],%o0
+Curline: 	cmp	%o0,9
+Curline: 	be	.L105
+Curline: ! source statement 135
+Curline: 	add	%g2,1,%o0
+Curline: 	mov	%o0,%g2
+Curline: ! source statement 136
+Curline: 	mov	10,%o0
+Curline: 	mov	%g2,%o1
+Curline: 	add	%g2,1,%o2
+Curline: 	mov	%o2,%g2
+Curline: 	stb	%o0,[%o1]
+Curline: ! source statement 137
+Curline: 	mov	%g4,%o0
+Curline: ! source statement 138
+Curline: 	stb	%g0,[%g2]
+Curline: ! source statement 139
+Curline: 	mov	%o5,%i0
+Curline: 	ret
+Curline: 	restore
+function     level instructions memory refs
+------------ ----- ------------ -----------
+mkline       total           90           9
+                 0           11           1
+                 1           16           1
+                 2           41           5
+                 3           22           2
+Curline: ! .2_prch = %l1
+Curline: ! .2_space = %l2
+Curline: ! .2_line = %l3
+Curline: 	save	%sp,(-104),%sp
+Curline: ! .2_argc = %l4
+Curline: 	mov	%i0,%l4
+Curline: ! .2_argv = %l5
+Curline: 	mov	%i1,%l5
+Curline: ! source statement 151
+Curline: 	mov	42,%o0
+Curline: 	mov	%o0,%l1
+Curline: ! source statement 152
+Curline: 	mov	10,%o0
+Curline: 	mov	%o0,%l3
+Curline: ! source statement 153
+Curline: 	mov	%l5,%o0
+Curline: ! source statement 154
+Curline: 	mov	%l4,%o0
+Curline: ! source statement 158
+Curline: 	mov	%l5,%o0
+Curline: ! source statement 163
+Curline: 	mov	%l5,%o0
+Curline: 	sra	%o0,3,%o0
+Curline: 	mov	%o0,%l3
+Curline: 	ba,a	.L113
+Curline: 	cmp	%o0,99
+Curline: 	be	.L117
+Curline: 	cmp	%o0,108
+Curline: 	be	.L118
+Curline: 	cmp	%o0,119
+Curline: 	be	.L119
+Curline: 	ba,a	.L113
+Curline: ! source statement 167
+Curline: 	mov	%l3,%o0
+Curline: 	mov	%o0,%l2
+Curline: ! source statement 168
+Curline: 	sethi	%hi(.L121),%o0
+Curline: 	add	%o0,%lo(.L121),%o0
+Curline: 	call	printf,1
+Curline: ! source statement 169
+Curline: 	mov	%l4,%o0
+Curline: ! source statement 171
+Curline: 	sethi	%hi(.L126),%l0
+Curline: 	mov	%l5,%o0
+Curline: 	add	%l5,4,%o1
+Curline: 	mov	%o1,%l5
+Curline: 	ld	[%o0],%o0
+Curline: 	mov	%l1,%o1
+Curline: 	mov	%l3,%o2
+Curline: 	mov	%l2,%o3
+Curline: 	call	mkline,4
+Curline: 	mov	%o0,%o1
+Curline: 	add	%l0,%lo(.L126),%o0
+Curline: 	mov	%o1,%o1
+Curline: 	call	printf,2
+Curline: ! source statement 172
+Curline: 	mov	%l4,%o0
+Curline: 	ba,a	.L127
+Curline: ! source statement 176
+Curline: 	sethi	%hi(.L111),%o0
+Curline: 	sethi	%hi(_iob),%o2
+Curline: 	add	%o0,%lo(.L111),%o0
+Curline: 	mov	256,%o1
+Curline: 	add	%o2,%lo(_iob),%o2
+Curline: 	call	fgets,3
+Curline: 	cmp	%o0,%g0
+Curline: 	be	.L129
+Curline: ! source statement 177
+Curline: 	sethi	%hi(.L130),%l0
+Curline: 	sethi	%hi(.L111),%o0
+Curline: 	add	%o0,%lo(.L111),%o0
+Curline: 	mov	%l1,%o1
+Curline: 	mov	%l3,%o2
+Curline: 	mov	%l2,%o3
+Curline: 	call	mkline,4
+Curline: 	mov	%o0,%o1
+Curline: 	add	%l0,%lo(.L130),%o0
+Curline: 	mov	%o1,%o1
+Curline: 	call	printf,2
+Curline: 	ba,a	.L128
+Curline: 	ret
+Curline: 	restore
+Curline: ! .2_prch = %l1
+Curline: ! .2_space = %l2
+Curline: ! .2_line = %l3
+Curline: 	save	%sp,(-104),%sp
+Curline: ! .2_argc = %l4
+Curline: 	mov	%i0,%l4
+Curline: ! .2_argv = %l5
+Curline: 	mov	%i1,%l5
+Curline: ! source statement 151
+Curline: 	mov	42,%o0
+Curline: 	mov	%o0,%l1
+Curline: ! source statement 152
+Curline: 	mov	10,%o0
+Curline: 	mov	%o0,%l3
+Curline: ! source statement 153
+Curline: 	add	%l5,4,%o0
+Curline: 	mov	%o0,%l5
+Curline: 	ld	[%o0],%o0
+Curline: 	ldsb	[%o0],%o0
+Curline: 	cmp	%o0,45
+Curline: 	bne	.L114
+Curline: ! source statement 154
+Curline: 	sub	%l4,1,%o0
+Curline: 	mov	%o0,%l4
+Curline: ! source statement 155
+Curline: 	mov	%l5,%o0
+Curline: ! source statement 158
+Curline: 	ld	[%l5],%o1
+Curline: 	add	%o1,1,%o1
+Curline: 	st	%o1,[%l5]
+Curline: 	ldsb	[%o1],%o0
+Curline: 	mov	%o0,%l1
+Curline: 	ba,a	.L113
+Curline: ! source statement 163
+Curline: 	ld	[%l5],%o1
+Curline: 	add	%o1,1,%o1
+Curline: 	st	%o1,[%l5]
+Curline: 	mov	%o1,%o0
+Curline: 	call	myatoi,1
+Curline: 	sra	%o0,3,%o0
+Curline: 	mov	%o0,%l3
+Curline: 	ba,a	.L113
+Curline: 	cmp	%o0,99
+Curline: 	be	.L117
+Curline: 	cmp	%o0,108
+Curline: 	be	.L118
+Curline: 	cmp	%o0,119
+Curline: 	be	.L119
+Curline: 	ba,a	.L113
+Curline: ! source statement 167
+Curline: 	sll	%l3,6,%o0
+Curline: 	call	malloc,1
+Curline: 	mov	%o0,%l2
+Curline: ! source statement 168
+Curline: 	sethi	%hi(.L121),%o0
+Curline: 	add	%o0,%lo(.L121),%o0
+Curline: 	call	printf,1
+Curline: ! source statement 169
+Curline: 	sub	%l4,1,%o0
+Curline: 	mov	%o0,%l4
+Curline: 	cmp	%o0,%g0
+Curline: 	be	.L122
+Curline: ! source statement 171
+Curline: 	sethi	%hi(.L126),%l0
+Curline: 	mov	%l5,%o0
+Curline: 	add	%l5,4,%o1
+Curline: 	mov	%o1,%l5
+Curline: 	ld	[%o0],%o0
+Curline: 	mov	%l1,%o1
+Curline: 	mov	%l3,%o2
+Curline: 	mov	%l2,%o3
+Curline: 	call	mkline,4
+Curline: 	mov	%o0,%o1
+Curline: 	add	%l0,%lo(.L126),%o0
+Curline: 	mov	%o1,%o1
+Curline: 	call	printf,2
+Curline: ! source statement 172
+Curline: 	sub	%l4,1,%o0
+Curline: 	mov	%o0,%l4
+Curline: 	cmp	%o0,%g0
+Curline: 	bne	.L125
+Curline: 	ba,a	.L127
+Curline: ! source statement 176
+Curline: 	sethi	%hi(.L111),%o0
+Curline: 	sethi	%hi(_iob),%o2
+Curline: 	add	%o0,%lo(.L111),%o0
+Curline: 	mov	256,%o1
+Curline: 	add	%o2,%lo(_iob),%o2
+Curline: 	call	fgets,3
+Curline: 	cmp	%o0,%g0
+Curline: 	be	.L129
+Curline: ! source statement 177
+Curline: 	sethi	%hi(.L130),%l0
+Curline: 	sethi	%hi(.L111),%o0
+Curline: 	add	%o0,%lo(.L111),%o0
+Curline: 	mov	%l1,%o1
+Curline: 	mov	%l3,%o2
+Curline: 	mov	%l2,%o3
+Curline: 	call	mkline,4
+Curline: 	mov	%o0,%o1
+Curline: 	add	%l0,%lo(.L130),%o0
+Curline: 	mov	%o1,%o1
+Curline: 	call	printf,2
+Curline: 	ba,a	.L128
+Curline: 	ret
+Curline: 	restore
+main         total          106          11
+                 0           23           0
+                 1           83          11
+Curline: ! .3_i = %g1
+Curline: ! .3_retval = %g2
+Curline: 	save	%sp,(-72),%sp
+Curline: ! .3_str = %g3
+Curline: 	mov	%i0,%g3
+Curline: ! source statement 184
+Curline: 	mov	%g0,%g1
+Curline: ! source statement 185
+Curline: 	mov	%g0,%g2
+Curline: ! source statement 187
+Curline: 	mov	%g3,%o0
+Curline: 	mov	%g3,%o0
+Curline: ! source statement 188
+Curline: 	mov	%g2,%o0
+Curline: ! source statement 191
+Curline: 	mov	%g2,%i0
+Curline: 	ret
+Curline: 	restore
+Curline: ! .3_i = %g1
+Curline: ! .3_retval = %g2
+Curline: 	save	%sp,(-72),%sp
+Curline: ! .3_str = %g3
+Curline: 	mov	%i0,%g3
+Curline: ! source statement 184
+Curline: 	mov	%g0,%g1
+Curline: ! source statement 185
+Curline: 	mov	%g0,%g2
+Curline: ! source statement 187
+Curline: 	mov	%g1,%o1
+Curline: 	ldsb	[%g3 + %g1],%o0
+Curline: 	cmp	%o0,48
+Curline: 	bl	.L134
+Curline: 	mov	%g1,%o1
+Curline: 	cmp	%o0,57
+Curline: 	bg	.L134
+Curline: ! source statement 188
+Curline: 	smul	%g2,10,%o0
+Curline: 	mov	%o0,%g2
+Curline: ! source statement 191
+Curline: 	mov	%g2,%i0
+Curline: 	ret
+Curline: 	restore
+myatoi       total           26           3
+                 0            7           0
+                 1           19           3
+------------ ----- ------------ -----------
+program      total          222          23
+                 0           41           1
+                 1          118          15
+                 2           41           5
+                 3           22           2
+
+  3 transformations applied by reverse branches phase.
+  3 transformations applied by branch chaining phase.
+ 34 transformations applied by dead assignment elimination phase.
+ 46 transformations applied by copy propagation phase.
+ 18 transformations applied by register allocation phase.
+---
+104 transformations applied by all optimization phases.
+
+Number of peeprules is 0, applied 0 times.

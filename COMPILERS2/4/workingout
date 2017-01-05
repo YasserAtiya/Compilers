@@ -1,0 +1,523 @@
+
+state 0
+  $accept : _commands $end 
+  commands : _    (1)
+
+  .  reduce 1
+
+  commands  goto 1
+
+state 1
+  $accept :  commands_$end 
+  commands :  commands_command 
+
+  $end  accept
+  NUM  shift 9
+  ALPHA  shift 6
+  DUMP  shift 4
+  CLEAR  shift 5
+  -  shift 16
+  ~  shift 18
+  (  shift 20
+  .  error
+
+  expr  goto 3
+  level9  goto 8
+  level8  goto 10
+  level7  goto 11
+  level6  goto 12
+  level5  goto 13
+  level4  goto 14
+  level3  goto 15
+  level2  goto 17
+  level1  goto 19
+  value  goto 7
+  command  goto 2
+
+state 2
+  commands :  commands command_    (2)
+
+  .  reduce 2
+
+
+state 3
+  command :  expr_; 
+  level9 :  expr_| value 
+  level8 :  expr_^ value 
+  level7 :  expr_& value 
+  level6 :  expr_LSHF value 
+  level6 :  expr_RSHF value 
+  level5 :  expr_+ value 
+  level5 :  expr_- value 
+  level4 :  expr_* value 
+  level4 :  expr_/ value 
+  level4 :  expr_% value 
+
+  RSHF  shift 26
+  LSHF  shift 25
+  ;  shift 21
+  |  shift 22
+  ^  shift 23
+  &  shift 24
+  +  shift 27
+  -  shift 28
+  *  shift 29
+  /  shift 30
+  %  shift 31
+  .  error
+
+
+state 4
+  command :  DUMP_    (4)
+
+  .  reduce 4
+
+
+state 5
+  command :  CLEAR_    (5)
+
+  .  reduce 5
+
+
+state 6
+  command :  ALPHA_level10 command 
+  value :  ALPHA_    (42)
+
+  PLSE  shift 34
+  MINE  shift 35
+  TIME  shift 36
+  DIVE  shift 37
+  MODE  shift 38
+  LSHE  shift 39
+  RSHE  shift 40
+  ANDE  shift 41
+  XORE  shift 42
+  ORE  shift 43
+  =  shift 33
+  .  reduce 42
+
+  level10  goto 32
+
+state 7
+  expr :  value_    (7)
+
+  .  reduce 7
+
+
+state 8
+  expr :  level9_    (8)
+
+  .  reduce 8
+
+
+state 9
+  value :  NUM_    (41)
+
+  .  reduce 41
+
+
+state 10
+  level9 :  level8_    (21)
+
+  .  reduce 21
+
+
+state 11
+  level8 :  level7_    (23)
+
+  .  reduce 23
+
+
+state 12
+  level7 :  level6_    (25)
+
+  .  reduce 25
+
+
+state 13
+  level6 :  level5_    (28)
+
+  .  reduce 28
+
+
+state 14
+  level5 :  level4_    (31)
+
+  .  reduce 31
+
+
+state 15
+  level4 :  level3_    (35)
+
+  .  reduce 35
+
+
+state 16
+  level3 :  -_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 44
+
+state 17
+  level3 :  level2_    (37)
+
+  .  reduce 37
+
+
+state 18
+  level2 :  ~_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 46
+
+state 19
+  level2 :  level1_    (39)
+
+  .  reduce 39
+
+
+state 20
+  level1 :  (_expr ) 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  -  shift 16
+  ~  shift 18
+  (  shift 20
+  .  error
+
+  expr  goto 47
+  level9  goto 8
+  level8  goto 10
+  level7  goto 11
+  level6  goto 12
+  level5  goto 13
+  level4  goto 14
+  level3  goto 15
+  level2  goto 17
+  level1  goto 19
+  value  goto 7
+
+state 21
+  command :  expr ;_    (3)
+
+  .  reduce 3
+
+
+state 22
+  level9 :  expr |_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 48
+
+state 23
+  level8 :  expr ^_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 49
+
+state 24
+  level7 :  expr &_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 50
+
+state 25
+  level6 :  expr LSHF_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 51
+
+state 26
+  level6 :  expr RSHF_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 52
+
+state 27
+  level5 :  expr +_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 53
+
+state 28
+  level5 :  expr -_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 54
+
+state 29
+  level4 :  expr *_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 55
+
+state 30
+  level4 :  expr /_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 56
+
+state 31
+  level4 :  expr %_value 
+
+  NUM  shift 9
+  ALPHA  shift 45
+  .  error
+
+  value  goto 57
+
+state 32
+  command :  ALPHA level10_command 
+
+  NUM  shift 9
+  ALPHA  shift 6
+  DUMP  shift 4
+  CLEAR  shift 5
+  -  shift 16
+  ~  shift 18
+  (  shift 20
+  .  error
+
+  expr  goto 3
+  level9  goto 8
+  level8  goto 10
+  level7  goto 11
+  level6  goto 12
+  level5  goto 13
+  level4  goto 14
+  level3  goto 15
+  level2  goto 17
+  level1  goto 19
+  value  goto 7
+  command  goto 58
+
+state 33
+  level10 :  =_    (9)
+
+  .  reduce 9
+
+
+state 34
+  level10 :  PLSE_    (10)
+
+  .  reduce 10
+
+
+state 35
+  level10 :  MINE_    (11)
+
+  .  reduce 11
+
+
+state 36
+  level10 :  TIME_    (12)
+
+  .  reduce 12
+
+
+state 37
+  level10 :  DIVE_    (13)
+
+  .  reduce 13
+
+
+state 38
+  level10 :  MODE_    (14)
+
+  .  reduce 14
+
+
+state 39
+  level10 :  LSHE_    (15)
+
+  .  reduce 15
+
+
+state 40
+  level10 :  RSHE_    (16)
+
+  .  reduce 16
+
+
+state 41
+  level10 :  ANDE_    (17)
+
+  .  reduce 17
+
+
+state 42
+  level10 :  XORE_    (18)
+
+  .  reduce 18
+
+
+state 43
+  level10 :  ORE_    (19)
+
+  .  reduce 19
+
+
+state 44
+  level3 :  - value_    (36)
+
+  .  reduce 36
+
+
+state 45
+  value :  ALPHA_    (42)
+
+  .  reduce 42
+
+
+state 46
+  level2 :  ~ value_    (38)
+
+  .  reduce 38
+
+
+state 47
+  level9 :  expr_| value 
+  level8 :  expr_^ value 
+  level7 :  expr_& value 
+  level6 :  expr_LSHF value 
+  level6 :  expr_RSHF value 
+  level5 :  expr_+ value 
+  level5 :  expr_- value 
+  level4 :  expr_* value 
+  level4 :  expr_/ value 
+  level4 :  expr_% value 
+  level1 :  ( expr_) 
+
+  RSHF  shift 26
+  LSHF  shift 25
+  |  shift 22
+  ^  shift 23
+  &  shift 24
+  +  shift 27
+  -  shift 28
+  *  shift 29
+  /  shift 30
+  %  shift 31
+  )  shift 59
+  .  error
+
+
+state 48
+  level9 :  expr | value_    (20)
+
+  .  reduce 20
+
+
+state 49
+  level8 :  expr ^ value_    (22)
+
+  .  reduce 22
+
+
+state 50
+  level7 :  expr & value_    (24)
+
+  .  reduce 24
+
+
+state 51
+  level6 :  expr LSHF value_    (26)
+
+  .  reduce 26
+
+
+state 52
+  level6 :  expr RSHF value_    (27)
+
+  .  reduce 27
+
+
+state 53
+  level5 :  expr + value_    (29)
+
+  .  reduce 29
+
+
+state 54
+  level5 :  expr - value_    (30)
+
+  .  reduce 30
+
+
+state 55
+  level4 :  expr * value_    (32)
+
+  .  reduce 32
+
+
+state 56
+  level4 :  expr / value_    (33)
+
+  .  reduce 33
+
+
+state 57
+  level4 :  expr % value_    (34)
+
+  .  reduce 34
+
+
+state 58
+  command :  ALPHA level10 command_    (6)
+
+  .  reduce 6
+
+
+state 59
+  level1 :  ( expr )_    (40)
+
+  .  reduce 40
+
+
+31/127 terminals, 14/600 nonterminals
+43/300 grammar rules, 60/1000 states
+0 shift/reduce, 0 reduce/reduce conflicts reported
+31/601 working sets used
+memory: states,etc. 157/2000, parser 49/4000
+12/3001 distinct lookahead sets
+24 extra closures
+76 shift entries, 1 exceptions
+28 goto entries
+21 entries saved by goto default
+Optimizer space used: input 196/2000, output 247/4000
+247 table entries, 172 zero
+maximum spread: 272, maximum offset: 257

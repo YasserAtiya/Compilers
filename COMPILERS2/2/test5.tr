@@ -1,0 +1,14 @@
+.fp 5 CBI
+.ft CR
+.nf
+\f(CRmain(\f(CBint\f(CR argc, \f(CBchar\f(CR *argv[])
+{
+   \f(CBint\f(CR c;
+ 
+   printf(\fB"Number of command line arguments passed: %d\\n"\f(CR, argc);
+ 
+   \f(CBfor\f(CR ( c = \f50\f(CR ; c < argc ; c++)
+      printf(\fB"%d. Command line argument passed is %s\\n"\f(CR, c+\f51\f(CR, argv[c]);
+ 
+   \f(CBreturn\f(CR \f50\f(CR;
+}

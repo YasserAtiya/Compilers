@@ -1,0 +1,735 @@
+
+state 0
+	$accept : _commands $end 
+	commands : _    (1)
+
+	.  reduce 1
+
+	commands  goto 1
+
+state 1
+	$accept :  commands_$end 
+	commands :  commands_command 
+
+	$end  accept
+	NUM  shift 9
+	ALPHA  shift 6
+	DUMP  shift 4
+	CLEAR  shift 5
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 25
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  error
+
+	expr  goto 3
+	level9  goto 8
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+	command  goto 2
+
+state 2
+	commands :  commands command_    (2)
+
+	.  reduce 2
+
+
+state 3
+	command :  expr_; 
+	expr :  expr_level9 expr 
+	level5 :  expr_- expr 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	;  shift 30
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 32
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  error
+
+	expr  goto 33
+	level9  goto 31
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+
+state 4
+	command :  DUMP_    (4)
+
+	.  reduce 4
+
+
+state 5
+	command :  CLEAR_    (5)
+
+	.  reduce 5
+
+
+state 6
+	command :  ALPHA_level10 command 
+	value :  ALPHA_    (45)
+
+	PLSE  shift 37
+	MINE  shift 38
+	TIME  shift 39
+	DIVE  shift 40
+	MODE  shift 41
+	LSHE  shift 42
+	RSHE  shift 43
+	ANDE  shift 44
+	XORE  shift 45
+	ORE  shift 46
+	=  shift 36
+	.  reduce 45
+
+	level10  goto 35
+
+state 7
+	expr :  value_    (7)
+
+	.  reduce 7
+
+
+state 8
+	expr :  level9_    (9)
+
+	.  reduce 9
+
+
+state 9
+	value :  NUM_    (44)
+
+	.  reduce 44
+
+
+state 10
+	level9 :  |_    (21)
+
+	.  reduce 21
+
+
+state 11
+	level9 :  level8_    (22)
+
+	.  reduce 22
+
+
+state 12
+	level8 :  ^_    (23)
+
+	.  reduce 23
+
+
+state 13
+	level8 :  level7_    (24)
+
+	.  reduce 24
+
+
+state 14
+	level7 :  &_    (25)
+
+	.  reduce 25
+
+
+state 15
+	level7 :  level6_    (26)
+
+	.  reduce 26
+
+
+state 16
+	level6 :  LSHF_    (27)
+
+	.  reduce 27
+
+
+state 17
+	level6 :  RSHF_    (28)
+
+	.  reduce 28
+
+
+state 18
+	level6 :  level5_    (29)
+
+	.  reduce 29
+
+
+state 19
+	level5 :  +_    (30)
+
+	.  reduce 30
+
+
+state 20
+	level5 :  level4_    (32)
+
+	.  reduce 32
+
+
+state 21
+	level4 :  *_    (33)
+
+	.  reduce 33
+
+
+state 22
+	level4 :  /_    (34)
+
+	.  reduce 34
+
+
+state 23
+	level4 :  %_    (35)
+
+	.  reduce 35
+
+
+state 24
+	level4 :  level3_    (36)
+
+	.  reduce 36
+
+
+state 25
+	level3 :  -_level1 
+	level3 :  -_value 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	(  shift 29
+	.  error
+
+	level1  goto 47
+	value  goto 48
+
+state 26
+	level3 :  level2_    (39)
+
+	.  reduce 39
+
+
+state 27
+	level2 :  ~_level1 
+	level2 :  ~_value 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	(  shift 29
+	.  error
+
+	level1  goto 49
+	value  goto 50
+
+state 28
+	level2 :  level1_    (42)
+
+	.  reduce 42
+
+
+state 29
+	level1 :  (_expr ) 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 25
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  error
+
+	expr  goto 51
+	level9  goto 8
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+
+state 30
+	command :  expr ;_    (3)
+
+	.  reduce 3
+
+
+31: shift/reduce conflict (shift 9, red'n 9) on NUM
+31: shift/reduce conflict (shift 34, red'n 9) on ALPHA
+31: shift/reduce conflict (shift 17, red'n 9) on RSHF
+31: shift/reduce conflict (shift 16, red'n 9) on LSHF
+31: shift/reduce conflict (shift 10, red'n 9) on |
+31: shift/reduce conflict (shift 12, red'n 9) on ^
+31: shift/reduce conflict (shift 14, red'n 9) on &
+31: shift/reduce conflict (shift 19, red'n 9) on +
+31: shift/reduce conflict (shift 25, red'n 9) on -
+31: shift/reduce conflict (shift 21, red'n 9) on *
+31: shift/reduce conflict (shift 22, red'n 9) on /
+31: shift/reduce conflict (shift 23, red'n 9) on %
+31: shift/reduce conflict (shift 27, red'n 9) on ~
+31: shift/reduce conflict (shift 29, red'n 9) on (
+state 31
+	expr :  expr level9_expr 
+	expr :  level9_    (9)
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 25
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  error
+
+	expr  goto 52
+	level9  goto 8
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+
+state 32
+	level5 :  expr -_expr 
+	level3 :  -_level1 
+	level3 :  -_value 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 25
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  error
+
+	expr  goto 53
+	level9  goto 8
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 54
+	value  goto 55
+
+state 33
+	expr :  expr_level9 expr 
+	level5 :  expr_- expr 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 32
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  error
+
+	expr  goto 33
+	level9  goto 31
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+
+state 34
+	value :  ALPHA_    (45)
+
+	.  reduce 45
+
+
+state 35
+	command :  ALPHA level10_command 
+
+	NUM  shift 9
+	ALPHA  shift 6
+	DUMP  shift 4
+	CLEAR  shift 5
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 25
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  error
+
+	expr  goto 3
+	level9  goto 8
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+	command  goto 56
+
+state 36
+	level10 :  =_    (10)
+
+	.  reduce 10
+
+
+state 37
+	level10 :  PLSE_    (11)
+
+	.  reduce 11
+
+
+state 38
+	level10 :  MINE_    (12)
+
+	.  reduce 12
+
+
+state 39
+	level10 :  TIME_    (13)
+
+	.  reduce 13
+
+
+state 40
+	level10 :  DIVE_    (14)
+
+	.  reduce 14
+
+
+state 41
+	level10 :  MODE_    (15)
+
+	.  reduce 15
+
+
+state 42
+	level10 :  LSHE_    (16)
+
+	.  reduce 16
+
+
+state 43
+	level10 :  RSHE_    (17)
+
+	.  reduce 17
+
+
+state 44
+	level10 :  ANDE_    (18)
+
+	.  reduce 18
+
+
+state 45
+	level10 :  XORE_    (19)
+
+	.  reduce 19
+
+
+state 46
+	level10 :  ORE_    (20)
+
+	.  reduce 20
+
+
+state 47
+	level3 :  - level1_    (37)
+
+	.  reduce 37
+
+
+state 48
+	level3 :  - value_    (38)
+
+	.  reduce 38
+
+
+state 49
+	level2 :  ~ level1_    (40)
+
+	.  reduce 40
+
+
+state 50
+	level2 :  ~ value_    (41)
+
+	.  reduce 41
+
+
+state 51
+	expr :  expr_level9 expr 
+	level5 :  expr_- expr 
+	level1 :  ( expr_) 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 32
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	)  shift 57
+	.  error
+
+	expr  goto 33
+	level9  goto 31
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+
+52: shift/reduce conflict (shift 9, red'n 8) on NUM
+52: shift/reduce conflict (shift 34, red'n 8) on ALPHA
+52: shift/reduce conflict (shift 17, red'n 8) on RSHF
+52: shift/reduce conflict (shift 16, red'n 8) on LSHF
+52: shift/reduce conflict (shift 10, red'n 8) on |
+52: shift/reduce conflict (shift 12, red'n 8) on ^
+52: shift/reduce conflict (shift 14, red'n 8) on &
+52: shift/reduce conflict (shift 19, red'n 8) on +
+52: shift/reduce conflict (shift 32, red'n 8) on -
+52: shift/reduce conflict (shift 21, red'n 8) on *
+52: shift/reduce conflict (shift 22, red'n 8) on /
+52: shift/reduce conflict (shift 23, red'n 8) on %
+52: shift/reduce conflict (shift 27, red'n 8) on ~
+52: shift/reduce conflict (shift 29, red'n 8) on (
+state 52
+	expr :  expr_level9 expr 
+	expr :  expr level9 expr_    (8)
+	level5 :  expr_- expr 
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 32
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  reduce 8
+
+	expr  goto 33
+	level9  goto 31
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+
+53: shift/reduce conflict (shift 9, red'n 31) on NUM
+53: shift/reduce conflict (shift 34, red'n 31) on ALPHA
+53: shift/reduce conflict (shift 17, red'n 31) on RSHF
+53: shift/reduce conflict (shift 16, red'n 31) on LSHF
+53: shift/reduce conflict (shift 10, red'n 31) on |
+53: shift/reduce conflict (shift 12, red'n 31) on ^
+53: shift/reduce conflict (shift 14, red'n 31) on &
+53: shift/reduce conflict (shift 19, red'n 31) on +
+53: shift/reduce conflict (shift 32, red'n 31) on -
+53: shift/reduce conflict (shift 21, red'n 31) on *
+53: shift/reduce conflict (shift 22, red'n 31) on /
+53: shift/reduce conflict (shift 23, red'n 31) on %
+53: shift/reduce conflict (shift 27, red'n 31) on ~
+53: shift/reduce conflict (shift 29, red'n 31) on (
+state 53
+	expr :  expr_level9 expr 
+	level5 :  expr_- expr 
+	level5 :  expr - expr_    (31)
+
+	NUM  shift 9
+	ALPHA  shift 34
+	RSHF  shift 17
+	LSHF  shift 16
+	|  shift 10
+	^  shift 12
+	&  shift 14
+	+  shift 19
+	-  shift 32
+	*  shift 21
+	/  shift 22
+	%  shift 23
+	~  shift 27
+	(  shift 29
+	.  reduce 31
+
+	expr  goto 33
+	level9  goto 31
+	level8  goto 11
+	level7  goto 13
+	level6  goto 15
+	level5  goto 18
+	level4  goto 20
+	level3  goto 24
+	level2  goto 26
+	level1  goto 28
+	value  goto 7
+
+54: reduce/reduce conflict (red'ns 37 and 42 ) on NUM
+54: reduce/reduce conflict (red'ns 37 and 42 ) on ALPHA
+54: reduce/reduce conflict (red'ns 37 and 42 ) on RSHF
+54: reduce/reduce conflict (red'ns 37 and 42 ) on LSHF
+54: reduce/reduce conflict (red'ns 37 and 42 ) on |
+54: reduce/reduce conflict (red'ns 37 and 42 ) on ^
+54: reduce/reduce conflict (red'ns 37 and 42 ) on &
+54: reduce/reduce conflict (red'ns 37 and 42 ) on +
+54: reduce/reduce conflict (red'ns 37 and 42 ) on -
+54: reduce/reduce conflict (red'ns 37 and 42 ) on *
+54: reduce/reduce conflict (red'ns 37 and 42 ) on /
+54: reduce/reduce conflict (red'ns 37 and 42 ) on %
+54: reduce/reduce conflict (red'ns 37 and 42 ) on ~
+54: reduce/reduce conflict (red'ns 37 and 42 ) on (
+state 54
+	level3 :  - level1_    (37)
+	level2 :  level1_    (42)
+
+	;  reduce 42
+	)  reduce 42
+	.  reduce 37
+
+
+55: reduce/reduce conflict (red'ns 7 and 38 ) on NUM
+55: reduce/reduce conflict (red'ns 7 and 38 ) on ALPHA
+55: reduce/reduce conflict (red'ns 7 and 38 ) on RSHF
+55: reduce/reduce conflict (red'ns 7 and 38 ) on LSHF
+55: reduce/reduce conflict (red'ns 7 and 38 ) on |
+55: reduce/reduce conflict (red'ns 7 and 38 ) on ^
+55: reduce/reduce conflict (red'ns 7 and 38 ) on &
+55: reduce/reduce conflict (red'ns 7 and 38 ) on +
+55: reduce/reduce conflict (red'ns 7 and 38 ) on -
+55: reduce/reduce conflict (red'ns 7 and 38 ) on *
+55: reduce/reduce conflict (red'ns 7 and 38 ) on /
+55: reduce/reduce conflict (red'ns 7 and 38 ) on %
+55: reduce/reduce conflict (red'ns 7 and 38 ) on ~
+55: reduce/reduce conflict (red'ns 7 and 38 ) on (
+state 55
+	expr :  value_    (7)
+	level3 :  - value_    (38)
+
+	.  reduce 7
+
+
+state 56
+	command :  ALPHA level10 command_    (6)
+
+	.  reduce 6
+
+
+state 57
+	level1 :  ( expr )_    (43)
+
+	.  reduce 43
+
+
+31/127 terminals, 14/600 nonterminals
+46/300 grammar rules, 58/1000 states
+42 shift/reduce, 28 reduce/reduce conflicts reported
+34/601 working sets used
+memory: states,etc. 152/2000, parser 78/4000
+13/3001 distinct lookahead sets
+25 extra closures
+163 shift entries, 3 exceptions
+31 goto entries
+87 entries saved by goto default
+Optimizer space used: input 376/2000, output 281/4000
+281 table entries, 162 zero
+maximum spread: 272, maximum offset: 61

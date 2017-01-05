@@ -1,0 +1,188 @@
+26,27c26,27
+< void makereg(char *reg, int rt, int rnum);
+< static char myreg[20];
+---
+> void makereg(char *reg, int rt, int rnum); 
+> static char myreg[20]; 
+39,40c39,42
+< void jal(), jmp(), l(), li(), mfc(), mfu(), mov(), mtc(), retrn(),  samemem();
+< void s(), nop(), mtof(), mtoi(), divide(), divideu(), mflo(), mfhi(),high(),low(),brk(),multi(),multu(),mfireg();
+---
+> void jal(), jmp(), l(), li(), mfc(), mfu(), mov(), mtc(), retrn();
+> void samemem(), s(), nop(), mtof(), mtoi(), divide(), divideu(), mflo();
+> void mfhi(),high(),low(),brk(),multi();
+> 
+42d43
+< extern int dde;
+95c96
+< %token REG0 REG1 REG2 REG3 REG4 REGDDE
+---
+> %token REG0 REG1 REG2 REG3 REG4
+111c112,113
+< %type <rec_ptr> rhs, s, samemem, mtof, mtoi, divide, divideu, mflo, mfhi,hilo, high,low, brk, multi,multu,mfireg
+---
+> %type <rec_ptr> rhs, s, samemem, mtof, mtoi, divide, divideu, mflo
+> %type <rec_ptr> mfhi,hilo, high,low, brk, multi,multu,mfireg
+113c115
+< %type <addr_ptr> src, dde_src, mem, dde_dst, dst, dst0, memaddr, addr,  expr, simpexpr, hreg
+---
+> %type <addr_ptr> src, mem, dst, dst0, memaddr, addr,  expr, simpexpr, hreg
+115c117
+< %type <str_ptr> rel, frel
+---
+> %type <str_ptr> rel frel
+118,158c120
+< inst  :  mips_inst { if(dde) errflag=1; }
+<    | dde_inst { if(!dde) errflag=1; }
+<    ;
+< 
+< dde_inst :  bb				{ bb($1); }
+< 	|	bcf				{ bc($1, 'f'); }
+< 	|	bct				{ bc($1, 't'); }
+< 	|	binst 				{ binst($1); }
+< 	|	cmpset				{ cmpset($1); }
+< 	|	cvt				{ cvt($1); }
+< 	|	cvtfi				{ cvtfi($1); }
+< 	|	cvtil				{ cvtil($1); }
+< 	|	cvtif				{ cvtif($1); }
+< 	|	fcmp				{ fcmp($1); }
+< 	|	jal				{ jal($1); }
+< 	|	l				{ l($1); }
+< 	|	li				{ li($1); }
+< 	|	mfc				{ mfc($1); }
+< 	|	mfu mfl				{ mfu($1, $2); }
+< 	|	mfl mfu				{ mfu($2, $1); }
+< 	|	mov				{ mov($1); }
+< 	|	mtc				{ mtc($1); }
+<    		|       mfhi                    { mfhi($1); }
+<       	|       mfireg                    { mfireg($1); }
+<       	|       mflo                    { mflo($1); }
+< 	|	neg 				{ neg($1); }
+< 	|	not 				{ not($1); }
+< 	|	jmp				{ jmp($1); }
+< 	|	ret				{ retrn(); }
+< 	|	samemem				{ samemem($1); }
+< 	|	s				{ s($1); }
+<       	|       mtof                            { mtof($1); }
+<       	|       mtoi                            { mtoi($1); }
+< 	|	nop				{ nop(); }
+<       	|       high                            { high($1); }
+<       	|       low                             { low($1); }
+<       	|       hilo                             { highlow($1); }
+<       	|       brk                             { brk($1); }
+<    ;
+< 
+< mips_inst 	:	bb				{ bb($1); }
+---
+> inst 	:	bb				{ bb($1); }
+165c127
+< 	|	cvtil				{ cvtil($1); }
+---
+> 	|	cvtil				{ cvtil($1); }  
+167,168c129,130
+<       	|       divide                          { divide($1); }
+<       	|       divideu                         { divideu($1); }
+---
+>         |       divide                          { divide($1); }
+>         |       divideu                         { divideu($1); }
+179,181c141,143
+<       	|       mfhi                    { mfhi($1); }
+<       	|       mfireg                    { mfireg($1); }
+<       	|       mflo                    { mflo($1); }
+---
+>         |       mfhi                    { mfhi($1); }
+>         |       mfireg                    { mfireg($1); }
+>         |       mflo                    { mflo($1); }
+204c166
+< nop	:	FC '=' FC ';'
+---
+> nop	:	FC '=' FC ';' 
+233c195
+<    the comparison is done here. */
+---
+>    the comparison is done here. */ 
+241,242c203,204
+< 	|	ST '=' HI '[' addr ']' '|' LO '[' addr ']' ';'
+< 		dst '=' HI '[' addr ']' '|' LO '[' addr ']' ';'
+---
+> 	|	ST '=' HI '[' addr ']' '|' LO '[' addr ']' ';' 
+> 		dst '=' HI '[' addr ']' '|' LO '[' addr ']' ';' 
+244,245c206,207
+<  	|	ST '=' HI '[' addr ']' '|' LO '[' addr ']' ';'
+< 		dst '=' dst ';'
+---
+>  	|	ST '=' HI '[' addr ']' '|' LO '[' addr ']' ';' 
+> 		dst '=' dst ';' 
+264,265d225
+< 
+< 
+268a229
+> 
+279c240
+< mtoi    :       dst '=' MY '[' TT '[' dst ']' ']' ';'      { $$ = record($1, $7, AN); };
+---
+> mtoi    :       dst '=' MY '[' TT '[' dst ']' ']' ';'      { $$ = record($1, $7, AN); };  
+297d257
+<    | dde_src
+301c261
+< dst0	:	dst
+---
+> dst0	:	dst	
+305,312c265
+< dde_src  :  dde_dst {$$ = $1;}
+<    ;
+< 
+< dde_dst  :  MMEM memaddr ']' { $$ = memref(REG, $2); }
+<    |   MMEM dde_dst { $$ = memref(REG, $2); }
+<    ;
+< 
+< dst	:   REG0	{ $$ =addr(LONG, RREGISTER, AE $<str_ptr>1, AN, AN); }
+---
+> dst	:	REG0	{ $$ =addr(LONG, RREGISTER, AE $<str_ptr>1, AN, AN); }
+321,323c274,275
+< mem	: dde_dst  {}
+<    | BMEM memaddr ']'	{ $$ = memref(BYTE, $2); }
+<    |	WMEM memaddr ']'	{ $$ = memref(WORD, $2); }
+---
+> mem	:	BMEM memaddr ']'	{ $$ = memref(BYTE, $2); }	
+>         |	WMEM memaddr ']'	{ $$ = memref(WORD, $2); }
+334d285
+< 
+348,351c299
+< reg	: "s[0]" expr {$$ = addr(LONG, RREGISTER, AE $<str_ptr>1, AN, AN);}
+< /*   |  "s[0]" expr {$$ = addr(LONG, DDEREGISTER, AE $<str_ptr>1, AN, AN);}*/
+<    |  REG0	{ $$ = addr(LONG, RREGISTER, AE $<str_ptr>1, AN, AN); }
+<    ;
+---
+> reg	:	REG0	{ $$ = addr(LONG, RREGISTER, AE $<str_ptr>1, AN, AN); };
+355d302
+< 
+357c304
+<       	|       expr '-' expr   { $$ = addr(ANY, EXPR, AE SUBI, $1, $3); }
+---
+>         |       expr '-' expr   { $$ = addr(ANY, EXPR, AE SUBI, $1, $3); }
+364c311
+<         |       con
+---
+>         |       con		
+366c313
+<         |       label
+---
+>         |       label		
+370c317
+< expr	:	 expr '+' expr	{ $$ = addr(ANY, EXPR, AE ADDI, $1, $3); }
+---
+> expr	:	expr '+' expr	{ $$ = addr(ANY, EXPR, AE ADDI, $1, $3); }
+382c329
+< /*	|	'~' expr	{ $$ = addr(ANY, EXPR, AE NOTI, $2, AN); }  */
+---
+> /*	|	'~' expr	{ $$ = addr(ANY, EXPR, AE NOTI, $2, AN); } */
+422c369
+<    |	'<'		{ $$ = "lt"; }
+---
+> 	|	'<'		{ $$ = "lt"; }
+430a378,381
+> 
+> 
+> 
+> 

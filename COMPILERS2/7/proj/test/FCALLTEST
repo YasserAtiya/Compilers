@@ -1,0 +1,10 @@
+int main()
+{
+  foo();
+  foo();
+}
+
+int foo();
+{
+  printf("Hello from foo");
+}

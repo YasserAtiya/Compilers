@@ -1,0 +1,620 @@
+53a54
+> 	mov	%i1,%l5             ! sets=%l5:    uses=%i1:     deads=%i1:
+57c58
+< 	mov	%i1,%l5             ! sets=%l5:    uses=%i1:     deads=
+---
+> 	nop
+68,69c69,71
+< 	call	printf,1            ! sets=scratch uses=%o0:     deads=
+< 	add	%o0,%lo(.L31),%o0   ! sets=%o0:    uses=%o0:     deads=
+---
+> 	add	%o0,%lo(.L31),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	call	printf,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+79d80
+< 	call	exit,1              ! sets=scratch uses=%o0:     deads=
+80a82,83
+> 	call	exit,1              ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+104d106
+< 	call	number,1            ! sets=scratch uses=%o0:     deads=
+105a108,109
+> 	call	number,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+113a118
+> 	mov	%o0,%l3             ! sets=%l3:    uses=%o0:     deads=
+117c122
+< 	mov	%o0,%l3             ! sets=%l3:    uses=%o0:     deads=
+---
+> 	nop
+140d144
+< 	call	number,1            ! sets=scratch uses=%o0:     deads=
+141a146,147
+> 	call	number,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+149a156
+> 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=
+153c160
+< 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=
+---
+> 	nop
+185d191
+< 	call	printf,3            ! sets=scratch uses=%o0:%o1:%o2:deads=
+186a193,194
+> 	call	printf,3            ! sets=scratch uses=%o0:%o1:%o2:deads=%o0:%o1:%o2:
+> 	nop
+199,200c207,209
+< 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=
+< 	add	%o1,%lo(dayw),%o1   ! sets=%o1:    uses=%o1:     deads=
+---
+> 	add	%o1,%lo(dayw),%o1   ! sets=%o1:    uses=%o1:     deads=%o1:
+> 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+214d222
+< 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=
+215a224,225
+> 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=%o0:%o1:%o2:%o3:
+> 	nop
+222c232
+< !  outs=%l1:%l2:%l5:
+---
+> !  outs=%l1:%l5:
+226,227d235
+< 	sethi	%hi(string),%l0     ! sets=%l0:    uses=         deads=
+< 	add	%l0,%lo(string),%l2 ! sets=%l2:    uses=%l0:     deads=%l0:
+233,234c241,242
+< !   ins=%l1:%l2:%l5:
+< !  outs=%l1:%l2:%l5:
+---
+> !   ins=%l1:%l5:
+> !  outs=%l1:%l5:
+238,239c246,248
+< 	add	%l1,%l2,%o0         ! sets=%o0:    uses=%l1:%l2: deads=
+< 	call	pstr,2              ! sets=scratch uses=%o0:%o1: deads=
+---
+> 	sethi	%hi(string),%o1     ! sets=%o1:    uses=         deads=
+> 	add	%o1,%lo(string),%o1 ! sets=%o1:    uses=%o1:     deads=%o1:
+> 	add	%l1,%o1,%o0         ! sets=%o0:    uses=%o1:%l1: deads=%o1:
+240a250,251
+> 	call	pstr,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+246,247c257,258
+< !   ins=%l1:%l2:%l5:
+< !  outs=%l1:%l2:%l5:
+---
+> !   ins=%l1:%l5:
+> !  outs=%l1:%l5:
+250a262
+> 	mov	%o0,%l1             ! sets=%l1:    uses=%o0:     deads=
+254c266
+< 	mov	%o0,%l1             ! sets=%l1:    uses=%o0:     deads=
+---
+> 	nop
+265d276
+< 	call	exit,1              ! sets=scratch uses=%o0:     deads=
+266a278,279
+> 	call	exit,1              ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+277,278c290,292
+< 	call	number,1            ! sets=scratch uses=%o0:     deads=
+< 	ld	[%l5 + 4],%o0       ! sets=%o0:    uses=%l5:     deads=
+---
+> 	ld	[%l5 + 4],%o0       ! sets=%o0:    uses=%l5:     deads=%l5:
+> 	call	number,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+286a301
+> 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=
+290c305
+< 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=
+---
+> 	nop
+316,317c331,333
+< 	call	printf,1            ! sets=scratch uses=%o0:     deads=
+< 	add	%o0,%lo(.L54),%o0   ! sets=%o0:    uses=%o0:     deads=
+---
+> 	add	%o0,%lo(.L54),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	call	printf,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+329d344
+< 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=
+330a346,347
+> 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+341,342c358,360
+< 	call	printf,1            ! sets=scratch uses=%o0:     deads=
+< 	add	%o0,%lo(.L56),%o0   ! sets=%o0:    uses=%o0:     deads=
+---
+> 	add	%o0,%lo(.L56),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	call	printf,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+349c367
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !  outs=%l0:%l1:
+353,368d370
+< 	sethi	%hi(.L64),%l4       ! sets=%l4:    uses=         deads=
+< 	sethi	%hi(smon),%l5       ! sets=%l5:    uses=         deads=
+< 	sethi	%hi(.L65),%l6       ! sets=%l6:    uses=         deads=
+< 	sethi	%hi(.L66),%l7       ! sets=%l7:    uses=         deads=
+< 	sethi	%hi(.L67),%i0       ! sets=%i0:    uses=         deads=
+< 	sethi	%hi(dayw),%i1       ! sets=%i1:    uses=         deads=
+< 	sethi	%hi(string),%i2     ! sets=%i2:    uses=         deads=
+< 	add	%l5,%lo(smon),%i4   ! sets=%i4:    uses=%l5:     deads=%l5:
+< 	add	%l4,%lo(.L64),%i5   ! sets=%i5:    uses=%l4:     deads=%l4:
+< 	add	%l6,%lo(.L65),%l3   ! sets=%l3:    uses=%l6:     deads=%l6:
+< 	add	%l7,%lo(.L66),%l4   ! sets=%l4:    uses=%l7:     deads=%l7:
+< 	add	%i0,%lo(.L67),%l5   ! sets=%l5:    uses=%i0:     deads=%i0:
+< 	add	%i1,%lo(dayw),%l6   ! sets=%l6:    uses=%i1:     deads=%i1:
+< 	add	%i2,%lo(string),%l7 ! sets=%l7:    uses=%i2:     deads=%i2:
+< 	add	%l7,23,%i0          ! sets=%i0:    uses=%l7:     deads=
+< 	add	%l7,46,%i1          ! sets=%i1:    uses=%l7:     deads=
+374,375c376,377
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%g2:%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:%l2:
+380d381
+< 	mov	%l7,%g2             ! sets=%g2:    uses=%l7:     deads=
+386,387c387,388
+< !   ins=%g2:%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%g2:%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:%l2:
+> !  outs=%l0:%l1:%l2:
+391c392,394
+< 	stb	%g0,[%l2 + %g2]     ! sets=        uses=%g0:%g2:%l2:deads=
+---
+> 	sethi	%hi(string),%o1     ! sets=%o1:    uses=         deads=
+> 	add	%o1,%lo(string),%o1 ! sets=%o1:    uses=%o1:     deads=%o1:
+> 	stb	%g0,[%l2 + %o1]     ! sets=        uses=%g0:%o1:%l2:deads=%o1:
+393a397
+> 	mov	%o0,%l2             ! sets=%l2:    uses=%o0:     deads=
+397c401
+< 	mov	%o0,%l2             ! sets=%l2:    uses=%o0:     deads=
+---
+> 	nop
+403,404c407,408
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+407a412
+> 	sethi	%hi(.L64),%o0       ! sets=%o0:    uses=         deads=
+409,411c414,419
+< 	mov	%i5,%o0             ! sets=%o0:    uses=%i5:     deads=
+< 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=
+< 	ld	[%o1 + %i4],%o1     ! sets=%o1:    uses=%o1:%i4: deads=
+---
+> 	sethi	%hi(smon),%o2       ! sets=%o2:    uses=         deads=
+> 	add	%o2,%lo(smon),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+> 	add	%o0,%lo(.L64),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	ld	[%o1 + %o2],%o1     ! sets=%o1:    uses=%o1:%o2: deads=%o1:%o2:
+> 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+417,418c425,426
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+420a429
+> 	sethi	%hi(.L65),%o0       ! sets=%o0:    uses=         deads=
+423,425c432,437
+< 	mov	%l3,%o0             ! sets=%o0:    uses=%l3:     deads=
+< 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=
+< 	ld	[%o1 + %i4],%o1     ! sets=%o1:    uses=%o1:%i4: deads=
+---
+> 	sethi	%hi(smon),%o2       ! sets=%o2:    uses=         deads=
+> 	add	%o2,%lo(smon),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+> 	add	%o0,%lo(.L65),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	ld	[%o1 + %o2],%o1     ! sets=%o1:    uses=%o1:%o2: deads=%o1:%o2:
+> 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+431,432c443,444
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+434a447
+> 	sethi	%hi(.L66),%o0       ! sets=%o0:    uses=         deads=
+437,439c450,455
+< 	mov	%l4,%o0             ! sets=%o0:    uses=%l4:     deads=
+< 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=
+< 	ld	[%o1 + %i4],%o1     ! sets=%o1:    uses=%o1:%i4: deads=
+---
+> 	sethi	%hi(smon),%o2       ! sets=%o2:    uses=         deads=
+> 	add	%o2,%lo(smon),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+> 	add	%o0,%lo(.L66),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	ld	[%o1 + %o2],%o1     ! sets=%o1:    uses=%o1:%o2: deads=%o1:%o2:
+> 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+445,446c461,462
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+449,453c465,474
+< 	mov	%l5,%o0             ! sets=%o0:    uses=%l5:     deads=
+< 	mov	%l6,%o1             ! sets=%o1:    uses=%l6:     deads=
+< 	mov	%l6,%o2             ! sets=%o2:    uses=%l6:     deads=
+< 	call	printf,4            ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=
+< 	mov	%l6,%o3             ! sets=%o3:    uses=%l6:     deads=
+---
+> 	sethi	%hi(.L67),%o0       ! sets=%o0:    uses=         deads=
+> 	sethi	%hi(dayw),%o1       ! sets=%o1:    uses=         deads=
+> 	sethi	%hi(dayw),%o2       ! sets=%o2:    uses=         deads=
+> 	sethi	%hi(dayw),%o3       ! sets=%o3:    uses=         deads=
+> 	add	%o0,%lo(.L67),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	add	%o1,%lo(dayw),%o1   ! sets=%o1:    uses=%o1:     deads=%o1:
+> 	add	%o2,%lo(dayw),%o2   ! sets=%o2:    uses=%o2:     deads=%o2:
+> 	add	%o3,%lo(dayw),%o3   ! sets=%o3:    uses=%o3:     deads=%o3:
+> 	call	printf,4            ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=%o0:%o1:%o2:%o3:
+> 	nop
+459,460c480,481
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+462a484
+> 	sethi	%hi(string),%o2     ! sets=%o2:    uses=         deads=
+465,466c487
+< 	mov	%l7,%o2             ! sets=%o2:    uses=%l7:     deads=
+< 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=
+---
+> 	add	%o2,%lo(string),%o2 ! sets=%o2:    uses=%o2:     deads=%o2:
+467a489,490
+> 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=%o0:%o1:%o2:%o3:
+> 	nop
+473,474c496,497
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+476a500,501
+> 	sethi	%hi(string),%o2     ! sets=%o2:    uses=         deads=
+> 	add	%o2,%lo(string),%o2 ! sets=%o2:    uses=%o2:     deads=%o2:
+479,480c504
+< 	mov	%i0,%o2             ! sets=%o2:    uses=%i0:     deads=
+< 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=
+---
+> 	add	%o2,23,%o2          ! sets=%o2:    uses=%o2:     deads=%o2:
+481a506,507
+> 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=%o0:%o1:%o2:%o3:
+> 	nop
+487,488c513,514
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+490a517,518
+> 	sethi	%hi(string),%o2     ! sets=%o2:    uses=         deads=
+> 	add	%o2,%lo(string),%o2 ! sets=%o2:    uses=%o2:     deads=%o2:
+493,494c521
+< 	mov	%i1,%o2             ! sets=%o2:    uses=%i1:     deads=
+< 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=
+---
+> 	add	%o2,46,%o2          ! sets=%o2:    uses=%o2:     deads=%o2:
+495a523,524
+> 	call	cal,4               ! sets=scratch uses=%o0:%o1:%o2:%o3:deads=%o0:%o1:%o2:%o3:
+> 	nop
+501,502c530,531
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i3:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:%l2:
+506d534
+< 	mov	%l7,%i3             ! sets=%i3:    uses=%l7:     deads=
+512,513c540,541
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i3:%i4:%i5:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i3:%i4:%i5:
+---
+> !   ins=%l0:%l1:%l2:
+> !  outs=%l0:%l1:%l2:
+517,518c545,547
+< 	add	%l2,%i3,%o0         ! sets=%o0:    uses=%l2:%i3: deads=
+< 	call	pstr,2              ! sets=scratch uses=%o0:%o1: deads=
+---
+> 	sethi	%hi(string),%o1     ! sets=%o1:    uses=         deads=
+> 	add	%o1,%lo(string),%o1 ! sets=%o1:    uses=%o1:     deads=%o1:
+> 	add	%l2,%o1,%o0         ! sets=%o0:    uses=%o1:%l2: deads=%o1:
+519a549,550
+> 	call	pstr,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+525,526c556,557
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i3:%i4:%i5:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i3:%i4:%i5:
+---
+> !   ins=%l0:%l1:%l2:
+> !  outs=%l0:%l1:%l2:
+529a561
+> 	mov	%o0,%l2             ! sets=%l2:    uses=%o0:     deads=
+533c565
+< 	mov	%o0,%l2             ! sets=%l2:    uses=%o0:     deads=
+---
+> 	nop
+539,540c571,572
+< !   ins=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+< !  outs=%l0:%l1:%l3:%l4:%l5:%l6:%l7:%i0:%i1:%i4:%i5:
+---
+> !   ins=%l0:%l1:
+> !  outs=%l0:%l1:
+544a577
+> 	mov	%o0,%l1             ! sets=%l1:    uses=%o0:     deads=
+548c581
+< 	mov	%o0,%l1             ! sets=%l1:    uses=%o0:     deads=
+---
+> 	nop
+560,561c593,595
+< 	call	printf,1            ! sets=scratch uses=%o0:     deads=
+< 	add	%o0,%lo(.L73),%o0   ! sets=%o0:    uses=%o0:     deads=
+---
+> 	add	%o0,%lo(.L73),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	call	printf,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+571d604
+< 	call	exit,1              ! sets=scratch uses=%o0:     deads=
+572a606,607
+> 	call	exit,1              ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+584,585c619,621
+< 	call	printf,1            ! sets=scratch uses=%o0:     deads=
+< 	add	%o0,%lo(.L74),%o0   ! sets=%o0:    uses=%o0:     deads=
+---
+> 	add	%o0,%lo(.L74),%o0   ! sets=%o0:    uses=%o0:     deads=%o0:
+> 	call	printf,1            ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+684a721
+> 	mov	%o0,%g2             ! sets=%g2:    uses=%o0:     deads=
+687c724
+< 	mov	%o0,%g2             ! sets=%g2:    uses=%o0:     deads=
+---
+> 	nop
+738,739c775,776
+< 	ba	.L77                ! sets=        uses=         deads=
+< 	mov	%o0,%g1             ! sets=%g1:    uses=%o0:     deads=
+---
+> 	mov	%o0,%g1             ! sets=%g1:    uses=%o0:     deads=%o0:
+> 	ba,a	.L77                ! sets=        uses=         deads=
+794a832
+> 	sub	%l0,1,%l0           ! sets=%l0:    uses=%l0:     deads=%l0:
+797c835
+< 	sub	%l0,1,%l0           ! sets=%l0:    uses=%l0:     deads=
+---
+> 	nop
+808a847
+> 	mov	%o1,%l1             ! sets=%l1:    uses=%o1:     deads=%o1:
+812c851
+< 	mov	%o1,%l1             ! sets=%l1:    uses=%o1:     deads=
+---
+> 	nop
+856a896
+> 	sub	%l0,1,%l0           ! sets=%l0:    uses=%l0:     deads=%l0:
+859c899
+< 	sub	%l0,1,%l0           ! sets=%l0:    uses=%l0:     deads=
+---
+> 	nop
+898,899c938,940
+< 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=
+< 	mov	%l2,%o1             ! sets=%o1:    uses=%l2:     deads=
+---
+> 	mov	%l2,%o1             ! sets=%o1:    uses=%l2:     deads=%l2:
+> 	call	printf,2            ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+951,952c992,994
+< 	call	jan1,1              ! sets=scratch uses=%o0:     deads=
+< 	mov	%i1,%o0             ! sets=%o0:    uses=%i1:     deads=
+---
+> 	mov	%i1,%o0             ! sets=%o0:    uses=%i1:     deads=%i1:
+> 	call	jan1,1              ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+973,974c1015,1017
+< 	call	jan1,1              ! sets=scratch uses=%o0:     deads=
+< 	add	%l4,1,%o0           ! sets=%o0:    uses=%l4:     deads=
+---
+> 	add	%l4,1,%o0           ! sets=%o0:    uses=%l4:     deads=%l4:
+> 	call	jan1,1              ! sets=scratch uses=%o0:     deads=%o0:
+> 	nop
+985d1027
+< 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=
+986a1029,1030
+> 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+1009,1010c1053,1054
+< 	ba	.L95                ! sets=        uses=         deads=
+< 	stb	%o0,[%o1 + 2]       ! sets=        uses=%o0:%o1: deads=
+---
+> 	stb	%o0,[%o1 + 2]       ! sets=        uses=%o0:%o1: deads=%o0:%o1:
+> 	ba,a	.L95                ! sets=        uses=         deads=
+1024,1025c1068,1069
+< 	ba	.L95                ! sets=        uses=         deads=
+< 	stb	%o0,[%o1 + 9]       ! sets=        uses=%o0:%o1: deads=
+---
+> 	stb	%o0,[%o1 + 9]       ! sets=        uses=%o0:%o1: deads=%o0:%o1:
+> 	ba,a	.L95                ! sets=        uses=         deads=
+1055c1099
+< !  outs=%g2:%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1060,1062c1104
+< 	sethi	%hi(mon),%g1        ! sets=%g1:    uses=         deads=
+< 	ba	.L102               ! sets=        uses=         deads=
+< 	add	%g1,%lo(mon),%g2    ! sets=%g2:    uses=%g1:     deads=
+---
+> 	ba,a	.L102               ! sets=        uses=         deads=
+1068,1069c1110,1111
+< !   ins=%g2:%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%g2:%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1073c1115,1117
+< 	ldsb	[%l1 + %g2],%o1     ! sets=%o1:    uses=%g2:%l1: deads=
+---
+> 	sethi	%hi(mon),%o2        ! sets=%o2:    uses=         deads=
+> 	add	%o2,%lo(mon),%o2    ! sets=%o2:    uses=%o2:     deads=%o2:
+> 	ldsb	[%l1 + %o2],%o1     ! sets=%o1:    uses=%o2:%l1: deads=%o2:
+1084,1085c1128,1129
+< !   ins=%g2:%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%g2:%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1103d1146
+< 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=
+1104a1148,1149
+> 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+1111c1156
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1120,1123c1165
+< 	sethi	%hi(mon),%l4        ! sets=%l4:    uses=         deads=
+< 	add	%l4,%lo(mon),%l7    ! sets=%l7:    uses=%l4:     deads=%l4:
+< 	ba	.L107               ! sets=        uses=         deads=
+< 	add	%l3,%l7,%l4         ! sets=%l4:    uses=%l3:%l7: deads=
+---
+> 	ba,a	.L107               ! sets=        uses=         deads=
+1129,1130c1171,1172
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1142,1143c1184,1185
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1145c1187,1189
+< 	ldsb	[%l3 + %l7],%o0     ! sets=%o0:    uses=%l3:%l7: deads=
+---
+> 	sethi	%hi(mon),%o1        ! sets=%o1:    uses=         deads=
+> 	add	%o1,%lo(mon),%o1    ! sets=%o1:    uses=%o1:     deads=%o1:
+> 	ldsb	[%l3 + %o1],%o0     ! sets=%o0:    uses=%o1:%l3: deads=%o1:
+1154,1155c1198,1199
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1161c1205,1208
+< 	ldsb	[%l4],%o1           ! sets=%o1:    uses=%l4:     deads=
+---
+> 	sethi	%hi(mon),%o1        ! sets=%o1:    uses=         deads=
+> 	add	%o1,%lo(mon),%o1    ! sets=%o1:    uses=%o1:     deads=%o1:
+> 	add	%l3,%o1,%o0         ! sets=%o0:    uses=%o1:%l3: deads=%o1:
+> 	ldsb	[%o0],%o1           ! sets=%o1:    uses=%o0:     deads=
+1163c1210
+< 	stb	%o1,[%l4]           ! sets=        uses=%o1:%l4: deads=%o1:
+---
+> 	stb	%o1,[%o0]           ! sets=        uses=%o0:%o1: deads=%o0:%o1:
+1169,1170c1216,1217
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1182,1183c1229,1230
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%o0:%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+1187d1233
+< 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=
+1188a1235,1236
+> 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+1194,1195c1242,1243
+< !   ins=%o0:%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1204,1205c1252,1253
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%o0:%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+1213d1260
+< 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=
+1214a1262,1263
+> 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+1220,1221c1269,1270
+< !   ins=%o0:%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1230a1280
+> 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=
+1233c1283
+< 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=
+---
+> 	nop
+1239,1240c1289,1290
+< !   ins=%l1:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l1:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1254,1255c1304,1305
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1266,1267c1316,1317
+< !   ins=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+< !  outs=%l0:%l1:%l2:%l3:%l4:%l5:%l6:%l7:
+---
+> !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+> !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+1271c1321,1323
+< 	ldsb	[%l3 + %l7],%o1     ! sets=%o1:    uses=%l3:%l7: deads=
+---
+> 	sethi	%hi(mon),%o2        ! sets=%o2:    uses=         deads=
+> 	add	%o2,%lo(mon),%o2    ! sets=%o2:    uses=%o2:     deads=%o2:
+> 	ldsb	[%l3 + %o2],%o1     ! sets=%o1:    uses=%o2:%l3: deads=%o2:
+1306d1357
+< ! source statement 184
+1307a1359
+> ! source statement 184
+1311d1362
+< 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=
+1312a1364,1365
+> 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+1321a1375
+> 	mov	%l0,%l2             ! sets=%l2:    uses=%l0:     deads=%l0:
+1325c1379
+< 	mov	%l0,%l2             ! sets=%l2:    uses=%l0:     deads=
+---
+> 	nop
+1337d1390
+< 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=
+1338a1392,1393
+> 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+1350d1404
+< 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=
+1351a1406,1407
+> 	call	.div,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop
+1397d1452
+< 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=
+1398a1454,1455
+> 	call	.rem,2              ! sets=scratch uses=%o0:%o1: deads=%o0:%o1:
+> 	nop

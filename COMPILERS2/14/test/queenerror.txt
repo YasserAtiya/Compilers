@@ -1,0 +1,138 @@
+
+PREHEADER FOUND FOR LOOP WITH 2 HEAD
+PREHEADER is 1
+Inv regs: 
+Set regs: %o0:%o1:%o2:%l0:
+HAS WRITES
+Everyitr before:
+ 2
+curblk 2 doms: 
+ 1 2
+Everyitr after intersect
+ 2
+
+Everyitr at end of function
+ 2
+Executed every iteration final
+ 2In find and hoist
+
+PREHEADER FOUND FOR LOOP WITH 4 HEAD
+PREHEADER is 3
+Inv regs: 
+Set regs: %o0:%o1:%o2:%l0:
+HAS WRITES
+Everyitr before:
+ 4
+curblk 4 doms: 
+ 1 2 3 4
+Everyitr after intersect
+ 4
+
+Everyitr at end of function
+ 4
+Executed every iteration final
+ 4In find and hoist
+function     level instructions memory refs
+------------ ----- ------------ -----------
+main         total           34           4
+                 0            8           0
+                 1           26           4
+
+PREHEADER FOUND FOR LOOP WITH 2 HEAD
+PREHEADER is 1
+Inv regs: %l1:
+Set regs: %o0:%o1:%o2:%l0:
+HAS WRITES
+Everyitr before:
+ 2 3 4 5 6 7 8 9 10
+curblk 10 doms: 
+ 1 2 10
+Everyitr after intersect
+ 2 10
+
+Everyitr at end of function
+ 2 10
+Executed every iteration final
+ 2 10In find and hoist
+In hoist
+Hoisted line: 	sub	%l0,%l1,%o0
+Hoisted line block num: 3
+Everyitr vect
+ 2 10Hoisting
+Hoisted line: 	sub	%l0,%l1,%o0
+Hoisted from block: 3
+Hoisted line items: 4
+New move text: 	mov	%g1,%o0
+New move block: 3
+New register: %g1
+New preheader line: 	sub	%l0,%l1,%g1
+New preheader block: 1
+In hoist
+Hoisted line: 	add	%l0,%l1,%o0
+Hoisted line block num: 4
+Everyitr vect
+ 2 10Hoisting
+Hoisted line: 	add	%l0,%l1,%o0
+Hoisted from block: 4
+Hoisted line items: 4
+New move text: 	mov	%g1,%o0
+New move block: 4
+New register: %g1
+New preheader line: 	add	%l0,%l1,%g1
+New preheader block: 1
+In hoist
+Hoisted line: 	add	%l0,%l1,%o1
+Hoisted line block num: 5
+Everyitr vect
+ 2 10Hoisting
+Hoisted line: 	add	%l0,%l1,%o1
+Hoisted from block: 5
+Hoisted line items: 4
+New move text: 	mov	%g1,%o1
+New move block: 5
+New register: %g1
+New preheader line: 	add	%l0,%l1,%g1
+New preheader block: 1
+In hoist
+Hoisted line: 	add	%l1,1,%o0
+Hoisted line block num: 8
+Everyitr vect
+ 2 10Hoisting
+Hoisted line: 	add	%l1,1,%o0
+Hoisted from block: 8
+Hoisted line items: 4
+New move text: 	mov	%g1,%o0
+New move block: 8
+New register: %g1
+New preheader line: 	add	%l1,1,%g1
+New preheader block: 1
+In hoist
+Hoisted line: 	add	%l0,%l1,%o1
+Hoisted line block num: 9
+Everyitr vect
+ 2 10Hoisting
+Hoisted line: 	add	%l0,%l1,%o1
+Hoisted from block: 9
+Hoisted line items: 4
+New move text: 	mov	%g1,%o1
+New move block: 9
+New register: %g1
+New preheader line: 	add	%l0,%l1,%g1
+New preheader block: 1
+
+PREHEADER FOUND FOR LOOP WITH 2 HEAD
+PREHEADER is 1
+Inv regs: %i0:
+Set regs: %g1:%o0:%o1:%o2:%l0:
+HAS WRITES
+Everyitr before:
+ 2 3 4 5 6 7 8 9 10
+curblk 10 doms: 
+ 1 2 10
+Everyitr after intersect
+ 2 10
+
+Everyitr at end of function
+ 2 10
+Executed every iteration final
+ 2 10In find and hoist

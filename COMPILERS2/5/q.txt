@@ -1,0 +1,13 @@
+make -f /home/faculty/whalley/asg5/makefile
+make[1]: Entering directory '/home/class/yatiya/Compilers/5'
+gcc -I/home/faculty/whalley/asg5 -I. -c -g /home/faculty/whalley/asg5/sym.c
+yacc -vd /home/faculty/whalley/asg5/cgram.y
+mv y.tab.c cgram.c
+gcc -I/home/faculty/whalley/asg5 -I. -c -g /home/faculty/whalley/asg5/scan.c
+gcc -I/home/faculty/whalley/asg5 -I. -c -g sem.c
+gcc -I/home/faculty/whalley/asg5 -I. -c -g /home/faculty/whalley/asg5/semutil.c
+gcc -I/home/faculty/whalley/asg5 -I. -c -g cgram.c
+gcc -g -o csem sym.o scan.o sem.o semutil.o cgram.o
+make[1]: Leaving directory '/home/class/yatiya/Compilers/5'
+csem < test2.c > test2.t
+makefile:10: recipe for target 'test2.t' failed

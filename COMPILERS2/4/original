@@ -1,0 +1,386 @@
+/*
+ * This file defines an example yacc grammar for simple C expressions.
+ */
+%{#include <stdio.h>
+int arr[26] = {0};
+int i = 0;
+int gotvar = 0;
+int print = 1;
+%}
+
+%union  {
+  int num;
+  char alpha;
+  }
+
+%token <num> NUM
+%token <alpha> ALPHA
+%token <dump> DUMP
+%token <clear> CLEAR
+%token <num> PLSE
+%token <num> MINE
+%token <num> TIME
+%token <num> DIVE
+%token <num> MODE
+%token <num> LSHE
+%token <num> RSHE
+%token <num> ANDE
+%token <num> XORE
+%token <num> ORE
+%token <num> RSHF
+%token <num> LSHF
+
+
+%type <num> expr
+%type <num> level10
+%type <num> level9
+%type <num> level8
+%type <num> level7
+%type <num> level6
+%type <num> level5
+%type <num> level4
+%type <num> level3
+%type <num> level2
+%type <num> level1
+%type <num> value
+%type <num> command
+
+%%
+commands:
+  | commands command    {  if(print)
+                              printf("%d", $2);
+                           print = 1;
+                        }
+  ;
+
+command : expr ';'      {$$ = $1;// printf("%d\n", $1); 
+}
+  | DUMP           {i = 0; for(i = 0; i<26; i++)
+                          { 
+                              printf("%c: %d\n", (i+97),arr[i]);
+                          }
+                    print = 0;
+                    }
+  | CLEAR           {
+                    i =0; 
+                          for(i = 0; i<26; i++)
+                          { 
+                              arr[i] = 0;
+                          }
+                      print = 0;
+                    }
+  | ALPHA level10 command      { 
+
+                                switch($2)
+                                {
+                                  case 0:
+                                      if($3 < 65535)
+                                         $$ = arr[$1-97] = $3;
+                                      else
+                                         {
+                                           printf("overflow");
+                                           print = 0;
+                                         }
+                                      //printf("%d\n", arr[$1-97]);
+                                      break;
+                                  case 1:
+                                      if($3+arr[$1-97] < 65535)
+                                        $$ = arr[$1-97] += $3;
+                                      else
+                                         {
+                                           printf("overflow");
+                                           print = 0;
+                                         }
+                                      //printf("%d\n", arr[$1-97]);
+                                      break;
+                                  case 2:
+                                      if(arr[$1-97]-$3 < 65535)
+                                        $$ = arr[$1-97] -= $3;
+                                      else
+                                         {
+                                           printf("overflow");
+                                           print = 0;
+                                         }
+                                      //printf("%d\n", arr[$1-97]);
+                                      break;
+                                  case 3:
+                                      if(arr[$1-97]*$3 < 65535)
+                                        $$ = arr[$1-97] *= $3;
+                                      else
+                                         {
+                                           printf("overflow");
+                                           print = 0;
+                                         }
+                                      break;
+                                  case 4:
+                                      if($3 == 0)
+                                         {
+                                           printf("dividebyzero\n");
+                                           print = 0;
+                                         }
+                                      else if(arr[$1-97]/$3 > 65535)
+                                         {
+                                           printf("overflow\n");
+                                           print = 0;
+                                         }
+                                      else
+                                        {
+                                          $$ = arr[$1-97] /= $3;
+                                          //printf("%d\n", arr[$1-97]);
+                                        }
+
+                                      break;
+                                  case 5:
+                                      if($3 == 0)
+                                         {
+                                           printf("dividebyzero\n");
+                                           print = 0;
+                                         }
+                                      else if(arr[$1-97]%$3 > 65535)
+                                         {
+                                           printf("overflow\n");
+                                           print = 0;
+                                         }
+
+                                      else
+                                        {
+                                          $$ = arr[$1-97] %= $3;
+                                          //printf("%d\n", arr[$1-97]);
+                                        }
+                                      break;
+                                  case 6:
+                                      if(arr[$1-97]<<$3 < 65535)
+                                        $$ = arr[$1-97] <<= $3;
+                                      else
+                                         {
+                                           printf("overflow\n");
+                                           print = 0;
+                                         }
+                                      break;
+                                  case 7:
+                                      if(arr[$1-97]>>$3 < 65535)
+                                        $$ = arr[$1-97] >>= $3;
+                                      else
+                                         {
+                                           printf("overflow\n");
+                                           print = 0;
+                                         }
+                                      break;
+                                  case 8:
+                                      if(arr[$1-97]&$3 < 65535)
+                                        $$ = arr[$1-97] &= $3;
+                                       else
+                                         {
+                                           printf("overflow\n");
+                                           print = 0;
+                                         }
+                                      break;
+                                  case 9:
+                                      if(arr[$1-97]^$3 < 65535)
+                                        $$ = arr[$1-97] ^= $3;
+                                      else
+                                         {
+                                           printf("overflow\n");
+                                           print = 0;
+                                         }
+                                      break;
+                                  case 10:
+                                      if(arr[$1-97]|$3 < 65535)
+                                        $$ = arr[$1-97] |= $3;
+                                      else
+                                         {
+                                           printf("overflow\n");
+                                           print = 0;
+                                         }
+                                      break;
+
+                                }
+                            }
+
+  ;
+
+
+expr  : value       {
+                        if(gotvar)
+                        {
+                          $$ = arr[$1-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1;
+                    }
+  | level9              {$$ = $1;}
+  ;
+
+level10 : '='     {$$ = 0;}
+  | PLSE          {$$ = 1;}
+  | MINE          {$$ = 2;}
+  | TIME          {$$ = 3;}
+  | DIVE          {$$ = 4;}
+  | MODE          {$$ = 5;}
+  | LSHE          {$$ = 6;}
+  | RSHE          {$$ = 7;}
+  | ANDE          {$$ = 8;}
+  | XORE          {$$ = 9;}
+  | ORE           {$$ = 10;}
+  ;
+
+
+level9 : expr '|' value {
+                        if(gotvar)
+                        {
+                          $$ = $1 | arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 | $3;
+                    }
+  | level8        {$$ = $1;}
+  ;
+
+level8 :  expr '^' value {
+                        if(gotvar)
+                        {
+                          $$ = $1 ^ arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 ^ $3;
+                    }
+  | level7        {$$ = $1;}
+  ;
+
+level7 :  expr '&' value {
+                        if(gotvar)
+                        {
+                          $$ = $1 & arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 & $3;
+                    }
+  | level6        {$$ = $1;}
+  ;
+
+level6 :  expr LSHF value {
+                        if(gotvar)
+                        {
+                          $$ = $1 << arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 << $3;
+                    }
+  | expr RSHF value {
+                        if(gotvar)
+                        {
+                          $$ = $1 >> arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 >> $3;
+                    }
+  | level5        {$$ = $1;}
+  ;
+
+level5 :  expr '+' value    {
+                        if(gotvar)
+                        {
+                          $$ = $1 + arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 + $3;
+                    }
+  | expr '-' value  {
+                        if(gotvar)
+                        {
+                          $$ = $1 - arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 - $3;
+                    }
+  | level4          {$$=$1;}
+  ;
+
+level4 :  expr '*' value    {
+                        if(gotvar)
+                        {
+                          $$ = $1 * arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = $1 * $3;
+                    }
+  | expr '/' value  {
+                        if(gotvar)
+                        {
+                          if(arr[$3-97] != 0)
+                            $$ = $1 / arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          if($3 != 0)
+                            $$ = $1 / $3;
+                    }
+  | expr '%' value  {
+                        if(gotvar)
+                        {
+                          if(arr[$3-97] != 0)
+                            $$ = $1 % arr[$3-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          if($3 != 0)
+                          $$ = $1 % $3;
+                    }
+  | level3        {$$ = $1;}
+  ;
+
+level3 : '-' value  {
+                        if(gotvar)
+                        {
+                          $$ = -arr[$2-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = -($2);
+                    }
+  | level2         {$$ = $1;}
+  ;
+
+level2 :  '~' value {
+                        if(gotvar)
+                        {
+                          $$ = ~arr[$2-97];
+                          gotvar = 0;
+                        }   
+                        else
+                          $$ = ~($2);
+                    }
+  | level1         {$$ = $1;}
+  ;
+
+level1 :  '(' expr ')' {$$ = $2;}
+  ;
+
+value : NUM      {$$ = $1;}
+  | ALPHA    {$$ = $1; gotvar = 1;}
+  ;
+%%
+
+
+main()
+{
+   if (yyparse())
+      printf("\nInvalid expression.\n");
+   else
+      printf("\nCalculator off.\n");
+}
+
+yyerror(s)
+char *s;
+{
+   fprintf(stderr, "%s\n", s);
+}

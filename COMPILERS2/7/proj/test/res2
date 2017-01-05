@@ -1,0 +1,1843 @@
+
+Current line: 
+1.	func main
+Function size: 104
+Got function head
+New function name before: 
+New function name after: main
+New function size: 104
+Created triple number: 1
+
+Current line: 
+2.	localloc 8
+Function size: 104
+Got declaration of local
+Created triple number: 2
+
+Current line: 
+3.	localloc 4
+Function size: 112
+Got declaration of local
+Created triple number: 3
+
+Current line: 
+	label L4
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+4.	local 1
+Function size: 116
+Got use of local variable
+Created triple number: 4
+
+Current line: 
+5.	con 10
+Function size: 116
+Got constant
+Created triple number: 5
+
+Current line: 
+6.	=i 4 5
+Function size: 116
+Got assignment
+Triples being referenced
+Ref1: 4
+Actual Triple number: 4
+Triples being referenced
+Ref2: 5
+Actual Triple number: 5
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+Created triple number: 6
+
+Current line: 
+	label L7
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+7.	local 0
+Function size: 116
+Got use of local variable
+Created triple number: 7
+
+Current line: 
+8.	con 15
+Function size: 116
+Got constant
+Created triple number: 8
+
+Current line: 
+9.	cvf 8
+Function size: 116
+Got conversion
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+Created triple number: 9
+
+Current line: 
+10.	=f 7 9
+Function size: 116
+Got assignment
+Triples being referenced
+Ref1: 7
+Actual Triple number: 0
+Triples being referenced
+Ref2: 9
+Actual Triple number: 8
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+Created triple number: 10
+
+Current line: 
+	label L11
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+11.	str "i is %d\n"
+Function size: 116
+Got string
+Created triple number: 11
+
+Current line: 
+12.	local 1
+Function size: 116
+Got use of local variable
+Created triple number: 12
+
+Current line: 
+13.	@i 12
+Function size: 116
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+Created triple number: 13
+
+Current line: 
+14.	argi 11
+Function size: 116
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+Created triple number: 14
+
+Current line: 
+15.	argi 13
+Function size: 116
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+Created triple number: 15
+
+Current line: 
+16.	global printf
+Function size: 116
+Got global variable declaration
+Created triple number: 16
+
+Current line: 
+17.	fi 16 2
+Function size: 116
+Got function call
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 1
+itre->num: 2
+Created triple number: 17
+
+Current line: 
+	label L18
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+18.	str "x is %f\n"
+Function size: 116
+Got string
+Created triple number: 18
+
+Current line: 
+19.	local 0
+Function size: 116
+Got use of local variable
+Created triple number: 19
+
+Current line: 
+20.	@f 19
+Function size: 116
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+Created triple number: 20
+
+Current line: 
+21.	argi 18
+Function size: 116
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+Created triple number: 21
+
+Current line: 
+22.	argf 20
+Function size: 116
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+Created triple number: 22
+
+Current line: 
+23.	global printf
+Function size: 116
+Got global variable declaration
+Created triple number: 23
+
+Current line: 
+24.	fi 23 2
+Function size: 116
+Got function call
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 1
+itre->num: 2
+Created triple number: 24
+
+Current line: 
+	label L25
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+25.	local 1
+Function size: 116
+Got use of local variable
+Created triple number: 25
+
+Current line: 
+26.	con 3
+Function size: 116
+Got constant
+Created triple number: 26
+
+Current line: 
+27.	@i 25
+Function size: 116
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+Created triple number: 27
+
+Current line: 
+28.	+i 27 26
+Function size: 116
+Got add
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+Created triple number: 28
+
+Current line: 
+29.	=i 25 28
+Function size: 116
+Got assignment
+Triples being referenced
+Ref1: 25
+Actual Triple number: 22
+Triples being referenced
+Ref2: 28
+Actual Triple number: 0
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+Created triple number: 29
+
+Current line: 
+	label L30
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+30.	local 0
+Function size: 116
+Got use of local variable
+Created triple number: 30
+
+Current line: 
+31.	con 3
+Function size: 116
+Got constant
+Created triple number: 31
+
+Current line: 
+32.	@f 30
+Function size: 116
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+Created triple number: 32
+
+Current line: 
+33.	cvf 31
+Function size: 116
+Got conversion
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+Created triple number: 33
+
+Current line: 
+34.	/f 32 33
+Function size: 116
+Got division
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+Created triple number: 34
+
+Current line: 
+35.	=f 30 34
+Function size: 116
+Got assignment
+Triples being referenced
+Ref1: 30
+Actual Triple number: 26
+Triples being referenced
+Ref2: 34
+Actual Triple number: 0
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+Created triple number: 35
+
+Current line: 
+	label L36
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+36.	local 1
+Function size: 116
+Got use of local variable
+Created triple number: 36
+
+Current line: 
+37.	@i 36
+Function size: 116
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+Created triple number: 37
+
+Current line: 
+38.	local 0
+Function size: 116
+Got use of local variable
+Created triple number: 38
+
+Current line: 
+39.	@f 38
+Function size: 116
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+Created triple number: 39
+
+Current line: 
+40.	argi 37
+Function size: 116
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+Created triple number: 40
+
+Current line: 
+41.	argf 39
+Function size: 116
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+Created triple number: 41
+
+Current line: 
+42.	global foo
+Function size: 116
+Got global variable declaration
+Created triple number: 42
+
+Current line: 
+43.	fi 42 2
+Function size: 116
+Got function call
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 1
+itre->num: 2
+Created triple number: 43
+
+Current line: 
+	label L44
+Function size: 116
+Got label
+Created triple number: 0
+
+Current line: 
+44.	fend
+Function size: 116
+Got end of function
+Created triple number: 44
+
+Current line: 
+45.	func foo
+Function size: 104
+Got function head
+New function name before: 
+New function name after: foo
+New function size: 104
+Created triple number: 45
+
+Current line: 
+46.	formal 4
+Function size: 104
+Got declaration of parameter
+Created triple number: 46
+
+Current line: 
+47.	formal 8
+Function size: 104
+Got declaration of parameter
+Created triple number: 47
+
+Current line: 
+	label L48
+Function size: 104
+Got label
+Created triple number: 0
+
+Current line: 
+48.	str "j is %d\n"
+Function size: 104
+Got string
+Created triple number: 48
+
+Current line: 
+49.	param 0
+Function size: 104
+Got use of argument
+Created triple number: 49
+
+Current line: 
+50.	@i 49
+Function size: 104
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+itre->num: 49
+Created triple number: 50
+
+Current line: 
+51.	argi 48
+Function size: 104
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+Created triple number: 51
+
+Current line: 
+52.	argi 50
+Function size: 104
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+itre->num: 49
+itre->num: 50
+Created triple number: 52
+
+Current line: 
+53.	global printf
+Function size: 104
+Got global variable declaration
+Created triple number: 53
+
+Current line: 
+54.	fi 53 2
+Function size: 104
+Got function call
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+itre->num: 49
+itre->num: 50
+itre->num: 51
+itre->num: 52
+itre->num: 53
+itre->num: 1
+itre->num: 2
+Created triple number: 54
+
+Current line: 
+	label L55
+Function size: 104
+Got label
+Created triple number: 0
+
+Current line: 
+55.	str "z is %f\n"
+Function size: 104
+Got string
+Created triple number: 55
+
+Current line: 
+56.	param 1
+Function size: 104
+Got use of argument
+Created triple number: 56
+
+Current line: 
+57.	@f 56
+Function size: 104
+Got dereference
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+itre->num: 49
+itre->num: 50
+itre->num: 51
+itre->num: 52
+itre->num: 53
+itre->num: 54
+itre->num: 0
+itre->num: 55
+itre->num: 56
+Created triple number: 57
+
+Current line: 
+58.	argi 55
+Function size: 104
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+itre->num: 49
+itre->num: 50
+itre->num: 51
+itre->num: 52
+itre->num: 53
+itre->num: 54
+itre->num: 0
+itre->num: 55
+Created triple number: 58
+
+Current line: 
+59.	argf 57
+Function size: 104
+Got passed argument declaration
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+itre->num: 49
+itre->num: 50
+itre->num: 51
+itre->num: 52
+itre->num: 53
+itre->num: 54
+itre->num: 0
+itre->num: 55
+itre->num: 56
+itre->num: 57
+Created triple number: 59
+
+Current line: 
+60.	global printf
+Function size: 104
+Got global variable declaration
+Created triple number: 60
+
+Current line: 
+61.	fi 60 2
+Function size: 104
+Got function call
+itre->num: 1
+itre->num: 2
+itre->num: 3
+itre->num: 0
+itre->num: 4
+itre->num: 5
+itre->num: 6
+itre->num: 0
+itre->num: 7
+itre->num: 8
+itre->num: 9
+itre->num: 10
+itre->num: 0
+itre->num: 11
+itre->num: 12
+itre->num: 13
+itre->num: 14
+itre->num: 15
+itre->num: 16
+itre->num: 17
+itre->num: 0
+itre->num: 18
+itre->num: 19
+itre->num: 20
+itre->num: 21
+itre->num: 22
+itre->num: 23
+itre->num: 24
+itre->num: 0
+itre->num: 25
+itre->num: 26
+itre->num: 27
+itre->num: 28
+itre->num: 29
+itre->num: 0
+itre->num: 30
+itre->num: 31
+itre->num: 32
+itre->num: 33
+itre->num: 34
+itre->num: 35
+itre->num: 0
+itre->num: 36
+itre->num: 37
+itre->num: 38
+itre->num: 39
+itre->num: 40
+itre->num: 41
+itre->num: 42
+itre->num: 43
+itre->num: 0
+itre->num: 44
+itre->num: 45
+itre->num: 46
+itre->num: 47
+itre->num: 0
+itre->num: 48
+itre->num: 49
+itre->num: 50
+itre->num: 51
+itre->num: 52
+itre->num: 53
+itre->num: 54
+itre->num: 0
+itre->num: 55
+itre->num: 56
+itre->num: 57
+itre->num: 58
+itre->num: 59
+itre->num: 60
+itre->num: 1
+itre->num: 2
+Created triple number: 61
+
+Current line: 
+	label L62
+Function size: 104
+Got label
+Created triple number: 0
+
+Current line: 
+62.	fend
+Function size: 104
+Got end of function
+Created triple number: 62
+
+Current line: 
+
+Function size: 104
+Idk what this is
+Created triple number: 0
+	.seg	"text"
+	.global main
+main:
+	save	%sp,(-120),%sp
+L4:
+	add	%sp,112,%l0
+	mov	10,%l1
+ASSIGN FAILED
+Accessed t
+L7:
+	add	%sp,104,%f0
+	mov	15,%l0
+	st	%l0,[%sp + 96]
+	ld	[%sp + 96],%f1
+	fitod	%f1,%f1
+L11:
+	add	%sp,112,%l0
+L18:
+	add	%sp,104,%f0
+L25:
+	add	%sp,112,%l0
+	mov	3,%l1
+Accessed t
+L30:
+	add	%sp,104,%f0
+	mov	3,%l0
+	st	%l0,[%sp + 96]
+	ld	[%sp + 96],%f1
+	fitod	%f1,%f1
+ASSIGN FAILED
+L36:
+	add	%sp,112,%l0
+	add	%sp,104,%f0
+L44:
+	ret
+	restore
+	.seg	"text"
+	.global foo
+foo:
+	save	%sp,(-104),%sp
+L48:
+L55:
+L62:
+	ret
+	restore

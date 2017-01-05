@@ -1,0 +1,20 @@
+
+.fp 5 CBI
+.ft CR
+.nf
+\f(CBint\f(CR main() {
+
+   \f(CBint\f(CR rad;
+   \f(CBfloat\f(CR PI = \f53\f(CR.\f514\f(CR, area, ci;
+
+   printf(\fB"\\nEnter radius of circle: "\f(CR);
+   scanf(\fB"%d"\f(CR, &rad);
+
+   area = PI * rad * rad;
+   printf(\fB"\\nArea of circle : %f "\f(CR, area);
+
+   ci = \f52\f(CR * PI * rad;
+   printf(\fB"\\nCircumference : %f "\f(CR, ci);
+
+   \f(CBreturn\f(CR (\f50\f(CR);
+}

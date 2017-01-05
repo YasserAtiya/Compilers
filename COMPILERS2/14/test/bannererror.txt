@@ -1,0 +1,75 @@
+
+Old inst: 	sethi	%hi(btab),%o1
+preheaderline: 	sethi	%hi(btab),%l0
+New move: 	mov	%l0,%o1
+
+Old inst: 	sethi	%hi(btab),%l0
+preheaderline: 	sethi	%hi(btab),%l1
+New move: 	mov	%l1,%l0
+
+Old inst: 	add	%l0,%lo(btab),%o1
+preheaderline: 	add	%l0,%lo(btab),%l2
+New move: 	mov	%l2,%o1
+
+Old inst: 	add	%l1,%lo(btab),%l2
+preheaderline: 	add	%l1,%lo(btab),%l3
+New move: 	mov	%l3,%l2
+function     level instructions memory refs
+------------ ----- ------------ -----------
+mkline       total           91           9
+                 0           13           1
+                 1           17           1
+                 2           39           5
+                 3           22           2
+
+Old inst: 	sethi	%hi(.L130),%l0
+preheaderline: 	sethi	%hi(.L130),%l4
+New move: 	mov	%l4,%l0
+
+Old inst: 	sethi	%hi(.L111),%o0
+preheaderline: 	sethi	%hi(.L111),%l5
+New move: 	mov	%l5,%o0
+
+Old inst: 	sethi	%hi(.L111),%o0
+preheaderline: 	sethi	%hi(.L111),%l6
+New move: 	mov	%l6,%o0
+
+Old inst: 	sethi	%hi(_iob),%o2
+preheaderline: 	sethi	%hi(_iob),%l7
+New move: 	mov	%l7,%o2
+
+Old inst: 	add	%l6,%lo(.L111),%o0
+preheaderline: 	add	%l6,%lo(.L111),%i0
+New move: 	mov	%i0,%o0
+
+Old inst: 	add	%l5,%lo(.L111),%o0
+preheaderline: 	add	%l5,%lo(.L111),%i1
+New move: 	mov	%i1,%o0
+
+Old inst: 	add	%l7,%lo(_iob),%o2
+preheaderline: 	add	%l7,%lo(_iob),%l5
+New move: 	mov	%l5,%o2
+main         total          109          11
+                 0           29           0
+                 1           80          11
+myatoi       total           25           3
+                 0            7           0
+                 1           18           3
+------------ ----- ------------ -----------
+program      total          225          23
+                 0           49           1
+                 1          115          15
+                 2           39           5
+                 3           22           2
+
+  3 transformations applied by reverse branches phase.
+  3 transformations applied by branch chaining phase.
+ 42 transformations applied by dead assignment elimination phase.
+  2 transformations applied by local cse phase.
+ 11 transformations applied by loop-invariant code motion phase.
+ 53 transformations applied by copy propagation phase.
+ 18 transformations applied by register allocation phase.
+---
+132 transformations applied by all optimization phases.
+
+Number of peeprules is 10, applied 0 times.

@@ -1,0 +1,2104 @@
+Current line: ! .1_rs = %g1
+Current line: ! .1_rl = %g2
+Current line: ! .1_bit = %g3
+Current line: ! .1_i = %g4
+Current line: ! .1_j = %g5
+Current line: ! .1_m = %g6
+Current line: 	save	%sp,(-88),%sp
+Current line: ! .1_s = %g7
+Current line: 	mov	%i0,%g7
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .1_prch = %o3
+Current line checked for propogating: 	mov	%i1,%o3
+Current line checked for propogating: ! .1_line = %o4
+Current line checked for propogating: 	mov	%i2,%o4
+Current line checked for propogating: ! .1_space = %o5
+Current line checked for propogating: 	mov	%i3,%o5
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! .1_prch = %o3
+Current line: 	mov	%i1,%o3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .1_line = %o4
+Current line checked for propogating: 	mov	%i2,%o4
+Current line checked for propogating: ! .1_space = %o5
+Current line checked for propogating: 	mov	%i3,%o5
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! .1_line = %o4
+Current line: 	mov	%i2,%o4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .1_space = %o5
+Current line checked for propogating: 	mov	%i3,%o5
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! .1_space = %o5
+Current line: 	mov	%i3,%o5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! source statement 122
+Current line: 	mov	%o5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! source statement 123
+Current line: 	mov	%g0,%g4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 124
+Current line: 	mov	%g0,%g5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 125
+Current line checked for propogating: 	mov	%g7,%o0
+Current line checked for propogating: 	mov	%o0,%g1
+Current line checked for propogating: 	ba,a	.L92
+Current line: ! source statement 125
+Current line: 	mov	%g7,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%g1
+Current line checked for propogating: 	ba,a	.L92
+Current line: 	mov	%o0,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L92
+Current line: 	ba,a	.L92
+Current line: ! source statement 126
+Current line: 	mov	%g1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o1
+Current line checked for propogating: 	mov	%o1,%g1
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	and	%o0,127,%o0
+Current line checked for propogating: 	sub	%o0,33,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bge	.L94
+Current line: 	add	%o0,1,%o1
+Current line: 	mov	%o1,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	and	%o0,127,%o0
+Current line checked for propogating: 	sub	%o0,33,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bge	.L94
+Current line: 	ldsb	[%o0],%o0
+Current line: 	and	%o0,127,%o0
+Current line: 	sub	%o0,33,%o0
+Current line: 	mov	%o0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bge	.L94
+Current line: 	cmp	%o0,%g0
+Current line: 	bge	.L94
+Current line: 	mov	%g0,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L95
+Current line: 	ba,a	.L95
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	smul	%o0,7,%o0
+Current line checked for propogating: 	sethi	%hi(btab),%o1
+Current line checked for propogating: 	add	%o1,%lo(btab),%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%g4,%o1
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line: 	smul	%o0,7,%o0
+Current line: 	sethi	%hi(btab),%o1
+Current line: 	add	%o1,%lo(btab),%o1
+Current line: 	add	%o0,%o1,%o0
+Current line: 	mov	%g4,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line: 	ldsb	[%o0 + %o1],%o0
+Current line: 	mov	%o0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 127
+Current line checked for propogating: 	mov	64,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line checked for propogating: 	ba,a	.L98
+Current line: ! source statement 127
+Current line: 	mov	64,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%g6
+Current line checked for propogating: 	ba,a	.L98
+Current line: 	mov	%o0,%g6
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L98
+Current line: 	ba,a	.L98
+Current line: ! source statement 128
+Current line: 	mov	%g6,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	andcc	%o0,%o1,%g0
+Current line checked for propogating: 	be	.L100
+Current line: 	mov	%g3,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	andcc	%o0,%o1,%g0
+Current line checked for propogating: 	be	.L100
+Current line: 	andcc	%o0,%o1,%g0
+Current line: 	be	.L100
+Current line: 	mov	%o3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L102
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L102
+Current line: 	mov	%o3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L101
+Current line: 	ba,a	.L101
+Current line: 	mov	%g1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + (-1)],%o0
+Current line: 	ldsb	[%o0 + (-1)],%o0
+Current line: 	ba,a	.L101
+Current line: 	mov	32,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: 	mov	%g2,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 129
+Current line checked for propogating: 	mov	%g3,%o0
+Current line checked for propogating: 	mov	%g6,%o1
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	add	%o1,1,%o2
+Current line: 	mov	%o2,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 129
+Current line checked for propogating: 	mov	%g3,%o0
+Current line checked for propogating: 	mov	%g6,%o1
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	stb	%o0,[%o1]
+Current line: ! source statement 129
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g6,%o1
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	mov	%g6,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	andn	%o0,%o1,%o0
+Current line: 	mov	%o0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: ! source statement 130
+Current line: 	mov	%g6,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	sra	%o0,1,%o0
+Current line: 	mov	%o0,%g6
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 130
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bne	.L99
+Current line: 	cmp	%o0,%g0
+Current line: 	bne	.L99
+Current line: ! source statement 131
+Current line: 	mov	9,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 132
+Current line checked for propogating: 	mov	%g5,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	mov	%g2,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 132
+Current line checked for propogating: 	mov	%g5,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	add	%o1,1,%o2
+Current line: 	mov	%o2,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 132
+Current line checked for propogating: 	mov	%g5,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	stb	%o0,[%o1]
+Current line: ! source statement 132
+Current line: 	mov	%g5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	add	%o0,1,%o0
+Current line: 	mov	%o0,%g5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 132
+Current line: 	mov	%g1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L104
+Current line: 	ldsb	[%o0],%o0
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L104
+Current line: 	mov	%g5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o4,%o1
+Current line checked for propogating: 	cmp	%o0,%o1
+Current line checked for propogating: 	bl	.L93
+Current line: 	mov	%o4,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%o1
+Current line checked for propogating: 	bl	.L93
+Current line: 	cmp	%o0,%o1
+Current line: 	bl	.L93
+Current line: ! source statement 133
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,9
+Current line checked for propogating: 	be	.L105
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,9
+Current line checked for propogating: 	be	.L105
+Current line: 	ldsb	[%o0],%o0
+Current line: 	cmp	%o0,9
+Current line: 	be	.L105
+Current line: ! source statement 135
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 136
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	add	%o0,1,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 136
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: ! source statement 136
+Current line: 	mov	10,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	mov	%g2,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	add	%o1,1,%o2
+Current line: 	mov	%o2,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	stb	%o0,[%o1]
+Current line: ! source statement 137
+Current line: 	mov	%g4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	add	%o0,1,%o0
+Current line: 	mov	%o0,%g4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: ! source statement 137
+Current line: 	mov	%g4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	cmp	%o0,7
+Current line: 	bl	.L89
+Current line: ! source statement 138
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%g0,[%o0]
+Current line checked for propogating: ! source statement 139
+Current line checked for propogating: 	mov	%o5,%i0
+Current line checked for propogating: 	ret
+Current line checked for propogating: 	restore
+Current line: 	stb	%g0,[%o0]
+Current line: ! source statement 139
+Current line: 	mov	%o5,%i0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ret
+Current line checked for propogating: 	restore
+Current line: 	ret
+Current line: 	restore
+Current line: ! .1_rs = %g1
+Current line: ! .1_rl = %g2
+Current line: ! .1_bit = %g3
+Current line: ! .1_i = %g4
+Current line: ! .1_j = %g5
+Current line: ! .1_m = %g6
+Current line: 	save	%sp,(-88),%sp
+Current line: ! .1_s = %g7
+Current line: 	mov	%i0,%g7
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .1_prch = %o3
+Current line checked for propogating: 	mov	%i1,%o3
+Current line checked for propogating: ! .1_line = %o4
+Current line checked for propogating: 	mov	%i2,%o4
+Current line checked for propogating: ! .1_space = %o5
+Current line checked for propogating: 	mov	%i3,%o5
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! .1_prch = %o3
+Current line: 	mov	%i1,%o3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .1_line = %o4
+Current line checked for propogating: 	mov	%i2,%o4
+Current line checked for propogating: ! .1_space = %o5
+Current line checked for propogating: 	mov	%i3,%o5
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! .1_line = %o4
+Current line: 	mov	%i2,%o4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .1_space = %o5
+Current line checked for propogating: 	mov	%i3,%o5
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! .1_space = %o5
+Current line: 	mov	%i3,%o5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 122
+Current line checked for propogating: 	mov	%o5,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! source statement 122
+Current line: 	mov	%o5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 123
+Current line checked for propogating: 	mov	%g0,%g4
+Current line: ! source statement 123
+Current line: 	mov	%g0,%g4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 124
+Current line: 	mov	%g0,%g5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 125
+Current line checked for propogating: 	mov	%g7,%o0
+Current line checked for propogating: 	mov	%o0,%g1
+Current line checked for propogating: 	ba,a	.L92
+Current line: ! source statement 125
+Current line: 	mov	%g7,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%g1
+Current line checked for propogating: 	ba,a	.L92
+Current line: 	mov	%o0,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L92
+Current line: 	ba,a	.L92
+Current line: ! source statement 126
+Current line: 	mov	%g1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o1
+Current line checked for propogating: 	mov	%o1,%g1
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	and	%o0,127,%o0
+Current line checked for propogating: 	sub	%o0,33,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bge	.L94
+Current line: 	add	%o0,1,%o1
+Current line: 	mov	%o1,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	and	%o0,127,%o0
+Current line checked for propogating: 	sub	%o0,33,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bge	.L94
+Current line: 	ldsb	[%o0],%o0
+Current line: 	and	%o0,127,%o0
+Current line: 	sub	%o0,33,%o0
+Current line: 	mov	%o0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bge	.L94
+Current line: 	cmp	%o0,%g0
+Current line: 	bge	.L94
+Current line: 	mov	%g0,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L95
+Current line: 	ba,a	.L95
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	smul	%o0,7,%o0
+Current line checked for propogating: 	sethi	%hi(btab),%o1
+Current line checked for propogating: 	add	%o1,%lo(btab),%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%g4,%o1
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line: 	smul	%o0,7,%o0
+Current line: 	sethi	%hi(btab),%o1
+Current line: 	add	%o1,%lo(btab),%o1
+Current line: 	add	%o0,%o1,%o0
+Current line: 	mov	%g4,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line: 	ldsb	[%o0 + %o1],%o0
+Current line: 	mov	%o0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 127
+Current line checked for propogating: 	mov	64,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line checked for propogating: 	ba,a	.L98
+Current line: ! source statement 127
+Current line: 	mov	64,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%g6
+Current line checked for propogating: 	ba,a	.L98
+Current line: 	mov	%o0,%g6
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L98
+Current line: 	ba,a	.L98
+Current line: ! source statement 128
+Current line: 	mov	%g6,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	andcc	%o0,%o1,%g0
+Current line checked for propogating: 	be	.L100
+Current line: 	mov	%g3,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	andcc	%o0,%o1,%g0
+Current line checked for propogating: 	be	.L100
+Current line: 	andcc	%o0,%o1,%g0
+Current line: 	be	.L100
+Current line: 	mov	%o3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L102
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L102
+Current line: 	mov	%o3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L101
+Current line: 	ba,a	.L101
+Current line: 	mov	%g1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + (-1)],%o0
+Current line: 	ldsb	[%o0 + (-1)],%o0
+Current line: 	ba,a	.L101
+Current line: 	mov	32,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: 	mov	%g2,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 129
+Current line checked for propogating: 	mov	%g3,%o0
+Current line checked for propogating: 	mov	%g6,%o1
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	add	%o1,1,%o2
+Current line: 	mov	%o2,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 129
+Current line checked for propogating: 	mov	%g3,%o0
+Current line checked for propogating: 	mov	%g6,%o1
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	stb	%o0,[%o1]
+Current line: ! source statement 129
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g6,%o1
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	mov	%g6,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	andn	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g3
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	andn	%o0,%o1,%o0
+Current line: 	mov	%o0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 130
+Current line checked for propogating: 	mov	%g6,%o0
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: ! source statement 130
+Current line: 	mov	%g6,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sra	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g6
+Current line: 	sra	%o0,1,%o0
+Current line: 	mov	%o0,%g6
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 130
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bne	.L99
+Current line: 	cmp	%o0,%g0
+Current line: 	bne	.L99
+Current line: ! source statement 131
+Current line: 	mov	9,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 132
+Current line checked for propogating: 	mov	%g5,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	mov	%g2,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 132
+Current line checked for propogating: 	mov	%g5,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	add	%o1,1,%o2
+Current line: 	mov	%o2,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 132
+Current line checked for propogating: 	mov	%g5,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	stb	%o0,[%o1]
+Current line: ! source statement 132
+Current line: 	mov	%g5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g5
+Current line: 	add	%o0,1,%o0
+Current line: 	mov	%o0,%g5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 132
+Current line: 	mov	%g1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L104
+Current line: 	ldsb	[%o0],%o0
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L104
+Current line: 	mov	%g5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o4,%o1
+Current line checked for propogating: 	cmp	%o0,%o1
+Current line checked for propogating: 	bl	.L93
+Current line: 	mov	%o4,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%o1
+Current line checked for propogating: 	bl	.L93
+Current line: 	cmp	%o0,%o1
+Current line: 	bl	.L93
+Current line: ! source statement 133
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,9
+Current line checked for propogating: 	be	.L105
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,9
+Current line checked for propogating: 	be	.L105
+Current line: 	ldsb	[%o0],%o0
+Current line: 	cmp	%o0,9
+Current line: 	be	.L105
+Current line: ! source statement 135
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 136
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	add	%o0,1,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 136
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: ! source statement 136
+Current line: 	mov	10,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g2,%o1
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	mov	%g2,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o1,1,%o2
+Current line checked for propogating: 	mov	%o2,%g2
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	add	%o1,1,%o2
+Current line: 	mov	%o2,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%o0,[%o1]
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	stb	%o0,[%o1]
+Current line: ! source statement 137
+Current line: 	mov	%g4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%g4
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	add	%o0,1,%o0
+Current line: 	mov	%o0,%g4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 137
+Current line checked for propogating: 	mov	%g4,%o0
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: ! source statement 137
+Current line: 	mov	%g4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,7
+Current line checked for propogating: 	bl	.L89
+Current line: 	cmp	%o0,7
+Current line: 	bl	.L89
+Current line: ! source statement 138
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	stb	%g0,[%o0]
+Current line checked for propogating: ! source statement 139
+Current line checked for propogating: 	mov	%o5,%i0
+Current line checked for propogating: 	ret
+Current line checked for propogating: 	restore
+Current line: 	stb	%g0,[%o0]
+Current line: ! source statement 139
+Current line: 	mov	%o5,%i0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ret
+Current line checked for propogating: 	restore
+Current line: 	ret
+Current line: 	restore
+function     level instructions memory refs
+------------ ----- ------------ -----------
+mkline       total          110           9
+                 0           90           7
+                 1            4           0
+                 2           12           2
+                 3            4           0
+Current line: ! .2_prch = %l1
+Current line: ! .2_space = %l2
+Current line: ! .2_line = %l3
+Current line: 	save	%sp,(-104),%sp
+Current line: ! .2_argc = %l4
+Current line: 	mov	%i0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .2_argv = %l5
+Current line checked for propogating: 	mov	%i1,%l5
+Current line checked for propogating: ! source statement 151
+Current line checked for propogating: 	mov	42,%o0
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: ! .2_argv = %l5
+Current line: 	mov	%i1,%l5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 151
+Current line checked for propogating: 	mov	42,%o0
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: ! source statement 151
+Current line: 	mov	42,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: 	mov	%o0,%l1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: ! source statement 152
+Current line: 	mov	10,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: 	mov	%o0,%l3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 153
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,4,%o0
+Current line checked for propogating: 	mov	%o0,%l5
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,45
+Current line checked for propogating: 	bne	.L114
+Current line: 	add	%o0,4,%o0
+Current line: 	mov	%o0,%l5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,45
+Current line checked for propogating: 	bne	.L114
+Current line: 	ld	[%o0],%o0
+Current line: 	ldsb	[%o0],%o0
+Current line: 	cmp	%o0,45
+Current line: 	bne	.L114
+Current line: ! source statement 154
+Current line: 	mov	%l4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%l4
+Current line checked for propogating: ! source statement 155
+Current line checked for propogating: 	mov	%l5,%o0
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	ba,a	.L116
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 155
+Current line checked for propogating: 	mov	%l5,%o0
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	ba,a	.L116
+Current line: ! source statement 155
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	ba,a	.L116
+Current line: 	ld	[%o0],%o1
+Current line: 	add	%o1,1,%o1
+Current line: 	st	%o1,[%o0]
+Current line: 	ldsb	[%o1],%o0
+Current line: 	ba,a	.L116
+Current line: ! source statement 158
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: 	ba,a	.L113
+Current line: 	ld	[%o0],%o1
+Current line: 	add	%o1,1,%o1
+Current line: 	st	%o1,[%o0]
+Current line: 	ldsb	[%o1],%o0
+Current line: 	mov	%o0,%l1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L113
+Current line: 	ba,a	.L113
+Current line: ! source statement 163
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	mov	%o1,%o0
+Current line checked for propogating: 	call	myatoi,1
+Current line: 	ld	[%o0],%o1
+Current line: 	add	%o1,1,%o1
+Current line: 	st	%o1,[%o0]
+Current line: 	mov	%o1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	myatoi,1
+Current line: 	call	myatoi,1
+Current line: 	sra	%o0,3,%o0
+Current line: 	mov	%o0,%l3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L113
+Current line: 	ba,a	.L113
+Current line: 	cmp	%o0,99
+Current line: 	be	.L117
+Current line: 	cmp	%o0,108
+Current line: 	be	.L118
+Current line: 	cmp	%o0,119
+Current line: 	be	.L119
+Current line: 	ba,a	.L113
+Current line: ! source statement 167
+Current line: 	mov	%l3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sll	%o0,6,%o0
+Current line checked for propogating: 	call	malloc,1
+Current line: 	sll	%o0,6,%o0
+Current line: 	call	malloc,1
+Current line: 	mov	%o0,%l2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 168
+Current line checked for propogating: 	sethi	%hi(.L121),%o0
+Current line checked for propogating: 	add	%o0,%lo(.L121),%o0
+Current line checked for propogating: 	call	printf,1
+Current line: ! source statement 168
+Current line: 	sethi	%hi(.L121),%o0
+Current line: 	add	%o0,%lo(.L121),%o0
+Current line: 	call	printf,1
+Current line: ! source statement 169
+Current line: 	mov	%l4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%l4
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L122
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L122
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L122
+Current line: ! source statement 171
+Current line: 	sethi	%hi(.L126),%l0
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,4,%o1
+Current line checked for propogating: 	mov	%o1,%l5
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	mov	%l1,%o1
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	add	%o0,4,%o1
+Current line: 	mov	%o1,%l5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	mov	%l1,%o1
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	ld	[%o0],%o0
+Current line: 	mov	%l1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l3,%o2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l2,%o3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	mkline,4
+Current line: 	call	mkline,4
+Current line: 	mov	%o0,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%l0,%lo(.L126),%o0
+Current line checked for propogating: 	mov	%o1,%o1
+Current line checked for propogating: 	call	printf,2
+Current line: 	add	%l0,%lo(.L126),%o0
+Current line: 	mov	%o1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	printf,2
+Current line: 	call	printf,2
+Current line: ! source statement 172
+Current line: 	mov	%l4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%l4
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bne	.L125
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bne	.L125
+Current line: 	cmp	%o0,%g0
+Current line: 	bne	.L125
+Current line: 	ba,a	.L127
+Current line: ! source statement 176
+Current line: 	sethi	%hi(.L111),%o0
+Current line: 	sethi	%hi(_iob),%o2
+Current line: 	add	%o0,%lo(.L111),%o0
+Current line: 	mov	256,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o2,%lo(_iob),%o2
+Current line checked for propogating: 	call	fgets,3
+Current line: 	add	%o2,%lo(_iob),%o2
+Current line: 	call	fgets,3
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L129
+Current line: ! source statement 177
+Current line: 	sethi	%hi(.L130),%l0
+Current line: 	sethi	%hi(.L111),%o0
+Current line: 	add	%o0,%lo(.L111),%o0
+Current line: 	mov	%l1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l3,%o2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l2,%o3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	mkline,4
+Current line: 	call	mkline,4
+Current line: 	mov	%o0,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%l0,%lo(.L130),%o0
+Current line checked for propogating: 	mov	%o1,%o1
+Current line checked for propogating: 	call	printf,2
+Current line: 	add	%l0,%lo(.L130),%o0
+Current line: 	mov	%o1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	printf,2
+Current line: 	call	printf,2
+Current line: 	ba,a	.L128
+Current line: 	ret
+Current line: 	restore
+Current line: ! .2_prch = %l1
+Current line: ! .2_space = %l2
+Current line: ! .2_line = %l3
+Current line: 	save	%sp,(-104),%sp
+Current line: ! .2_argc = %l4
+Current line: 	mov	%i0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! .2_argv = %l5
+Current line checked for propogating: 	mov	%i1,%l5
+Current line checked for propogating: ! source statement 151
+Current line checked for propogating: 	mov	42,%o0
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: ! .2_argv = %l5
+Current line: 	mov	%i1,%l5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 151
+Current line checked for propogating: 	mov	42,%o0
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: ! source statement 151
+Current line: 	mov	42,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: 	mov	%o0,%l1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 152
+Current line checked for propogating: 	mov	10,%o0
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: ! source statement 152
+Current line: 	mov	10,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%o0,%l3
+Current line: 	mov	%o0,%l3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 153
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,4,%o0
+Current line checked for propogating: 	mov	%o0,%l5
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,45
+Current line checked for propogating: 	bne	.L114
+Current line: 	add	%o0,4,%o0
+Current line: 	mov	%o0,%l5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	ldsb	[%o0],%o0
+Current line checked for propogating: 	cmp	%o0,45
+Current line checked for propogating: 	bne	.L114
+Current line: 	ld	[%o0],%o0
+Current line: 	ldsb	[%o0],%o0
+Current line: 	cmp	%o0,45
+Current line: 	bne	.L114
+Current line: ! source statement 154
+Current line: 	mov	%l4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%l4
+Current line checked for propogating: ! source statement 155
+Current line checked for propogating: 	mov	%l5,%o0
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	ba,a	.L116
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 155
+Current line checked for propogating: 	mov	%l5,%o0
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	ba,a	.L116
+Current line: ! source statement 155
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	ba,a	.L116
+Current line: 	ld	[%o0],%o1
+Current line: 	add	%o1,1,%o1
+Current line: 	st	%o1,[%o0]
+Current line: 	ldsb	[%o1],%o0
+Current line: 	ba,a	.L116
+Current line: ! source statement 158
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	ldsb	[%o1],%o0
+Current line checked for propogating: 	mov	%o0,%l1
+Current line checked for propogating: 	ba,a	.L113
+Current line: 	ld	[%o0],%o1
+Current line: 	add	%o1,1,%o1
+Current line: 	st	%o1,[%o0]
+Current line: 	ldsb	[%o1],%o0
+Current line: 	mov	%o0,%l1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L113
+Current line: 	ba,a	.L113
+Current line: ! source statement 163
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o1
+Current line checked for propogating: 	add	%o1,1,%o1
+Current line checked for propogating: 	st	%o1,[%o0]
+Current line checked for propogating: 	mov	%o1,%o0
+Current line checked for propogating: 	call	myatoi,1
+Current line: 	ld	[%o0],%o1
+Current line: 	add	%o1,1,%o1
+Current line: 	st	%o1,[%o0]
+Current line: 	mov	%o1,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	myatoi,1
+Current line: 	call	myatoi,1
+Current line: 	sra	%o0,3,%o0
+Current line: 	mov	%o0,%l3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L113
+Current line: 	ba,a	.L113
+Current line: 	cmp	%o0,99
+Current line: 	be	.L117
+Current line: 	cmp	%o0,108
+Current line: 	be	.L118
+Current line: 	cmp	%o0,119
+Current line: 	be	.L119
+Current line: 	ba,a	.L113
+Current line: ! source statement 167
+Current line: 	mov	%l3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sll	%o0,6,%o0
+Current line checked for propogating: 	call	malloc,1
+Current line: 	sll	%o0,6,%o0
+Current line: 	call	malloc,1
+Current line: 	mov	%o0,%l2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 168
+Current line checked for propogating: 	sethi	%hi(.L121),%o0
+Current line checked for propogating: 	add	%o0,%lo(.L121),%o0
+Current line checked for propogating: 	call	printf,1
+Current line: ! source statement 168
+Current line: 	sethi	%hi(.L121),%o0
+Current line: 	add	%o0,%lo(.L121),%o0
+Current line: 	call	printf,1
+Current line: ! source statement 169
+Current line: 	mov	%l4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%l4
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L122
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	be	.L122
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L122
+Current line: ! source statement 171
+Current line: 	sethi	%hi(.L126),%l0
+Current line: 	mov	%l5,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o0,4,%o1
+Current line checked for propogating: 	mov	%o1,%l5
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	mov	%l1,%o1
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	add	%o0,4,%o1
+Current line: 	mov	%o1,%l5
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ld	[%o0],%o0
+Current line checked for propogating: 	mov	%l1,%o1
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	ld	[%o0],%o0
+Current line: 	mov	%l1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l3,%o2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l2,%o3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	mkline,4
+Current line: 	call	mkline,4
+Current line: 	mov	%o0,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%l0,%lo(.L126),%o0
+Current line checked for propogating: 	mov	%o1,%o1
+Current line checked for propogating: 	call	printf,2
+Current line: 	add	%l0,%lo(.L126),%o0
+Current line: 	mov	%o1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	printf,2
+Current line: 	call	printf,2
+Current line: ! source statement 172
+Current line: 	mov	%l4,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	sub	%o0,1,%o0
+Current line checked for propogating: 	mov	%o0,%l4
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bne	.L125
+Current line: 	sub	%o0,1,%o0
+Current line: 	mov	%o0,%l4
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	cmp	%o0,%g0
+Current line checked for propogating: 	bne	.L125
+Current line: 	cmp	%o0,%g0
+Current line: 	bne	.L125
+Current line: 	ba,a	.L127
+Current line: ! source statement 176
+Current line: 	sethi	%hi(.L111),%o0
+Current line: 	sethi	%hi(_iob),%o2
+Current line: 	add	%o0,%lo(.L111),%o0
+Current line: 	mov	256,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o2,%lo(_iob),%o2
+Current line checked for propogating: 	call	fgets,3
+Current line: 	add	%o2,%lo(_iob),%o2
+Current line: 	call	fgets,3
+Current line: 	cmp	%o0,%g0
+Current line: 	be	.L129
+Current line: ! source statement 177
+Current line: 	sethi	%hi(.L130),%l0
+Current line: 	sethi	%hi(.L111),%o0
+Current line: 	add	%o0,%lo(.L111),%o0
+Current line: 	mov	%l1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l3,%o2
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l3,%o2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%l2,%o3
+Current line checked for propogating: 	call	mkline,4
+Current line: 	mov	%l2,%o3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	mkline,4
+Current line: 	call	mkline,4
+Current line: 	mov	%o0,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%l0,%lo(.L130),%o0
+Current line checked for propogating: 	mov	%o1,%o1
+Current line checked for propogating: 	call	printf,2
+Current line: 	add	%l0,%lo(.L130),%o0
+Current line: 	mov	%o1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	call	printf,2
+Current line: 	call	printf,2
+Current line: 	ba,a	.L128
+Current line: 	ret
+Current line: 	restore
+main         total          114          11
+                 0           89           8
+                 1           25           3
+Current line: ! .3_i = %g1
+Current line: ! .3_retval = %g2
+Current line: 	save	%sp,(-72),%sp
+Current line: ! .3_str = %g3
+Current line: 	mov	%i0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 184
+Current line checked for propogating: 	mov	%g0,%g1
+Current line checked for propogating: ! source statement 185
+Current line checked for propogating: 	mov	%g0,%g2
+Current line: ! source statement 184
+Current line: 	mov	%g0,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 185
+Current line checked for propogating: 	mov	%g0,%g2
+Current line: ! source statement 185
+Current line: 	mov	%g0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 187
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g1,%o1
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,48
+Current line checked for propogating: 	bl	.L134
+Current line: 	mov	%g1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,48
+Current line checked for propogating: 	bl	.L134
+Current line: 	ldsb	[%o0 + %o1],%o0
+Current line: 	cmp	%o0,48
+Current line: 	bl	.L134
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g1,%o1
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,57
+Current line checked for propogating: 	bg	.L134
+Current line: 	mov	%g1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,57
+Current line checked for propogating: 	bg	.L134
+Current line: 	ldsb	[%o0 + %o1],%o0
+Current line: 	cmp	%o0,57
+Current line: 	bg	.L134
+Current line: ! source statement 188
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	smul	%o0,10,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 189
+Current line checked for propogating: 	mov	%g2,%o0
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	smul	%o0,10,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 189
+Current line checked for propogating: 	mov	%g2,%o0
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: ! source statement 189
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	mov	%g3,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	mov	%g1,%o2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	add	%o2,1,%o3
+Current line: 	mov	%o3,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	ldsb	[%o1 + %o2],%o1
+Current line: 	sub	%o1,48,%o1
+Current line: 	add	%o0,%o1,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	ba,a	.L133
+Current line: ! source statement 191
+Current line: 	mov	%g2,%i0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ret
+Current line checked for propogating: 	restore
+Current line: 	ret
+Current line: 	restore
+Current line: ! .3_i = %g1
+Current line: ! .3_retval = %g2
+Current line: 	save	%sp,(-72),%sp
+Current line: ! .3_str = %g3
+Current line: 	mov	%i0,%g3
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 184
+Current line checked for propogating: 	mov	%g0,%g1
+Current line checked for propogating: ! source statement 185
+Current line checked for propogating: 	mov	%g0,%g2
+Current line: ! source statement 184
+Current line: 	mov	%g0,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 185
+Current line checked for propogating: 	mov	%g0,%g2
+Current line: ! source statement 185
+Current line: 	mov	%g0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line: ! source statement 187
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g1,%o1
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,48
+Current line checked for propogating: 	bl	.L134
+Current line: 	mov	%g1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,48
+Current line checked for propogating: 	bl	.L134
+Current line: 	ldsb	[%o0 + %o1],%o0
+Current line: 	cmp	%o0,48
+Current line: 	bl	.L134
+Current line: 	mov	%g3,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g1,%o1
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,57
+Current line checked for propogating: 	bg	.L134
+Current line: 	mov	%g1,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o0 + %o1],%o0
+Current line checked for propogating: 	cmp	%o0,57
+Current line checked for propogating: 	bg	.L134
+Current line: 	ldsb	[%o0 + %o1],%o0
+Current line: 	cmp	%o0,57
+Current line: 	bg	.L134
+Current line: ! source statement 188
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	smul	%o0,10,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: ! source statement 189
+Current line checked for propogating: 	mov	%g2,%o0
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	smul	%o0,10,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: ! source statement 189
+Current line checked for propogating: 	mov	%g2,%o0
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: ! source statement 189
+Current line: 	mov	%g2,%o0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g3,%o1
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	mov	%g3,%o1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	mov	%g1,%o2
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	mov	%g1,%o2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	add	%o2,1,%o3
+Current line checked for propogating: 	mov	%o3,%g1
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	add	%o2,1,%o3
+Current line: 	mov	%o3,%g1
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ldsb	[%o1 + %o2],%o1
+Current line checked for propogating: 	sub	%o1,48,%o1
+Current line checked for propogating: 	add	%o0,%o1,%o0
+Current line checked for propogating: 	mov	%o0,%g2
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	ldsb	[%o1 + %o2],%o1
+Current line: 	sub	%o1,48,%o1
+Current line: 	add	%o0,%o1,%o0
+Current line: 	mov	%o0,%g2
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ba,a	.L133
+Current line: 	ba,a	.L133
+Current line: ! source statement 191
+Current line: 	mov	%g2,%i0
+GOT MOVE
+Replacee: 
+Replacer: 
+Current line checked for propogating: 	ret
+Current line checked for propogating: 	restore
+Current line: 	ret
+Current line: 	restore
+myatoi       total           32           3
+                 0           26           2
+                 1            6           1
+------------ ----- ------------ -----------
+program      total          256          23
+                 0          205          17
+                 1           35           4
+                 2           12           2
+                 3            4           0
+
+  3 transformations applied by reverse branches phase.
+  3 transformations applied by branch chaining phase.
+---
+  6 transformations applied by all optimization phases.
+
+Number of peeprules is 0, applied 0 times.

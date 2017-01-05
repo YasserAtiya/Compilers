@@ -1,0 +1,14 @@
+function     level instructions memory refs
+------------ ----- ------------ -----------
+mkline       total          110          57
+main         total          114          38
+myatoi       total           32          18
+------------ ----- ------------ -----------
+program      total          256         113
+
+  3 transformations applied by reverse branches phase.
+  3 transformations applied by branch chaining phase.
+---
+  6 transformations applied by all optimization phases.
+
+Number of peeprules is 0, applied 0 times.

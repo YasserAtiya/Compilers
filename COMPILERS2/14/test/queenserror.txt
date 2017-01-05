@@ -1,0 +1,937 @@
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: 
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(down),%o2
+Hoisted from block: 2
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g1
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	mov	%g0,%l0
+New preheader line: 	sethi	%hi(down),%g1
+New preheader block: 1
+Preheader final line: 	sethi	%hi(down),%g1
+New preheader line prev: 	mov	%g0,%l0
+New preheader line prev->next: 	sethi	%hi(down),%g1
+Checking cf for preheaderline
+New move text: 	mov	%g1,%o2
+New move block: 2
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g1,%o2
+New preheader line next: 	add	%o2,%lo(down),%o2
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: 
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(x),%o2
+Hoisted from block: 4
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g1
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	mov	%g0,%l0
+New preheader line: 	sethi	%hi(x),%g1
+New preheader block: 3
+Preheader final line: 	sethi	%hi(x),%g1
+New preheader line prev: 	mov	%g0,%l0
+New preheader line prev->next: 	sethi	%hi(x),%g1
+Checking cf for preheaderline
+New move text: 	mov	%g1,%o2
+New move block: 4
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g1,%o2
+New preheader line next: 	add	%o2,%lo(x),%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:
+Holder: %g1:
+Curline->uses: %g1:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g1,%lo(down),%o2
+Hoisted from block: 2
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %g2
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(down),%g1
+New preheader line: 	add	%g1,%lo(down),%g2
+New preheader block: 1
+Preheader final line: 	add	%g1,%lo(down),%g2
+New preheader line prev: 	sethi	%hi(down),%g1
+New preheader line prev->next: 	add	%g1,%lo(down),%g2
+Checking cf for preheaderline
+New move text: 	mov	%g2,%o2
+New move block: 2
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g2,%o2
+New preheader line next: 	st	%g0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:
+Holder: %g1:
+Curline->uses: %g1:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g1,%lo(x),%o2
+Hoisted from block: 4
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %g2
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(x),%g1
+New preheader line: 	add	%g1,%lo(x),%g2
+New preheader block: 3
+Preheader final line: 	add	%g1,%lo(x),%g2
+New preheader line prev: 	sethi	%hi(x),%g1
+New preheader line prev->next: 	add	%g1,%lo(x),%g2
+Checking cf for preheaderline
+New move text: 	mov	%g2,%o2
+New move block: 4
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g2,%o2
+New preheader line next: 	st	%g0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %g2:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(up),%o2
+Hoisted from block: 2
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g3
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%g1,%lo(down),%g2
+New preheader line: 	sethi	%hi(up),%g3
+New preheader block: 1
+Preheader final line: 	sethi	%hi(up),%g3
+New preheader line prev: 	add	%g1,%lo(down),%g2
+New preheader line prev->next: 	sethi	%hi(up),%g3
+Checking cf for preheaderline
+New move text: 	mov	%g3,%o2
+New move block: 2
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g3,%o2
+New preheader line next: 	add	%o2,%lo(up),%o2
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %g2:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(rows),%o2
+Hoisted from block: 4
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g3
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%g1,%lo(x),%g2
+New preheader line: 	sethi	%hi(rows),%g3
+New preheader block: 3
+Preheader final line: 	sethi	%hi(rows),%g3
+New preheader line prev: 	add	%g1,%lo(x),%g2
+New preheader line prev->next: 	sethi	%hi(rows),%g3
+Checking cf for preheaderline
+New move text: 	mov	%g3,%o2
+New move block: 4
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g3,%o2
+New preheader line next: 	add	%o2,%lo(rows),%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g2:%g3:
+Holder: %g3:
+Curline->uses: %g3:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g3,%lo(up),%o2
+Hoisted from block: 2
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %g4
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(up),%g3
+New preheader line: 	add	%g3,%lo(up),%g4
+New preheader block: 1
+Preheader final line: 	add	%g3,%lo(up),%g4
+New preheader line prev: 	sethi	%hi(up),%g3
+New preheader line prev->next: 	add	%g3,%lo(up),%g4
+Checking cf for preheaderline
+New move text: 	mov	%g4,%o2
+New move block: 2
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g4,%o2
+New preheader line next: 	st	%g0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g2:%g3:
+Holder: %g3:
+Curline->uses: %g3:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g3,%lo(rows),%o2
+Hoisted from block: 4
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %g4
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(rows),%g3
+New preheader line: 	add	%g3,%lo(rows),%g4
+New preheader block: 3
+Preheader final line: 	add	%g3,%lo(rows),%g4
+New preheader line prev: 	sethi	%hi(rows),%g3
+New preheader line prev->next: 	add	%g3,%lo(rows),%g4
+Checking cf for preheaderline
+New move text: 	mov	%g4,%o2
+New move block: 4
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%g4,%o2
+New preheader line next: 	st	%g0,[%o1 + %o2]
+Checking cf for newmove
+function     level instructions memory refs
+------------ ----- ------------ -----------
+main         total           34           4
+                 0           16           0
+                 1           18           4
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(x),%o0
+Hoisted from block: 6
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g1
+Invariant register: %o0
+Checking cf for preheaderline before
+Old Preheader final line: 	mov	1,%l0
+New preheader line: 	sethi	%hi(x),%g1
+New preheader block: 1
+Preheader final line: 	sethi	%hi(x),%g1
+New preheader line prev: 	mov	1,%l0
+New preheader line prev->next: 	sethi	%hi(x),%g1
+Checking cf for preheaderline
+New move text: 	mov	%g1,%o0
+New move block: 6
+New preheader line prev: ! source statement 26
+New preheader line prev->next: 	mov	%g1,%o0
+New preheader line next: 	add	%o0,%lo(x),%o0
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(up),%o1
+Hoisted from block: 3
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g2
+Invariant register: %o1
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(x),%g1
+New preheader line: 	sethi	%hi(up),%g2
+New preheader block: 1
+Preheader final line: 	sethi	%hi(up),%g2
+New preheader line prev: 	sethi	%hi(x),%g1
+New preheader line prev->next: 	sethi	%hi(up),%g2
+Checking cf for preheaderline
+New move text: 	mov	%g2,%o1
+New move block: 3
+New preheader line prev: 	sll	%o0,2,%o0
+New preheader line prev->next: 	mov	%g2,%o1
+New preheader line next: 	add	%o1,%lo(up),%o1
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(down),%o1
+Hoisted from block: 4
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g3
+Invariant register: %o1
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(up),%g2
+New preheader line: 	sethi	%hi(down),%g3
+New preheader block: 1
+Preheader final line: 	sethi	%hi(down),%g3
+New preheader line prev: 	sethi	%hi(up),%g2
+New preheader line prev->next: 	sethi	%hi(down),%g3
+Checking cf for preheaderline
+New move text: 	mov	%g3,%o1
+New move block: 4
+New preheader line prev: 	sll	%o0,2,%o0
+New preheader line prev->next: 	mov	%g3,%o1
+New preheader line next: 	add	%o1,%lo(down),%o1
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(down),%o2
+Hoisted from block: 5
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g4
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(down),%g3
+New preheader line: 	sethi	%hi(down),%g4
+New preheader block: 1
+Preheader final line: 	sethi	%hi(down),%g4
+New preheader line prev: 	sethi	%hi(down),%g3
+New preheader line prev->next: 	sethi	%hi(down),%g4
+Checking cf for preheaderline
+New move text: 	mov	%g4,%o2
+New move block: 5
+New preheader line prev: 	sll	%o1,2,%o1
+New preheader line prev->next: 	mov	%g4,%o2
+New preheader line next: 	add	%o2,%lo(down),%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %l1:
+Holder: %l1:
+Curline->uses: %l1:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%l1,1,%o0
+Hoisted from block: 8
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %g5
+Invariant register: %o0
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(down),%g4
+New preheader line: 	add	%l1,1,%g5
+New preheader block: 1
+Preheader final line: 	add	%l1,1,%g5
+New preheader line prev: 	sethi	%hi(down),%g4
+New preheader line prev->next: 	add	%l1,1,%g5
+Checking cf for preheaderline
+New move text: 	mov	%g5,%o0
+New move block: 8
+New preheader line prev: ! source statement 28
+New preheader line prev->next: 	mov	%g5,%o0
+New preheader line next: 	call	queens,1
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(down),%o2
+Hoisted from block: 9
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g6
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%l1,1,%g5
+New preheader line: 	sethi	%hi(down),%g6
+New preheader block: 1
+Preheader final line: 	sethi	%hi(down),%g6
+New preheader line prev: 	add	%l1,1,%g5
+New preheader line prev->next: 	sethi	%hi(down),%g6
+Checking cf for preheaderline
+New move text: 	mov	%g6,%o2
+New move block: 9
+New preheader line prev: 	sll	%o1,2,%o1
+New preheader line prev->next: 	mov	%g6,%o2
+New preheader line next: 	add	%o2,%lo(down),%o2
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(rows),%o1
+Hoisted from block: 2
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g7
+Invariant register: %o1
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(down),%g6
+New preheader line: 	sethi	%hi(rows),%g7
+New preheader block: 1
+Preheader final line: 	sethi	%hi(rows),%g7
+New preheader line prev: 	sethi	%hi(down),%g6
+New preheader line prev->next: 	sethi	%hi(rows),%g7
+Checking cf for preheaderline
+New move text: 	mov	%g7,%o1
+New move block: 2
+New preheader line prev: 	sll	%l0,2,%o0
+New preheader line prev->next: 	mov	%g7,%o1
+New preheader line next: 	add	%o1,%lo(rows),%o1
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:%g2:%g3:%g4:%g5:%g7:%l1:
+Holder: %g1:
+Curline->uses: %g1:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g1,%lo(x),%o0
+Hoisted from block: 6
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %o3
+Invariant register: %o0
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(rows),%g7
+New preheader line: 	add	%g1,%lo(x),%o3
+New preheader block: 1
+Preheader final line: 	add	%g1,%lo(x),%o3
+New preheader line prev: 	sethi	%hi(rows),%g7
+New preheader line prev->next: 	add	%g1,%lo(x),%o3
+Checking cf for preheaderline
+New move text: 	mov	%o3,%o0
+New move block: 6
+New preheader line prev: ! source statement 26
+New preheader line prev->next: 	mov	%o3,%o0
+New preheader line next: 	call	print,1
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:%g2:%g3:%g4:%g5:%g7:%l1:
+Holder: %g2:
+Curline->uses: %g2:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g2,%lo(up),%o1
+Hoisted from block: 3
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %o4
+Invariant register: %o1
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%g1,%lo(x),%o3
+New preheader line: 	add	%g2,%lo(up),%o4
+New preheader block: 1
+Preheader final line: 	add	%g2,%lo(up),%o4
+New preheader line prev: 	add	%g1,%lo(x),%o3
+New preheader line prev->next: 	add	%g2,%lo(up),%o4
+Checking cf for preheaderline
+New move text: 	mov	%o4,%o1
+New move block: 3
+New preheader line prev: 	sll	%o0,2,%o0
+New preheader line prev->next: 	mov	%o4,%o1
+New preheader line next: 	ld	[%o0 + %o1],%o0
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:%g2:%g3:%g4:%g5:%g7:%l1:
+Holder: %g3:
+Curline->uses: %g3:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g3,%lo(down),%o1
+Hoisted from block: 4
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %o5
+Invariant register: %o1
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%g2,%lo(up),%o4
+New preheader line: 	add	%g3,%lo(down),%o5
+New preheader block: 1
+Preheader final line: 	add	%g3,%lo(down),%o5
+New preheader line prev: 	add	%g2,%lo(up),%o4
+New preheader line prev->next: 	add	%g3,%lo(down),%o5
+Checking cf for preheaderline
+New move text: 	mov	%o5,%o1
+New move block: 4
+New preheader line prev: 	sll	%o0,2,%o0
+New preheader line prev->next: 	mov	%o5,%o1
+New preheader line next: 	ld	[%o0 + %o1],%o0
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:%g2:%g3:%g4:%g5:%g7:%l1:
+Holder: %g4:
+Curline->uses: %g4:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g4,%lo(down),%o2
+Hoisted from block: 5
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %l2
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%g3,%lo(down),%o5
+New preheader line: 	add	%g4,%lo(down),%l2
+New preheader block: 1
+Preheader final line: 	add	%g4,%lo(down),%l2
+New preheader line prev: 	add	%g3,%lo(down),%o5
+New preheader line prev->next: 	add	%g4,%lo(down),%l2
+Checking cf for preheaderline
+New move text: 	mov	%l2,%o2
+New move block: 5
+New preheader line prev: 	sll	%o1,2,%o1
+New preheader line prev->next: 	mov	%l2,%o2
+New preheader line next: 	st	%o0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %g1:%g2:%g3:%g4:%g5:%g7:%l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(up),%o2
+Hoisted from block: 9
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %l3
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%g4,%lo(down),%l2
+New preheader line: 	sethi	%hi(up),%l3
+New preheader block: 1
+Preheader final line: 	sethi	%hi(up),%l3
+New preheader line prev: 	add	%g4,%lo(down),%l2
+New preheader line prev->next: 	sethi	%hi(up),%l3
+Checking cf for preheaderline
+New move text: 	mov	%l3,%o2
+New move block: 9
+New preheader line prev: 	sll	%o1,2,%o1
+New preheader line prev->next: 	mov	%l3,%o2
+New preheader line next: 	add	%o2,%lo(up),%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:%g2:%g3:%g4:%g5:%g7:%l1:
+Holder: %g7:
+Curline->uses: %g7:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g7,%lo(rows),%o1
+Hoisted from block: 2
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %l4
+Invariant register: %o1
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(up),%l3
+New preheader line: 	add	%g7,%lo(rows),%l4
+New preheader block: 1
+Preheader final line: 	add	%g7,%lo(rows),%l4
+New preheader line prev: 	sethi	%hi(up),%l3
+New preheader line prev->next: 	add	%g7,%lo(rows),%l4
+Checking cf for preheaderline
+New move text: 	mov	%l4,%o1
+New move block: 2
+New preheader line prev: 	sll	%l0,2,%o0
+New preheader line prev->next: 	mov	%l4,%o1
+New preheader line next: 	ld	[%o0 + %o1],%o0
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l3:%l4:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(up),%o2
+Hoisted from block: 5
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %l5
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%g7,%lo(rows),%l4
+New preheader line: 	sethi	%hi(up),%l5
+New preheader block: 1
+Preheader final line: 	sethi	%hi(up),%l5
+New preheader line prev: 	add	%g7,%lo(rows),%l4
+New preheader line prev->next: 	sethi	%hi(up),%l5
+Checking cf for preheaderline
+New move text: 	mov	%l5,%o2
+New move block: 5
+New preheader line prev: 	sll	%o1,2,%o1
+New preheader line prev->next: 	mov	%l5,%o2
+New preheader line next: 	add	%o2,%lo(up),%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l3:%l4:
+Holder: %l3:
+Curline->uses: %l3:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%l3,%lo(up),%o2
+Hoisted from block: 9
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %l6
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(up),%l5
+New preheader line: 	add	%l3,%lo(up),%l6
+New preheader block: 1
+Preheader final line: 	add	%l3,%lo(up),%l6
+New preheader line prev: 	sethi	%hi(up),%l5
+New preheader line prev->next: 	add	%l3,%lo(up),%l6
+Checking cf for preheaderline
+New move text: 	mov	%l6,%o2
+New move block: 9
+New preheader line prev: 	sll	%o1,2,%o1
+New preheader line prev->next: 	mov	%l6,%o2
+New preheader line next: 	st	%g0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l5:%l6:
+Holder: %l5:
+Curline->uses: %l5:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%l5,%lo(up),%o2
+Hoisted from block: 5
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %l7
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%l3,%lo(up),%l6
+New preheader line: 	add	%l5,%lo(up),%l7
+New preheader block: 1
+Preheader final line: 	add	%l5,%lo(up),%l7
+New preheader line prev: 	add	%l3,%lo(up),%l6
+New preheader line prev->next: 	add	%l5,%lo(up),%l7
+Checking cf for preheaderline
+New move text: 	mov	%l7,%o2
+New move block: 5
+New preheader line prev: 	sll	%o1,2,%o1
+New preheader line prev->next: 	mov	%l7,%o2
+New preheader line next: 	st	%o0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l5:%l6:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(rows),%o2
+Hoisted from block: 9
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %i0
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%l5,%lo(up),%l7
+New preheader line: 	sethi	%hi(rows),%i0
+New preheader block: 1
+Preheader final line: 	sethi	%hi(rows),%i0
+New preheader line prev: 	add	%l5,%lo(up),%l7
+New preheader line prev->next: 	sethi	%hi(rows),%i0
+Checking cf for preheaderline
+New move text: 	mov	%i0,%o2
+New move block: 9
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%i0,%o2
+New preheader line next: 	add	%o2,%lo(rows),%o2
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l6:%l7:%i0:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(rows),%o2
+Hoisted from block: 5
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %i1
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(rows),%i0
+New preheader line: 	sethi	%hi(rows),%i1
+New preheader block: 1
+Preheader final line: 	sethi	%hi(rows),%i1
+New preheader line prev: 	sethi	%hi(rows),%i0
+New preheader line prev->next: 	sethi	%hi(rows),%i1
+Checking cf for preheaderline
+New move text: 	mov	%i1,%o2
+New move block: 5
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%i1,%o2
+New preheader line next: 	add	%o2,%lo(rows),%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l6:%l7:%i0:
+Holder: %i0:
+Curline->uses: %i0:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%i0,%lo(rows),%o2
+Hoisted from block: 9
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %i2
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(rows),%i1
+New preheader line: 	add	%i0,%lo(rows),%i2
+New preheader block: 1
+Preheader final line: 	add	%i0,%lo(rows),%i2
+New preheader line prev: 	sethi	%hi(rows),%i1
+New preheader line prev->next: 	add	%i0,%lo(rows),%i2
+Checking cf for preheaderline
+New move text: 	mov	%i2,%o2
+New move block: 9
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%i2,%o2
+New preheader line next: 	st	%g0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l6:%l7:%i1:%i2:
+Holder: %i1:
+Curline->uses: %i1:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%i1,%lo(rows),%o2
+Hoisted from block: 5
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %i3
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%i0,%lo(rows),%i2
+New preheader line: 	add	%i1,%lo(rows),%i3
+New preheader block: 1
+Preheader final line: 	add	%i1,%lo(rows),%i3
+New preheader line prev: 	add	%i0,%lo(rows),%i2
+New preheader line prev->next: 	add	%i1,%lo(rows),%i3
+Checking cf for preheaderline
+New move text: 	mov	%i3,%o2
+New move block: 5
+New preheader line prev: 	sll	%l0,2,%o1
+New preheader line prev->next: 	mov	%i3,%o2
+New preheader line next: 	st	%o0,[%o1 + %o2]
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l6:%l7:%i2:%i3:
+Holder: %l1:
+Curline->uses: %l1:
+Checking cf before
+
+Hoisting
+Hoisted line: 	sll	%l1,2,%o1
+Hoisted from block: 5
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %i4
+Invariant register: %o1
+Checking cf for preheaderline before
+Old Preheader final line: 	add	%i1,%lo(rows),%i3
+New preheader line: 	sll	%l1,2,%i4
+New preheader block: 1
+Preheader final line: 	sll	%l1,2,%i4
+New preheader line prev: 	add	%i1,%lo(rows),%i3
+New preheader line prev->next: 	sll	%l1,2,%i4
+Checking cf for preheaderline
+New move text: 	mov	%i4,%o1
+New move block: 5
+New preheader line prev: ! source statement 24
+New preheader line prev->next: 	mov	%i4,%o1
+New preheader line next: 	sethi	%hi(x),%o2
+Checking cf for newmove
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(x),%o2
+Hoisted from block: 5
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %i5
+Invariant register: %o2
+Checking cf for preheaderline before
+Old Preheader final line: 	sll	%l1,2,%i4
+New preheader line: 	sethi	%hi(x),%i5
+New preheader block: 1
+Preheader final line: 	sethi	%hi(x),%i5
+New preheader line prev: 	sll	%l1,2,%i4
+New preheader line prev->next: 	sethi	%hi(x),%i5
+Checking cf for preheaderline
+New move text: 	mov	%i5,%o2
+New move block: 5
+New preheader line prev: ! source statement 24
+New preheader line prev->next: 	mov	%i5,%o2
+New preheader line next: 	add	%o2,%lo(x),%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g5:%o3:%o4:%o5:%l1:%l2:%l4:%l6:%l7:%i2:%i3:%i4:%i5:
+Holder: %i5:
+Curline->uses: %i5:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%i5,%lo(x),%o2
+Hoisted from block: 5
+Hoisted line items: 4
+Hoisted line type: 0
+queens       total           84          10
+                 0           26           0
+                 1           58          10
+varcommon(holder,holder): 0
+varcommon(curline->uses,curline->uses): 0
+Inv regs: %l1:
+Holder: 
+Curline->uses: 
+Checking cf before
+
+Hoisting
+Hoisted line: 	sethi	%hi(.L43),%o0
+Hoisted from block: 2
+Hoisted line items: 3
+Hoisted line type: 0
+New register: %g1
+Invariant register: %o0
+Checking cf for preheaderline before
+Old Preheader final line: 	mov	1,%l0
+New preheader line: 	sethi	%hi(.L43),%g1
+New preheader block: 1
+Preheader final line: 	sethi	%hi(.L43),%g1
+New preheader line prev: 	mov	1,%l0
+New preheader line prev->next: 	sethi	%hi(.L43),%g1
+Checking cf for preheaderline
+New move text: 	mov	%g1,%o0
+New move block: 2
+New preheader line prev: ! source statement 39
+New preheader line prev->next: 	mov	%g1,%o0
+New preheader line next: 	sll	%l0,2,%o2
+Checking cf for newmove
+varcommon(holder,holder): 1
+varcommon(curline->uses,curline->uses): 1
+Inv regs: %g1:%l1:
+Holder: %g1:
+Curline->uses: %g1:
+Checking cf before
+
+Hoisting
+Hoisted line: 	add	%g1,%lo(.L43),%o0
+Hoisted from block: 2
+Hoisted line items: 4
+Hoisted line type: 0
+New register: %g2
+Invariant register: %o0
+Checking cf for preheaderline before
+Old Preheader final line: 	sethi	%hi(.L43),%g1
+New preheader line: 	add	%g1,%lo(.L43),%g2
+New preheader block: 1
+Preheader final line: 	add	%g1,%lo(.L43),%g2
+New preheader line prev: 	sethi	%hi(.L43),%g1
+New preheader line prev->next: 	add	%g1,%lo(.L43),%g2
+Checking cf for preheaderline
+New move text: 	mov	%g2,%o0
+New move block: 2
+New preheader line prev: 	sll	%l0,2,%o2
+New preheader line prev->next: 	mov	%g2,%o0
+New preheader line next: 	ld	[%l1 + %o2],%o1
+Checking cf for newmove
+print        total           21           1
+                 0           11           0
+                 1           10           1
+------------ ----- ------------ -----------
+program      total          139          15
+                 0           53           0
+                 1           86          15
+
+  4 transformations applied by reverse branches phase.
+ 57 transformations applied by dead assignment elimination phase.
+ 32 transformations applied by loop-invariant code motion phase.
+ 65 transformations applied by copy propagation phase.
+ 11 transformations applied by peephole optimization phase.
+  5 transformations applied by register allocation phase.
+---
+174 transformations applied by all optimization phases.
+
+Number of peeprules is 10, applied 11 times.
+Peephole rule 2 applied 5 times.
+Peephole rule 3 applied 2 times.
+Peephole rule 7 applied 4 times.

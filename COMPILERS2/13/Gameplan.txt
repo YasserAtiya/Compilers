@@ -1,0 +1,16 @@
+Search through block for register to register copy
+   Iterate through block,
+      if we have a move instruction,
+         take its sets and uses and places them in two separate varstates
+   Loop through rest of block, and see if we used found uses varstate, if so replace wiht found set varstate
+         If regexists in line's uses,
+            minus found uses from it,
+            union found set varstate with current line uses
+
+
+Loop through every line in program
+   Pick up sets
+   Check uses
+      On every use, subtract the uses from our varstate
+      On every set, if that reg/var is in our varstate
+         Call function to go backwards from line until reg/var assignment is found, then delete that line

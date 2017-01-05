@@ -1,0 +1,2513 @@
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sub	%o1,1,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sll	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sethi	%hi(smon),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L43)
+ curline: %hi(smon)
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L43),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L43),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L44),%o0
+ curline line: 	sethi	%hi(dayw),%o1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L44)
+ curline: %hi(dayw)
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	add	%o0,%lo(.L44),%o0
+
+Comparing default line: 	add	%o0,%lo(.L44),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o1
+
+Comparing default line: 	add	%o1,%lo(string),%o1
+ curline line: 	add	%o0,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o0
+
+Comparing default line: 	add	%o1,%lo(string),%o1
+ curline line: 	add	%o0,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L64),%o0
+ curline line: 	sll	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L64),%o0
+ curline line: 	sethi	%hi(smon),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(smon)
+
+Comparing default line: 	sethi	%hi(.L64),%o0
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L64),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L64),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L65),%o0
+ curline line: 	add	%o1,1,%o1
+
+Comparing default line: 	sethi	%hi(.L65),%o0
+ curline line: 	sll	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L65),%o0
+ curline line: 	sethi	%hi(smon),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(smon)
+
+Comparing default line: 	sethi	%hi(.L65),%o0
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L65),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L65),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L66),%o0
+ curline line: 	add	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L66),%o0
+ curline line: 	sll	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L66),%o0
+ curline line: 	sethi	%hi(smon),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(smon)
+
+Comparing default line: 	sethi	%hi(.L66),%o0
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L66),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L66),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L67),%o0
+ curline line: 	sethi	%hi(dayw),%o1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(dayw)
+
+Comparing default line: 	sethi	%hi(.L67),%o0
+ curline line: 	sethi	%hi(dayw),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(dayw)
+
+Comparing default line: 	sethi	%hi(.L67),%o0
+ curline line: 	sethi	%hi(dayw),%o3
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(dayw)
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	sethi	%hi(dayw),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(dayw)
+ curline: %hi(dayw)
+match
+SUCCESS
+
+Comparing default line: 	sethi	%hi(dayw),%o3
+ curline line: 	add	%o0,%lo(.L67),%o0
+
+Comparing default line: 	sethi	%hi(dayw),%o3
+ curline line: 	add	%o1,%lo(dayw),%o1
+
+Comparing default line: 	sethi	%hi(dayw),%o3
+ curline line: 	add	%o2,%lo(dayw),%o2
+
+Comparing default line: 	add	%o0,%lo(.L67),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o1
+
+Comparing default line: 	add	%o0,%lo(.L67),%o0
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o2
+
+Comparing default line: 	add	%o0,%lo(.L67),%o0
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o3
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o2
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o3
+
+Comparing default line: 	add	%o2,%lo(dayw),%o2
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o3
+
+Comparing default line: 	sethi	%hi(string),%o2
+ curline line: 	add	%o0,1,%o0
+
+Comparing default line: 	add	%o0,1,%o0
+ curline line: 	add	%o2,%lo(string),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o2
+
+Comparing default line: 	add	%o2,%lo(string),%o2
+ curline line: 	add	%o0,2,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	add	%o0,2,%o0
+ curline line: 	add	%o2,23,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o2
+
+Comparing default line: 	add	%o2,%lo(string),%o2
+ curline line: 	add	%o0,3,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	add	%o0,3,%o0
+ curline line: 	add	%o2,46,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o2
+
+Comparing default line: 	add	%o1,%lo(string),%o1
+ curline line: 	add	%o0,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L65),%l5
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L65)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i3
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i3
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i3
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i3
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(string),%i0
+ curline line: 	sethi	%hi(string),%i1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(string)
+ curline: %hi(string)
+match
+SUCCESS
+
+Comparing default line: 	sethi	%hi(string),%i2
+ curline line: 	sethi	%hi(string),%i3
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(string)
+ curline: %hi(string)
+match
+SUCCESS
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sub	%l3,1,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sll	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sethi	%hi(smon),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L43)
+ curline: %hi(smon)
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L43),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L43),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L44),%o0
+ curline line: 	sethi	%hi(dayw),%o1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L44)
+ curline: %hi(dayw)
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	add	%o0,%lo(.L44),%o0
+
+Comparing default line: 	add	%o0,%lo(.L44),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o1
+
+Comparing default line: 	add	%o1,%lo(string),%o1
+ curline line: 	add	%l1,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l1
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L65),%l5
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L65)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(string),%i0
+ curline line: 	sethi	%hi(string),%i2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(string)
+ curline: %hi(string)
+match
+SUCCESS
+
+Comparing default line: 	add	%o1,%lo(string),%o1
+ curline line: 	add	%l2,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l2
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	add	%o0,%lo(.L64),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L64),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L65),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L65),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L66),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L66),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	sethi	%hi(dayw),%o3
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(dayw)
+ curline: %hi(dayw)
+match
+SUCCESS
+
+Comparing default line: 	add	%o0,%lo(.L67),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o1
+
+Comparing default line: 	add	%o0,%lo(.L67),%o0
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o2
+
+Comparing default line: 	add	%o0,%lo(.L67),%o0
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o3
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o2
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o3
+
+Comparing default line: 	add	%o2,%lo(dayw),%o2
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o3
+
+Comparing default line: 	add	%l1,1,%o0
+ curline line: 	add	%o2,%lo(string),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %o2
+
+Comparing default line: 	add	%o2,%lo(string),%o2
+ curline line: 	add	%l1,2,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l1
+
+Comparing default line: 	add	%l1,2,%o0
+ curline line: 	add	%o2,23,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %o2
+
+Comparing default line: 	add	%o2,%lo(string),%o2
+ curline line: 	add	%l1,3,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l1
+
+Comparing default line: 	add	%l1,3,%o0
+ curline line: 	add	%o2,46,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %o2
+
+Comparing default line: 	add	%o1,%lo(string),%o1
+ curline line: 	add	%l2,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l2
+
+Comparing default line: 	sethi	%hi(string),%l0
+ curline line: 	add	%l0,%lo(string),%l2
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L65),%l5
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L65)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(string),%i0
+ curline line: 	sethi	%hi(string),%i4
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(string)
+ curline: %hi(string)
+match
+SUCCESS
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sub	%l3,1,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sll	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sethi	%hi(smon),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L43)
+ curline: %hi(smon)
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L43),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L43),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L44),%o0
+ curline line: 	sethi	%hi(dayw),%o1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L44)
+ curline: %hi(dayw)
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	add	%o0,%lo(.L44),%o0
+
+Comparing default line: 	add	%o0,%lo(.L44),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o1
+
+Comparing default line: 	sethi	%hi(string),%l0
+ curline line: 	add	%l0,%lo(string),%l2
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L65),%l5
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L65)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	add	%l4,%lo(.L64),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%l4,%lo(.L64),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l4
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%l5,%lo(.L65),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%l5,%lo(.L65),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l5
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%l6,%lo(.L66),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%l6,%lo(.L66),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l6
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	add	%l7,%lo(.L67),%o0
+
+Comparing default line: 	add	%l7,%lo(.L67),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %o1
+
+Comparing default line: 	add	%l7,%lo(.L67),%o0
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %o2
+
+Comparing default line: 	add	%l7,%lo(.L67),%o0
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %o3
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o2
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o3
+
+Comparing default line: 	add	%o2,%lo(dayw),%o2
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o3
+
+Comparing default line: 	add	%l1,1,%o0
+ curline line: 	add	%i0,%lo(string),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %i0
+
+Comparing default line: 	add	%i1,%lo(string),%o2
+ curline line: 	add	%l1,2,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %i1
+ curline: %l1
+
+Comparing default line: 	add	%l1,2,%o0
+ curline line: 	add	%o2,23,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %o2
+
+Comparing default line: 	add	%i2,%lo(string),%o2
+ curline line: 	add	%l1,3,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %i2
+ curline: %l1
+
+Comparing default line: 	add	%l1,3,%o0
+ curline line: 	add	%o2,46,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %o2
+
+Comparing default line: 	sethi	%hi(string),%l0
+ curline line: 	add	%l0,%lo(string),%l2
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L65),%l5
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L65)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sub	%l3,1,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sll	%o1,2,%o1
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	sethi	%hi(smon),%o2
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L43)
+ curline: %hi(smon)
+
+Comparing default line: 	sethi	%hi(.L43),%o0
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o0,%lo(.L43),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%o0,%lo(.L43),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	sethi	%hi(.L44),%o0
+ curline line: 	sethi	%hi(dayw),%o1
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L44)
+ curline: %hi(dayw)
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	add	%o0,%lo(.L44),%o0
+
+Comparing default line: 	add	%o0,%lo(.L44),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o1
+
+Comparing default line: 	sethi	%hi(string),%l0
+ curline line: 	add	%l0,%lo(string),%l2
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L65),%l5
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L65)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L64),%l4
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L64)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L66),%l6
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L66)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L65),%l5
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L65)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(.L67),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(.L67)
+
+Comparing default line: 	sethi	%hi(.L66),%l6
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L66)
+ curline: %hi(string)
+
+Comparing default line: 	sethi	%hi(.L67),%l7
+ curline line: 	sethi	%hi(string),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(.L67)
+ curline: %hi(string)
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%l1,2,%o1
+ curline line: 	add	%l4,%lo(.L64),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%l4,%lo(.L64),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l4
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%l5,%lo(.L65),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%l5,%lo(.L65),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l5
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	sethi	%hi(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%o2,%lo(smon),%o2
+
+Comparing default line: 	sll	%o1,2,%o1
+ curline line: 	add	%l6,%lo(.L66),%o0
+
+Comparing default line: 	add	%o2,%lo(smon),%o2
+ curline line: 	add	%l6,%lo(.L66),%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l6
+
+Comparing default line: 	sethi	%hi(dayw),%o1
+ curline line: 	add	%l7,%lo(.L67),%o0
+
+Comparing default line: 	add	%l7,%lo(.L67),%o0
+ curline line: 	add	%o1,%lo(dayw),%o1
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %o1
+
+Comparing default line: 	add	%l7,%lo(.L67),%o0
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %o2
+
+Comparing default line: 	add	%l7,%lo(.L67),%o0
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %o3
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o2,%lo(dayw),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o2
+
+Comparing default line: 	add	%o1,%lo(dayw),%o1
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o3
+
+Comparing default line: 	add	%o2,%lo(dayw),%o2
+ curline line: 	add	%o3,%lo(dayw),%o3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o3
+
+Comparing default line: 	add	%l1,1,%o0
+ curline line: 	add	%i0,%lo(string),%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %i0
+
+Comparing default line: 	add	%i1,%lo(string),%o2
+ curline line: 	add	%l1,2,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %i1
+ curline: %l1
+
+Comparing default line: 	add	%l1,2,%o0
+ curline line: 	add	%o2,23,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %o2
+
+Comparing default line: 	add	%i2,%lo(string),%o2
+ curline line: 	add	%l1,3,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %i2
+ curline: %l1
+
+Comparing default line: 	add	%l1,3,%o0
+ curline line: 	add	%o2,46,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l1
+ curline: %o2
+function     level instructions memory refs
+------------ ----- ------------ -----------
+main         total          207           8
+                 0          118           4
+                 1           72           3
+                 2           17           1
+number       total           28           1
+                 0            9           0
+                 1           19           1
+pstr         total           44           4
+                 0           16           1
+                 1           28           3
+
+Comparing default line: 	add	%o1,%lo(mon),%o1
+ curline line: 	add	%o0,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o0
+
+Comparing default line: 	add	%o2,%lo(mon),%o2
+ curline line: 	add	%o0,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	add	%o2,%lo(mon),%o2
+ curline line: 	add	%o0,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %o0
+
+Comparing default line: 	smul	%o1,3,%o1
+ curline line: 	add	%o0,%o1,%o0
+
+Comparing default line: 	add	%o1,%lo(mon),%o1
+ curline line: 	add	%o0,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o0
+
+Comparing default line: 	add	%o0,48,%o0
+ curline line: 	add	%o1,1,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %o1
+
+Comparing default line: 	add	%o1,1,%o2
+ curline line: 	add	%o0,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o0
+
+Comparing default line: 	add	%o1,1,%o2
+ curline line: 	add	%o0,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %o0
+
+Comparing default line: 	smul	%l0,3,%o1
+ curline line: 	add	%l2,%o1,%o0
+
+Comparing default line: 	smul	%l0,3,%o1
+ curline line: 	sethi	%hi(mon),%l4
+
+Comparing default line: 	smul	%l0,3,%o1
+ curline line: 	sethi	%hi(mon),%l7
+
+Comparing default line: 	smul	%l0,3,%o1
+ curline line: 	sethi	%hi(mon),%i0
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	sethi	%hi(mon),%l7
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(mon)
+ curline: %hi(mon)
+match
+SUCCESS
+
+Comparing default line: 	add	%o1,%lo(mon),%o1
+ curline line: 	add	%l4,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l4
+
+Comparing default line: 	add	%o2,%lo(mon),%o2
+ curline line: 	add	%l0,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l0
+
+Comparing default line: 	add	%o2,%lo(mon),%o2
+ curline line: 	add	%l1,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o2
+ curline: %l1
+
+Comparing default line: 	smul	%l0,3,%o1
+ curline line: 	add	%l2,%o1,%o0
+
+Comparing default line: 	smul	%l0,3,%o1
+ curline line: 	sethi	%hi(mon),%l4
+
+Comparing default line: 	smul	%l0,3,%o1
+ curline line: 	sethi	%hi(mon),%i0
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	sethi	%hi(mon),%i0
+Item: 0
+Comparing default: sethi
+ curline: sethi
+match
+Item: 1
+Comparing default: %hi(mon)
+ curline: %hi(mon)
+match
+SUCCESS
+
+Comparing default line: 	add	%o1,%lo(mon),%o1
+ curline line: 	add	%l3,%o1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l3
+
+Comparing default line: 	add	%o0,48,%o0
+ curline line: 	add	%l2,1,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %l2
+
+Comparing default line: 	add	%l2,1,%o2
+ curline line: 	add	%o2,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l2
+ curline: %o2
+
+Comparing default line: 	sethi	%hi(mon),%g1
+ curline line: 	add	%g1,%lo(mon),%g2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i1
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l7,%lo(mon),%i2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%i0,%lo(mon),%i3
+
+Comparing default line: 	add	%l4,%lo(mon),%i1
+ curline line: 	add	%l7,%lo(mon),%i2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l4
+ curline: %l7
+
+Comparing default line: 	add	%l4,%lo(mon),%i1
+ curline line: 	add	%i0,%lo(mon),%i3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l4
+ curline: %i0
+
+Comparing default line: 	add	%l7,%lo(mon),%i2
+ curline line: 	add	%i0,%lo(mon),%i3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %i0
+
+Comparing default line: 	add	%o1,%lo(mon),%o1
+ curline line: 	add	%l4,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l4
+
+Comparing default line: 	sethi	%hi(mon),%g1
+ curline line: 	add	%g1,%lo(mon),%g2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i1
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l7,%lo(mon),%i2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%i0,%lo(mon),%i3
+
+Comparing default line: 	add	%l4,%lo(mon),%i1
+ curline line: 	add	%l7,%lo(mon),%i2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l4
+ curline: %l7
+
+Comparing default line: 	add	%l4,%lo(mon),%i1
+ curline line: 	add	%i0,%lo(mon),%i3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l4
+ curline: %i0
+
+Comparing default line: 	add	%l7,%lo(mon),%i2
+ curline line: 	add	%i0,%lo(mon),%i3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l7
+ curline: %i0
+
+Comparing default line: 	add	%o0,48,%o0
+ curline line: 	add	%l2,1,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %l2
+
+Comparing default line: 	add	%l2,1,%o2
+ curline line: 	add	%o2,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l2
+ curline: %o2
+
+Comparing default line: 	sethi	%hi(mon),%g1
+ curline line: 	add	%g1,%lo(mon),%g2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i1
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i3
+
+Comparing default line: 	add	%l4,%lo(mon),%i1
+ curline line: 	add	%l4,%lo(mon),%i2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l4
+ curline: %l4
+match
+Item: 2
+Comparing default: %lo(mon)
+ curline: %lo(mon)
+match
+SUCCESS
+
+Comparing default line: 	add	%o1,%lo(mon),%o1
+ curline line: 	add	%l4,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l4
+
+Comparing default line: 	sethi	%hi(mon),%g1
+ curline line: 	add	%g1,%lo(mon),%g2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i1
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i3
+
+Comparing default line: 	add	%l4,%lo(mon),%i1
+ curline line: 	add	%l4,%lo(mon),%i3
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l4
+ curline: %l4
+match
+Item: 2
+Comparing default: %lo(mon)
+ curline: %lo(mon)
+match
+SUCCESS
+
+Comparing default line: 	add	%o0,48,%o0
+ curline line: 	add	%l2,1,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %l2
+
+Comparing default line: 	add	%l2,1,%o2
+ curline line: 	add	%o2,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l2
+ curline: %o2
+
+Comparing default line: 	sethi	%hi(mon),%g1
+ curline line: 	add	%g1,%lo(mon),%g2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i1
+
+Comparing default line: 	add	%o1,%lo(mon),%o1
+ curline line: 	add	%l4,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o1
+ curline: %l4
+
+Comparing default line: 	sethi	%hi(mon),%g1
+ curline line: 	add	%g1,%lo(mon),%g2
+
+Comparing default line: 	sethi	%hi(mon),%l4
+ curline line: 	add	%l4,%lo(mon),%i1
+
+Comparing default line: 	add	%o0,48,%o0
+ curline line: 	add	%l2,1,%o2
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %o0
+ curline: %l2
+
+Comparing default line: 	add	%l2,1,%o2
+ curline line: 	add	%o2,1,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l2
+ curline: %o2
+cal          total          122          11
+                 0           66           4
+                 1           56           7
+
+Comparing default line: 	add	%l0,4,%l0
+ curline line: 	add	%o0,3,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %l0
+ curline: %o0
+
+Comparing default line: 	add	%i0,4,%l0
+ curline line: 	add	%i0,3,%o0
+Item: 0
+Comparing default: add
+ curline: add
+match
+Item: 1
+Comparing default: %i0
+ curline: %i0
+match
+Item: 2
+Comparing default: 4
+ curline: 3
+jan1         total           36           0
+------------ ----- ------------ -----------
+program      total          437          24
+                 0          245           9
+                 1          175          14
+                 2           17           1
+
+ 15 transformations applied by reverse branches phase.
+  6 transformations applied by branch chaining phase.
+ 97 transformations applied by dead assignment elimination phase.
+ 10 transformations applied by local cse phase.
+ 24 transformations applied by loop-invariant code motion phase.
+120 transformations applied by copy propagation phase.
+ 24 transformations applied by register allocation phase.
+  3 transformations applied by unreachable code elimination phase.
+---
+299 transformations applied by all optimization phases.
+
+Number of peeprules is 10, applied 0 times.

@@ -1,0 +1,606 @@
+.fp 5 CBI
+.ft CR
+.nf
+\f(CI/****************************************
+*										*
+*	Yasser Atiya						*
+*	COP5621								*
+*	Asg 1 (Scanner for C Language)		*
+*	g++ -g -o cscan cscan.cpp			*
+*										*
+*****************************************/
+
+
+\f(CR#include <iostream>
+#include <stdio.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <iomanip>
+using namespace std;
+
+
+\f(CBstruct\f(CR Token{
+
+	Token()													
+	{
+		count = \f51\f(CR;
+		isident = false;
+		isstring = false;
+		isnumber = false;
+		ischarliteral = false;
+	}
+
+	\f(CBint\f(CR count;												
+	string contents;										
+	bool isident, isstring, isnumber, ischarliteral;		
+};
+
+
+string GlobalWord;											
+\f(CBint\f(CR line = \f51\f(CR;											
+
+
+vector<Token> Tokens;										
+vector<Token>::iterator itr;								
+
+
+\f(CBvoid\f(CR Parse();												
+\f(CBvoid\f(CR Print();												
+\f(CBvoid\f(CR AddtoVector(Token t);									
+bool isOneCharToken(\f(CBchar\f(CR c);								
+bool isTwoCharToken(\f(CBchar\f(CR c, \f(CBchar\f(CR c\f52\f(CR);						
+bool isTwoorThreeCharToken(\f(CBchar\f(CR c);							
+bool isNumber(\f(CBchar\f(CR c);										
+bool isIdentifier(\f(CBchar\f(CR c);									
+bool isCharLiteral(\f(CBchar\f(CR c);									
+bool isString(\f(CBchar\f(CR c);										
+\f(CBvoid\f(CR SortVector();											
+\f(CBvoid\f(CR IgnoreComment(\f(CBchar\f(CR c);									
+
+
+\f(CBint\f(CR main()													
+{
+	Parse();												
+	Print();												
+}
+
+\f(CBvoid\f(CR Parse()												
+{
+	string word;											
+	\f(CBchar\f(CR c;													
+
+	\f(CBwhile\f(CR(!cin.eof())										
+	{
+		GlobalWord = \fB"\0"\f(CR;
+		Token* t = new Token();								
+
+
+		cin.get(c);											
+
+
+
+		\f(CBif\f(CR(c == \fI'\\n'\f(CR)										
+		{
+			line++;												
+
+			\f(CBcontinue\f(CR;											
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(isspace(c))									
+		{
+
+			\f(CBcontinue\f(CR;											
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(isTwoCharToken(c,cin.peek()))				
+		{
+			word = c;											
+			cin.get(c);
+			word.push_back(c);
+
+		}		
+		\f(CBelse\f(CR \f(CBif\f(CR(isTwoorThreeCharToken(c))					
+		{
+			word = GlobalWord;									
+
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(isOneCharToken(c))							
+		{
+			word = c;											
+
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(isNumber(c))								
+		{
+			word = GlobalWord;									
+			t->isnumber = true;									
+
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(isIdentifier(c))							
+		{
+			word = GlobalWord;									
+			t->isident = true;									
+
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(isString(c))								
+		{
+			word = GlobalWord;									
+			t->isstring = true;									
+
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(isCharLiteral(c))							
+		{
+			word = GlobalWord;									
+			t->ischarliteral = true;							
+
+		}
+		\f(CBelse\f(CR												
+		{
+			\f(CBif\f(CR(c == \fI'/'\f(CR)										
+			{
+
+				IgnoreComment(c);								
+				\f(CBcontinue\f(CR;										
+			}
+			\f(CBelse\f(CR \f(CBif\f(CR(isspace(GlobalWord[\f50\f(CR]))
+				\f(CBcontinue\f(CR;
+			\f(CBelse\f(CR											
+			{
+				cerr << \fB"illegal character: "\f(CR << c  
+				<< \fB" on line "\f(CR << line << endl;	
+				\f(CBcontinue\f(CR;										
+			}
+		}
+
+		t->contents = word;									
+
+		AddtoVector(*t);									
+		
+	}
+}
+
+\f(CBvoid\f(CR AddtoVector(Token t)									
+{
+	cout << t.contents << endl;
+	\f(CBfor\f(CR(itr = Tokens.begin(); itr != Tokens.end(); itr++)		
+	{
+
+
+		\f(CBif\f(CR(t.contents == itr->contents)								
+		{
+			\f(CBif\f(CR(itr->isident || itr->isnumber 
+				|| itr->ischarliteral || itr->isstring)	
+				\f(CBbreak\f(CR;													
+
+			itr->count++;											
+
+
+			\f(CBreturn\f(CR;													
+		}
+	}
+	
+
+	Tokens.push_back(t);										
+
+}
+
+\f(CBvoid\f(CR Print()												
+{
+	Token t\f51\f(CR,t\f52\f(CR,t\f53\f(CR,t\f54\f(CR;											
+	t\f51\f(CR.contents = \fB"number"\f(CR;
+	t\f52\f(CR.contents = \fB"string"\f(CR;
+	t\f53\f(CR.contents = \fB"ident"\f(CR;
+	t\f54\f(CR.contents = \fB"char"\f(CR;
+
+	t\f51\f(CR.count = t\f52\f(CR.count = t\f53\f(CR.count = t\f54\f(CR.count = \f50\f(CR;				
+
+	\f(CBfor\f(CR(itr = Tokens.begin(); itr != Tokens.end(); itr++)		
+	{
+
+
+		\f(CBif\f(CR(itr->isnumber)											
+		{
+			t\f51\f(CR.count++;
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(itr->isident)
+		{
+			t\f53\f(CR.count++;
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(itr->ischarliteral)
+		{
+			t\f54\f(CR.count++;
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(itr->isstring)
+		{
+			t\f52\f(CR.count++;
+		}
+
+		\f(CBif\f(CR(itr->ischarliteral || itr->isstring 
+			|| itr-> isident || itr->isnumber)	
+		{
+
+			Tokens.erase(itr);															
+			itr--;																		
+		}
+	}
+
+	\f(CBif\f(CR(t\f54\f(CR.count != \f50\f(CR)																
+		Tokens.insert(Tokens.begin(),t\f54\f(CR);
+	\f(CBif\f(CR(t\f53\f(CR.count != \f50\f(CR)
+		Tokens.insert(Tokens.begin(),t\f53\f(CR);
+	\f(CBif\f(CR(t\f52\f(CR.count != \f50\f(CR)
+		Tokens.insert(Tokens.begin(),t\f52\f(CR);
+	\f(CBif\f(CR(t\f51\f(CR.count != \f50\f(CR)
+		Tokens.insert(Tokens.begin(),t\f51\f(CR);
+
+
+
+	cout << \fB"\\n"\f(CR << setw(\f513\f(CR) << \fB"token"\f(CR << setw(\f516\f(CR) << \fB"count\\n"\f(CR;					
+	cout  << \fB"---------------------"\f(CR << setw(\f58\f(CR) << \fB"-----\\n"\f(CR;					
+
+	
+	SortVector();																	
+	
+	\f(CBfor\f(CR(itr = Tokens.begin(); itr != Tokens.end(); itr++)							
+	{
+		cout << setw(\f521\f(CR) << itr->contents  << setw(\f57\f(CR) << itr->count << endl;
+	}
+
+}
+
+bool isOneCharToken(\f(CBchar\f(CR c)											
+{
+	\f(CBswitch\f(CR(c)															
+	{
+		\f(CBcase\f(CR \fI'('\f(CR:
+		\f(CBcase\f(CR \fI')'\f(CR:
+		\f(CBcase\f(CR \fI'*'\f(CR:
+		\f(CBcase\f(CR \fI'+'\f(CR:
+		\f(CBcase\f(CR \fI'-'\f(CR:
+		\f(CBcase\f(CR \fI'='\f(CR:
+		\f(CBcase\f(CR \fI','\f(CR:
+		\f(CBcase\f(CR \fI'.'\f(CR:
+		\f(CBcase\f(CR \fI'!'\f(CR:
+		\f(CBcase\f(CR \fI':'\f(CR:
+		\f(CBcase\f(CR \fI';'\f(CR:
+		\f(CBcase\f(CR \fI'?'\f(CR:
+		\f(CBcase\f(CR \fI'['\f(CR:
+		\f(CBcase\f(CR \fI']'\f(CR:
+		\f(CBcase\f(CR \fI'{'\f(CR:
+		\f(CBcase\f(CR \fI'}'\f(CR:
+		\f(CBcase\f(CR \fI'~'\f(CR:
+		\f(CBcase\f(CR \fI'<'\f(CR:
+		\f(CBcase\f(CR \fI'>'\f(CR:
+		\f(CBcase\f(CR \fI'&'\f(CR:
+		\f(CBcase\f(CR \fI'%'\f(CR:
+		\f(CBcase\f(CR \fI'|'\f(CR:
+			\f(CBreturn\f(CR true;
+		\f(CBdefault\f(CR:
+			\f(CBreturn\f(CR false;
+	}
+}
+
+bool isTwoCharToken(\f(CBchar\f(CR c, \f(CBchar\f(CR c\f52\f(CR)						
+{
+	\f(CBif\f(CR(c == \fI'&'\f(CR && c\f52\f(CR == \fI'&'\f(CR)									
+	{
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse\f(CR \f(CBif\f(CR(c == \fI'|'\f(CR && c\f52\f(CR == \fI'|'\f(CR)
+	{
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse\f(CR \f(CBif\f(CR(c == \fI'+'\f(CR && c\f52\f(CR == \fI'+'\f(CR)
+	{
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse\f(CR \f(CBif\f(CR(c == \fI'-'\f(CR && c\f52\f(CR == \fI'-'\f(CR)
+	{
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse\f(CR \f(CBif\f(CR(c == \fI'-'\f(CR && c\f52\f(CR == \fI'>'\f(CR)
+	{
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse\f(CR 
+	{
+		\f(CBreturn\f(CR false;
+	}
+
+}
+
+bool isTwoorThreeCharToken(\f(CBchar\f(CR c)										
+{
+	\f(CBswitch\f(CR(c)																
+	{
+		\f(CBcase\f(CR \fI'|'\f(CR:
+		\f(CBcase\f(CR \fI'^'\f(CR:
+		\f(CBcase\f(CR \fI'&'\f(CR:
+		\f(CBcase\f(CR \fI'+'\f(CR:
+		\f(CBcase\f(CR \fI'-'\f(CR:
+		\f(CBcase\f(CR \fI'%'\f(CR:
+		\f(CBcase\f(CR \fI'*'\f(CR:
+		\f(CBcase\f(CR \fI'/'\f(CR:
+		\f(CBcase\f(CR \fI'='\f(CR:
+		\f(CBcase\f(CR \fI'!'\f(CR:															
+		{
+			\f(CBif\f(CR(cin.peek() == \fI'='\f(CR)
+			{
+				GlobalWord = c;
+				cin.get(c);
+				GlobalWord.push_back(c);
+				\f(CBreturn\f(CR true;
+			}
+
+			\f(CBbreak\f(CR;
+		}	
+		\f(CBcase\f(CR \fI'>'\f(CR:															
+		\f(CBcase\f(CR \fI'<'\f(CR:
+		{
+			GlobalWord = c;
+
+			\f(CBif\f(CR(cin.peek() == c)
+			{
+				cin.get(c);
+				GlobalWord.push_back(c);											
+
+				\f(CBif\f(CR(cin.peek() == \fI'='\f(CR)											
+				{
+					cin.get(c);
+					GlobalWord.push_back(c);
+				}
+
+				\f(CBreturn\f(CR true;
+			}
+			\f(CBelse\f(CR \f(CBif\f(CR(cin.peek() == \fI'='\f(CR)										
+			{
+				cin.get(c);
+				GlobalWord.push_back(c);
+
+				\f(CBreturn\f(CR true;
+			}
+
+		}
+
+	}
+
+	\f(CBreturn\f(CR false;
+}
+
+bool isNumber(\f(CBchar\f(CR c)												
+{
+	\f(CBif\f(CR(isdigit(c))														
+	{
+		GlobalWord = c;														
+		c = cin.peek();														
+		\f(CBwhile\f(CR(isdigit(c) && c != cin.eof())									
+		{
+			cin.get(c);															
+			GlobalWord.push_back(c);											
+			c = cin.peek();														
+		}
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse\f(CR 
+		\f(CBreturn\f(CR false;
+}
+
+bool isIdentifier(\f(CBchar\f(CR c)											
+{
+	
+	\f(CBif\f(CR(isalpha(c) || c == \fI'_'\f(CR)											
+	{
+		GlobalWord = c;													
+		c = cin.peek();													
+		\f(CBwhile\f(CR((isalnum(c) | c == \fI'_'\f(CR) && c != cin.eof())				
+		{
+			cin.get(c);														
+			GlobalWord.push_back(c);										
+			c = cin.peek();													
+		}
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse
+\f(CR		\f(CBreturn\f(CR false;
+		
+}
+
+bool isCharLiteral(\f(CBchar\f(CR c)											
+{
+	\f(CBif\f(CR(c == \fI'\''\f(CR)														
+	{
+		GlobalWord = c;													
+
+		\f(CBif\f(CR(cin.peek() == \fI'\''\f(CR)											
+		{
+			cin.get(c);														
+			cerr <<	\fB"character has zero length on line "\f(CR << line << endl;
+			GlobalWord = \fB" "\f(CR;
+			\f(CBreturn\f(CR false;
+		}
+
+		\f(CBdo\f(CR																
+		{
+			cin.get(c);														
+			GlobalWord.push_back(c);										
+
+
+			\f(CBif\f(CR(cin.peek() == \fI'\\n'\f(CR)											
+			{
+				cin.get(c);																
+				cerr << \fB"missing ' for "\f(CR << GlobalWord 
+				<< \fB" on line "\f(CR << line << endl;	
+				line++;																	
+				GlobalWord = \fB" "\f(CR;														
+				\f(CBreturn\f(CR false;															
+			}
+			\f(CBif\f(CR(cin.peek() == \fI'\\'\f(CR && c == \fI'\\'\f(CR)								
+			{
+				cin.get(c);			
+																			
+				\f(CBif\f(CR(cin.peek() == \fI'\''\f(CR)										
+				{
+					GlobalWord.push_back(c);										
+					\f(CBbreak\f(CR;
+				}
+				\f(CBelse
+\f(CR					cin.putback(c);											
+			}
+			\f(CBif\f(CR(cin.peek() == \fI'\''\f(CR){											
+				\f(CBif\f(CR(c == \fI'\\'\f(CR)
+					\f(CBcontinue\f(CR;
+
+				\f(CBbreak\f(CR;
+			}
+			\f(CBif\f(CR(cin.peek() == cin.eof()){									
+
+				\f(CBbreak\f(CR;
+			}
+		}
+		\f(CBwhile\f(CR(true);
+
+		cin.get(c);															
+		GlobalWord.push_back(c);											
+
+		\f(CBif\f(CR(GlobalWord.length() > \f54\f(CR || GlobalWord[\f51\f(CR] != \fI'\\'\f(CR 
+			&& GlobalWord.length() > \f53\f(CR)				
+		{
+			cerr <<	\fB"character constant "\f(CR << GlobalWord 
+			<< \fB" too long on line "\f(CR << line << endl;	
+			GlobalWord = \fB" "\f(CR;
+			\f(CBreturn\f(CR false;
+		}
+
+		\f(CBreturn\f(CR true;
+	}
+	\f(CBelse\f(CR 
+		\f(CBreturn\f(CR false;
+
+}
+
+bool isString(\f(CBchar\f(CR c)														
+{
+
+	\f(CBif\f(CR(c == \fI'"'\f(CR)																
+	{
+
+
+
+		GlobalWord = c;															
+
+		\f(CBif\f(CR(cin.peek() == \fI'\\n'\f(CR)
+		{
+			cerr << \fB"missing \\" for "\f(CR << GlobalWord 
+			<< \fB" on line "\f(CR << line << endl;	
+
+			GlobalWord = \fB" "\f(CR;														
+			\f(CBreturn\f(CR false;
+		}
+		\f(CBelse\f(CR \f(CBif\f(CR(cin.peek() == \fI'"'\f(CR)
+		{
+			cin.get(c);																
+			GlobalWord.push_back(c);												
+			\f(CBreturn\f(CR true;	
+		}
+
+
+		\f(CBdo\f(CR 																		
+		{
+
+			cin.get(c);																
+			GlobalWord.push_back(c);												
+
+
+
+			\f(CBif\f(CR(cin.peek() == \fI'\\n'\f(CR)
+			{
+	cerr << \fB"missing \\" for "\f(CR << GlobalWord 
+	<< \fB" on line "\f(CR << line << endl;
+
+				GlobalWord = \fB" "\f(CR;														
+				\f(CBreturn\f(CR false;
+			}
+			\f(CBif\f(CR(cin.peek() == \fI'"'\f(CR && c != \fI'\\'\f(CR){										
+
+				\f(CBbreak\f(CR;																
+			}
+			\f(CBelse\f(CR \f(CBif\f(CR(cin.peek() == cin.eof()){										
+
+				\f(CBbreak\f(CR;																
+			}
+		}
+		\f(CBwhile\f(CR(true);
+
+		cin.get(c);																
+		GlobalWord.push_back(c);												
+		
+		\f(CBreturn\f(CR true;	
+	}
+	\f(CBelse\f(CR 
+		\f(CBreturn\f(CR false;
+}
+
+\f(CBvoid\f(CR SortVector()															
+{
+	bool sorted = false;														
+	\f(CBwhile\f(CR(!sorted)																
+	{
+		sorted = true;																
+		\f(CBfor\f(CR(itr = Tokens.begin(); itr != Tokens.end(); itr++)						
+		{
+
+\f(CBif\f(CR(itr != Tokens.end()-\f51\f(CR && (itr->count < (itr+\f51\f(CR)->count 
+	|| (itr->contents.length() < (itr+\f51\f(CR)->contents.length() 
+	&& itr->count == (itr+\f51\f(CR)->count) 
+	|| (itr->contents > (itr+\f51\f(CR)->contents 
+	&& itr->count == (itr+\f51\f(CR)->count 
+	&& itr->contents.length() == (itr+\f51\f(CR)->contents.length())))
+			{
+				sorted = false;															
+
+				\f(CBint\f(CR holder;																
+				holder = itr->count;													
+				itr->count = (itr+\f51\f(CR)->count;
+				(itr+\f51\f(CR)->count = holder;
+				itr->contents.swap((itr+\f51\f(CR)->contents);									
+			}
+
+		}
+	}
+}
+
+\f(CBvoid\f(CR IgnoreComment(\f(CBchar\f(CR c)									
+{
+	\f(CBint\f(CR nlcount = \f50\f(CR;
+	string s;
+	s = c;														
+
+
+	\f(CBif\f(CR(cin.peek() == \fI'/'\f(CR)										
+	{
+		getline(cin,s);												
+
+	}	
+	\f(CBelse\f(CR \f(CBif\f(CR(cin.peek() == \fI'*'\f(CR)									
+	{
+
+		\f(CBdo\f(CR 															
+		{
+			cin.get(c);													
+			\f(CBif\f(CR(c == \fI'\\n'\f(CR){
+				line++;
+				nlcount++;
+			}
+
+			\f(CBif\f(CR(c == \fI'*'\f(CR && cin.peek() == \fI'/'\f(CR)								
+				\f(CBbreak\f(CR;															
+			\f(CBif\f(CR(cin.peek() == cin.eof() || nlcount > \f510000\f(CR)					
+			{
+				cerr << \fB"unclosed comment\\n"\f(CR;
+				\f(CBreturn\f(CR;
+			}
+		}
+		\f(CBwhile\f(CR(true);
+
+		cin.get(c);													
+
+	}
+}

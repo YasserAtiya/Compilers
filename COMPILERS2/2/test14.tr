@@ -1,0 +1,20 @@
+.fp 5 CBI
+.ft CR
+.nf
+\f(CBauto\f(CR \f(CBdo\f(CR \f(CI/*5667777 This is a multiline comment auto */
+\fB"Ihaveto 
+lex"
+\fI'\\'\f(CR;
+\f(CBwhile
+\fB"2 consecutive strings"
+\fB"2nd consecutive string"
+\fI'1234'
+\f512\f(CBdo\f534
+\fI'2 consecutive literals'
+\fI'2nd consecutive literal'
+\f(CRshortstuffishardcore
+\f5123456789\f(CRshortdo			\f(CI//123do auto doThis is a line 
+\fI'"'
+\fB"'"
+\fI'\''
+\fB"\\""

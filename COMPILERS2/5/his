@@ -1,0 +1,54 @@
+1.	alloc m 48
+2.	func scale
+3.	formal 8
+4.	localloc 4
+	label L5
+5.	param 0
+6.	@f 5
+7.	con 0
+8.	cvf 7
+9.	==f 6 8
+10.	bt 9 B10
+11.	br B11
+	label L12
+12.	con 0
+13.	reti 12
+14.	B10=L12
+	label L15
+15.	local 0
+16.	con 0
+17.	=i 15 16
+	label L18
+18.	local 0
+19.	@i 18
+20.	con 6
+21.	<i 19 20
+22.	bt 21 B22
+23.	br B23
+	label L24
+24.	local 0
+25.	con 1
+26.	@i 24
+27.	+i 26 25
+28.	=i 24 27
+29.	br B29
+	label L30
+30.	local 0
+31.	@i 30
+32.	global m
+33.	[]f 32 31
+34.	param 0
+35.	@f 34
+36.	@f 33
+37.	*f 36 35
+38.	=f 33 37
+39.	B22=L30
+40.	B29=L18
+41.	br L24
+42.	B11=L15
+	label L43
+43.	con 1
+44.	reti 43
+45.	B23=L43
+	label L46
+46.	fend

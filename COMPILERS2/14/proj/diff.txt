@@ -1,0 +1,183 @@
+974c974
+< !  outs=%o0:%l2:%l3:%l4:%l5:%l6:
+---
+> !  outs=%o0:%l2:%l3:%l4:
+986d985
+< 	mov	%i2,%l5             ! sets=%l5:    uses=%i2:     deads=
+988d986
+< 	mov	%i3,%l6             ! sets=%l6:    uses=%i3:     deads=%i3:
+1000,1001c998,999
+< !   ins=%o0:%l2:%l3:%l4:%l5:%l6:
+< !  outs=%o0:%l0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%o0:%l2:%l3:%l4:
+> !  outs=%o0:%l0:%l2:%l3:
+1023,1024c1021,1022
+< !   ins=%o0:%l0:%l2:%l3:%l5:%l6:
+< !  outs=%o0:%l0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%o0:%l0:%l2:%l3:
+> !  outs=%o0:%l0:%l2:%l3:
+1036,1037c1034,1035
+< !   ins=%o0:%l0:%l2:%l3:%l5:%l6:
+< !  outs=%o0:%l0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%o0:%l0:%l2:%l3:
+> !  outs=%o0:%l0:%l2:%l3:
+1045,1046c1043,1044
+< !   ins=%l0:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l2:%l3:
+> !  outs=%l0:%l2:%l3:
+1060,1061c1058,1059
+< !   ins=%l0:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l2:%l3:
+> !  outs=%l0:%l2:%l3:
+1075,1076c1073,1074
+< !   ins=%o0:%l0:%l2:%l3:%l5:%l6:
+< !  outs=%o0:%l0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%o0:%l0:%l2:%l3:
+> !  outs=%o0:%l0:%l2:%l3:
+1087,1088c1085,1086
+< !   ins=%o0:%l0:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%o0:%l0:%l2:%l3:
+> !  outs=%l0:%l2:%l3:
+1098,1099c1096,1097
+< !   ins=%l0:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l2:%l3:
+> !  outs=%l0:%l1:%l2:%l3:
+1110,1111c1108,1109
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l1:%l2:%l3:
+> !  outs=%l0:%l1:%l2:%l3:
+1128,1129c1126,1127
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l1:%l2:%l3:
+> !  outs=%l0:%l1:%l2:%l3:
+1141,1142c1139,1140
+< !   ins=%l0:%l2:%l3:%l5:%l6:
+< !  outs=%o0:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l2:%l3:
+> !  outs=%o0:%l2:%l3:
+1155,1156c1153,1154
+< !   ins=%o0:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%o0:%l2:%l3:
+> !  outs=%g1:%l0:%l1:%l2:%l3:
+1158c1156
+< 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=%o0:
+---
+> 	mov	%o0,%l0             ! sets=%l0:    uses=%o0:     deads=
+1160,1161c1158,1159
+< 	smul	%l0,3,%o1           ! sets=%o1:    uses=%l0:     deads=
+< 	add	%l2,%o1,%o0         ! sets=%o0:    uses=%o1:%l2: deads=%o1:%l2:
+---
+> 	smul	%o0,3,%o1           ! sets=%o1:    uses=%o0:     deads=%o0:
+> 	add	%l2,%o1,%o0         ! sets=%o0:    uses=%o1:%l2: deads=%l2:
+1165a1164
+> 	add	%l3,%o1,%g1         ! sets=%g1:    uses=%o1:%l3: deads=%o1:
+1171,1172c1170,1171
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%g1:%l0:%l1:%l2:%l3:
+> !  outs=%g1:%l0:%l1:%l2:%l3:
+1184,1185c1183,1184
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%g1:%l0:%l1:%l2:%l3:
+> !  outs=%g1:%l0:%l1:%l2:%l3:
+1198,1199c1197,1198
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%g1:%l0:%l1:%l2:%l3:
+> !  outs=%l0:%l1:%l2:%l3:
+1205,1208c1204
+< 	sethi	%hi(mon),%o1        ! sets=%o1:    uses=         deads=
+< 	add	%o1,%lo(mon),%o1    ! sets=%o1:    uses=%o1:     deads=%o1:
+< 	add	%l3,%o1,%o0         ! sets=%o0:    uses=%o1:%l3: deads=%o1:
+< 	ldsb	[%o0],%o1           ! sets=%o1:    uses=%o0:     deads=
+---
+> 	ldsb	[%g1],%o1           ! sets=%o1:    uses=%g1:     deads=
+1210c1206
+< 	stb	%o1,[%o0]           ! sets=        uses=%o0:%o1: deads=%o0:%o1:
+---
+> 	stb	%o1,[%g1]           ! sets=        uses=%g1:%o1: deads=%g1:%o1:
+1216,1217c1212,1213
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l1:%l2:%l3:
+> !  outs=%l0:%l1:%l2:%l3:
+1229,1230c1225,1226
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l1:%l2:%l3:
+> !  outs=%o0:%l0:%l1:%l2:%l3:
+1242,1243c1238,1239
+< !   ins=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%o0:%l0:%l1:%l2:%l3:
+> !  outs=%l0:%l1:%l2:%l3:
+1252,1253c1248,1249
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%l0:%l1:%l2:%l3:
+> !  outs=%g1:%g2:%o0:%l0:%l1:%l2:%l3:
+1269,1270c1265,1266
+< !   ins=%o0:%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%g1:%g2:%o0:%l0:%l1:%l2:%l3:
+> !  outs=%g1:%g2:%l0:%l1:%l2:%l3:
+1273,1275c1269,1270
+< 	mov	%l2,%o1             ! sets=%o1:    uses=%l2:     deads=
+< 	add	%l2,1,%o2           ! sets=%o2:    uses=%l2:     deads=%l2:
+< 	stb	%o0,[%o1]           ! sets=        uses=%o0:%o1: deads=%o0:%o1:
+---
+> 	add	%l2,1,%o2           ! sets=%o2:    uses=%l2:     deads=
+> 	stb	%o0,[%l2]           ! sets=        uses=%o0:%l2: deads=%o0:%l2:
+1290,1291c1285,1286
+< !   ins=%l1:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%g1:%g2:%l1:%l3:
+> !  outs=%g1:%l0:%l1:%l2:%l3:
+1296,1297c1291
+< 	add	%l5,%l6,%o0         ! sets=%o0:    uses=%l5:%l6: deads=%l5:
+< 	mov	%o0,%l2             ! sets=%l2:    uses=%o0:     deads=
+---
+> 	mov	%g2,%l2             ! sets=%l2:    uses=%g2:     deads=%g2:
+1299d1292
+< 	mov	%o0,%l5             ! sets=%l5:    uses=%o0:     deads=%o0:
+1305,1306c1298,1299
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%g1:%l0:%l1:%l2:%l3:
+> !  outs=%g1:%l0:%l1:%l2:%l3:
+1317,1318c1310,1311
+< !   ins=%l0:%l1:%l2:%l3:%l5:%l6:
+< !  outs=%l0:%l1:%l2:%l3:%l5:%l6:
+---
+> !   ins=%g1:%l0:%l1:%l2:%l3:
+> !  outs=%g1:%l0:%l1:%l2:%l3:

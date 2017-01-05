@@ -1,0 +1,8 @@
+opt < ../test/banner.s > ../test/banner3.s
+opt < ../test/cal.s > ../test/cal3.s
+opt < ../test/echo.s > ../test/echo3.s
+opt < ../test/find.s > ../test/find3.s
+opt < ../test/half.s > ../test/half3.s
+opt < ../test/queens.s > ../test/queens3.s
+opt < ../test/square.s > ../test/square3.s
+opt < ../test/wc.s > ../test/wc3.s
